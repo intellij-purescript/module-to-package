@@ -22,4 +22,4 @@ function packages () {
     echo "\"$package\": [$(modules "$package")]"
   done | paste -s -d, -
 }
-echo "{$(packages)}" > database/latest.json
+echo "{$(packages)}" > docs/latest.json
