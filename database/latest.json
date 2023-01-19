@@ -1,0 +1,3699 @@
+{
+  "abc-parser": [
+    "Data.Abc.Accidentals",
+    "Data.Abc.Canonical",
+    "Data.Abc.KeySignature",
+    "Data.Abc.Meter",
+    "Data.Abc.Midi.Pitch",
+    "Data.Abc.Midi.RepeatSections",
+    "Data.Abc.Midi.Types",
+    "Data.Abc.Midi",
+    "Data.Abc.Octave",
+    "Data.Abc.Optics",
+    "Data.Abc.Parser",
+    "Data.Abc.Repeats.Section",
+    "Data.Abc.Repeats.Types",
+    "Data.Abc.Repeats.Variant",
+    "Data.Abc.Tempo",
+    "Data.Abc.Transposition",
+    "Data.Abc.UnitNote",
+    "Data.Abc.Utils",
+    "Data.Abc.Voice",
+    "Data.Abc"
+  ],
+  "ace": [
+    "Ace.Anchor",
+    "Ace.BackgroundTokenizer",
+    "Ace.Command",
+    "Ace.Config",
+    "Ace.Document",
+    "Ace.Editor",
+    "Ace.EditSession",
+    "Ace.Ext.LanguageTools.Completer",
+    "Ace.Ext.LanguageTools",
+    "Ace.KeyBinding",
+    "Ace.Marker",
+    "Ace.Range",
+    "Ace.ScrollBar",
+    "Ace.Search",
+    "Ace.Selection",
+    "Ace.TokenIterator",
+    "Ace.Tokenizer",
+    "Ace.Types",
+    "Ace.UndoManager",
+    "Ace.VirtualRenderer",
+    "Ace"
+  ],
+  "aff": [
+    "Effect.Aff.Class",
+    "provides",
+    "Effect.Aff"
+  ],
+  "aff-bus": [
+    "Effect.Aff.Bus"
+  ],
+  "aff-coroutines": [
+    "defines"
+  ],
+  "aff-promise": [
+    "Control.Promise"
+  ],
+  "aff-retry": [
+    "Effect.Aff.Retry"
+  ],
+  "affjax": [
+    "Affjax.RequestBody",
+    "Affjax.RequestHeader",
+    "Affjax.ResponseFormat",
+    "Affjax.ResponseHeader",
+    "Affjax.StatusCode",
+    "is"
+  ],
+  "affjax-node": [
+    "Affjax.Node"
+  ],
+  "affjax-web": [
+    "Affjax.Web"
+  ],
+  "ansi": [
+    "defines",
+    "Ansi.Output"
+  ],
+  "argonaut": [
+    "Data.Argonaut"
+  ],
+  "argonaut-aeson-generic": [
+    "Data.Argonaut.Aeson.Decode.Generic",
+    "Data.Argonaut.Aeson.Encode.Generic",
+    "Data.Argonaut.Aeson.Helpers",
+    "Data.Argonaut.Aeson.Options"
+  ],
+  "argonaut-codecs": [
+    "Data.Argonaut.Decode.Class",
+    "Data.Argonaut.Decode.Combinators",
+    "Data.Argonaut.Decode.Decoders",
+    "Data.Argonaut.Decode.Error",
+    "Data.Argonaut.Decode.Parser",
+    "Data.Argonaut.Decode",
+    "Data.Argonaut.Encode.Class",
+    "Data.Argonaut.Encode.Combinators",
+    "Data.Argonaut.Encode.Encoders",
+    "Data.Argonaut.Encode"
+  ],
+  "argonaut-core": [
+    "defines",
+    "Data.Argonaut.Gen",
+    "Data.Argonaut.Parser"
+  ],
+  "argonaut-generic": [
+    "Data.Argonaut.Decode.Generic",
+    "Data.Argonaut.Encode.Generic",
+    "Data.Argonaut.Types.Generic"
+  ],
+  "argonaut-traversals": [
+    "Data.Argonaut.JCursor.Gen",
+    "Data.Argonaut.JCursor",
+    "Data.Argonaut.Prisms",
+    "Data.Argonaut.Traversals"
+  ],
+  "argparse-basic": [
+    "ArgParse.Basic"
+  ],
+  "array-builder": [
+    "Data.Array.Builder"
+  ],
+  "arraybuffer": [
+    "Data.ArrayBuffer.ArrayBuffer.Gen",
+    "represents",
+    "Data.ArrayBuffer.Cast",
+    "Data.ArrayBuffer.DataView.Gen",
+    "represents",
+    "Data.ArrayBuffer.Typed.Gen",
+    "represents",
+    "represents"
+  ],
+  "arraybuffer-builder": [
+    "provides",
+    ""
+  ],
+  "arraybuffer-types": [
+    "Data.ArrayBuffer.Types"
+  ],
+  "arrays": [
+    "exports",
+    "Data.Array.NonEmpty",
+    "Data.Array.Partial",
+    "Data.Array.ST.Iterator",
+    "is",
+    "can",
+    "is"
+  ],
+  "arrays-zipper": [
+    "Data.Zipper.ArrayZipper"
+  ],
+  "ask": [
+    "Control.Ask"
+  ],
+  "assert": [
+    "Test.Assert"
+  ],
+  "avar": [
+    "Effect.Aff.AVar",
+    "Effect.AVar"
+  ],
+  "b64": [
+    "Data.Binary.Base",
+    "Data.String.Base",
+    "Data.String.Base"
+  ],
+  "barbies": [
+    "Data.Barbie"
+  ],
+  "barlow-lens": [
+    "Data.Lens.Barlow.Construction",
+    "Data.Lens.Barlow.Generic",
+    "Data.Lens.Barlow.Helpers",
+    "Data.Lens.Barlow.Parser",
+    "Data.Lens.Barlow.Types",
+    "Data.Lens.Barlow"
+  ],
+  "basic-auth": [
+    "Node.BasicAuth"
+  ],
+  "bifunctors": [
+    "Control.Biapplicative",
+    "Control.Biapply",
+    "Data.Bifunctor.Join",
+    "Data.Bifunctor"
+  ],
+  "bigints": [
+    "defines"
+  ],
+  "bolson": [
+    "Bolson.Control",
+    "Bolson.Core"
+  ],
+  "bower-json": [
+    "Web.Bower.PackageMeta"
+  ],
+  "bucketchain": [
+    "Bucketchain.Http",
+    "Bucketchain.Middleware",
+    "Bucketchain.ResponseBody",
+    "Bucketchain.Stream",
+    "Bucketchain.Test",
+    "Bucketchain"
+  ],
+  "bucketchain-basic-auth": [
+    "Bucketchain.BasicAuth"
+  ],
+  "bucketchain-conditional": [
+    "Bucketchain.Conditional"
+  ],
+  "bucketchain-cors": [
+    "Bucketchain.CORS"
+  ],
+  "bucketchain-csrf": [
+    "Bucketchain.CSRF"
+  ],
+  "bucketchain-header-utils": [
+    "Bucketchain.Header.Cookie",
+    "Bucketchain.Header.Vary"
+  ],
+  "bucketchain-health": [
+    "Bucketchain.Health"
+  ],
+  "bucketchain-history-api-fallback": [
+    "Bucketchain.HistoryAPIFallback"
+  ],
+  "bucketchain-logger": [
+    "Bucketchain.Logger.Error",
+    "Bucketchain.Logger.HTTP.LTSV",
+    "Bucketchain.Logger.HTTP.Token",
+    "Bucketchain.Logger.HTTP.Tokenizer"
+  ],
+  "bucketchain-secure": [
+    "Bucketchain.Secure.ContentTypeOptions",
+    "Bucketchain.Secure.DownloadOptions",
+    "Bucketchain.Secure.FrameOptions",
+    "Bucketchain.Secure.HSTS",
+    "Bucketchain.Secure.XSSProtection",
+    "Bucketchain.Secure"
+  ],
+  "bucketchain-simple-api": [
+    "Bucketchain.SimpleAPI.Auth.Class",
+    "Bucketchain.SimpleAPI.Auth",
+    "Bucketchain.SimpleAPI.Batch",
+    "Bucketchain.SimpleAPI.Body",
+    "Bucketchain.SimpleAPI.Class",
+    "Bucketchain.SimpleAPI.FreeT.Class",
+    "Bucketchain.SimpleAPI.JSON",
+    "Bucketchain.SimpleAPI.Proc",
+    "Bucketchain.SimpleAPI.RawData",
+    "Bucketchain.SimpleAPI.Response.Class",
+    "Bucketchain.SimpleAPI.Response",
+    "Bucketchain.SimpleAPI"
+  ],
+  "bucketchain-sslify": [
+    "Bucketchain.SSLify"
+  ],
+  "bucketchain-static": [
+    "Bucketchain.Static.ContentType",
+    "Bucketchain.Static"
+  ],
+  "call-by-name": [
+    "CallByName.Alt",
+    "CallByName.Applicative",
+    "CallByName.Class",
+    "CallByName.Monoid",
+    "CallByName.Syntax"
+  ],
+  "canvas": [
+    "defines"
+  ],
+  "canvas-action": [
+    "Graphics.CanvasAction.Class",
+    "Graphics.CanvasAction.CSSOM",
+    "Graphics.CanvasAction.Path",
+    "Graphics.CanvasAction.Run",
+    "Graphics.CanvasAction.Transformation",
+    "Graphics.CanvasAction.Types",
+    "defines"
+  ],
+  "cartesian": [
+    "Data.Complex",
+    "Data.Complex"
+  ],
+  "catenable-lists": [
+    "defines",
+    "defines"
+  ],
+  "channel": [
+    "Concurrent.Channel"
+  ],
+  "checked-exceptions": [
+    "provides"
+  ],
+  "classless": [
+    "Classless"
+  ],
+  "classless-arbitrary": [
+    "Classless.Arbitrary"
+  ],
+  "classless-decode-json": [
+    "Classless.DecodeJson.Generic",
+    "Classless.DecodeJson"
+  ],
+  "classless-encode-json": [
+    "Classless.EncodeJson.Generic",
+    "Classless.EncodeJson.Record",
+    "Classless.EncodeJson"
+  ],
+  "classnames": [
+    "ClassNames"
+  ],
+  "codec": [
+    "Data.Codec"
+  ],
+  "codec-argonaut": [
+    "Data.Codec.Argonaut.Common",
+    "Data.Codec.Argonaut.Compat",
+    "Data.Codec.Argonaut.Generic",
+    "Data.Codec.Argonaut.Migration",
+    "Data.Codec.Argonaut.Record",
+    "Data.Codec.Argonaut.Sum",
+    "Data.Codec.Argonaut.Variant",
+    "Data.Codec.Argonaut"
+  ],
+  "colors": [
+    "Color.Blending",
+    "defines",
+    "provides"
+  ],
+  "concur-core": [
+    "Concur.Core.DevTools",
+    "Concur.Core.Discharge",
+    "Concur.Core.DOM",
+    "Concur.Core.ElementBuilder",
+    "Concur.Core.FRP",
+    "Concur.Core.Gen",
+    "Concur.Core.IsWidget",
+    "Concur.Core.LiftWidget",
+    "Concur.Core.Patterns",
+    "Concur.Core.Props",
+    "Concur.Core.Types",
+    "Concur.Core",
+    "Control.Cofree",
+    "Control.MonadFix",
+    "Control.MultiAlternative",
+    "Control.ShiftMap"
+  ],
+  "concur-react": [
+    "Concur.React.DOM",
+    "Concur.React.Props",
+    "Concur.React.Run",
+    "Concur.React.SVG",
+    "Concur.React.Widgets",
+    "Concur.React"
+  ],
+  "concurrent-queues": [
+    "Concurrent.BoundedQueue.Internal",
+    "Concurrent.BoundedQueue.Sync",
+    "Concurrent.BoundedQueue",
+    "Concurrent.Queue"
+  ],
+  "console": [
+    "Effect.Class.Console",
+    "Effect.Console"
+  ],
+  "const": [
+    "Data.Const"
+  ],
+  "contravariant": [
+    "Data.Comparison",
+    "Data.Decidable",
+    "Data.Decide",
+    "Data.Divide",
+    "Data.Divisible",
+    "Data.Equivalence",
+    "Data.Functor.Contravariant",
+    "Data.Op",
+    "Data.Predicate"
+  ],
+  "control": [
+    "Control.Alt",
+    "Control.Alternative",
+    "Control.Comonad",
+    "Control.Extend",
+    "Control.Lazy",
+    "Control.MonadPlus",
+    "Control.Plus",
+    "Data.Monoid.Alternate"
+  ],
+  "convertable-options": [
+    "ConvertableOptions"
+  ],
+  "coroutines": [
+    "defines"
+  ],
+  "crypto": [
+    "Node.Crypto.Cipher",
+    "Node.Crypto.Decipher",
+    "Node.Crypto.Hash",
+    "Node.Crypto.Hmac",
+    "Node.Crypto"
+  ],
+  "css": [
+    "CSS.Animation",
+    "CSS.Background",
+    "CSS.Border",
+    "CSS.Box",
+    "CSS.Color",
+    "CSS.Common",
+    "CSS.Cursor",
+    "CSS.Display",
+    "CSS.Elements",
+    "CSS.Flexbox",
+    "CSS.Font",
+    "CSS.FontFace",
+    "CSS.FontStyle",
+    "CSS.Geometry",
+    "CSS.Gradient",
+    "CSS.ListStyle.Image",
+    "CSS.ListStyle.Position",
+    "CSS.ListStyle.Type",
+    "CSS.ListStyle",
+    "CSS.Media",
+    "CSS.Overflow",
+    "CSS.Property",
+    "CSS.Pseudo",
+    "CSS.Render",
+    "CSS.Selector",
+    "CSS.Size",
+    "CSS.String",
+    "CSS.Stylesheet",
+    "CSS.Text.Direction",
+    "CSS.Text.Overflow",
+    "CSS.Text.Shadow",
+    "CSS.Text.Transform",
+    "CSS.Text.Whitespace",
+    "CSS.Text",
+    "CSS.TextAlign",
+    "CSS.Time",
+    "CSS.Transform",
+    "CSS.Transition",
+    "CSS.VerticalAlign",
+    "CSS",
+    "X"
+  ],
+  "datetime": [
+    "Data.Date.Component.Gen",
+    "Data.Date.Component",
+    "Data.Date.Gen",
+    "Data.Date",
+    "Data.DateTime.Gen",
+    "Data.DateTime.Instant",
+    "Data.DateTime",
+    "Data.Interval.Duration.Iso",
+    "Data.Interval.Duration",
+    "Data.Interval",
+    "Data.Time.Component.Gen",
+    "Data.Time.Component",
+    "Data.Time.Duration.Gen",
+    "Data.Time.Duration",
+    "Data.Time.Gen",
+    "Data.Time"
+  ],
+  "datetime-parsing": [
+    ""
+  ],
+  "debug": [
+    "Debug"
+  ],
+  "decimals": [
+    "defines"
+  ],
+  "default-values": [
+    "Data.Default"
+  ],
+  "deku": [
+    "Deku.Attribute",
+    "Deku.Attributes",
+    "Deku.Control",
+    "Deku.Core",
+    "Deku.CSS",
+    "Deku.Do",
+    "Deku.DOM.Attr.Accelerate",
+    "Deku.DOM.Attr.Accept",
+    "Deku.DOM.Attr.AcceptCharset",
+    "Deku.DOM.Attr.Accesskey",
+    "Deku.DOM.Attr.Accumulate",
+    "Deku.DOM.Attr.Action",
+    "Deku.DOM.Attr.Additive",
+    "Deku.DOM.Attr.Align",
+    "Deku.DOM.Attr.AlignmentBaseline",
+    "Deku.DOM.Attr.Allow",
+    "Deku.DOM.Attr.Alt",
+    "Deku.DOM.Attr.Amplitude",
+    "Deku.DOM.Attr.AriaActivedescendant",
+    "Deku.DOM.Attr.AriaAtomic",
+    "Deku.DOM.Attr.AriaAutocomplete",
+    "Deku.DOM.Attr.AriaBusy",
+    "Deku.DOM.Attr.AriaChecked",
+    "Deku.DOM.Attr.AriaColcount",
+    "Deku.DOM.Attr.AriaColindex",
+    "Deku.DOM.Attr.AriaColspan",
+    "Deku.DOM.Attr.AriaControls",
+    "Deku.DOM.Attr.AriaCurrent",
+    "Deku.DOM.Attr.AriaDescribedby",
+    "Deku.DOM.Attr.AriaDetails",
+    "Deku.DOM.Attr.AriaDisabled",
+    "Deku.DOM.Attr.AriaDropeffect",
+    "Deku.DOM.Attr.AriaErrormessage",
+    "Deku.DOM.Attr.AriaExpanded",
+    "Deku.DOM.Attr.AriaFlowto",
+    "Deku.DOM.Attr.AriaGrabbed",
+    "Deku.DOM.Attr.AriaHaspopup",
+    "Deku.DOM.Attr.AriaHidden",
+    "Deku.DOM.Attr.AriaInvalid",
+    "Deku.DOM.Attr.AriaKeyshortcuts",
+    "Deku.DOM.Attr.AriaLabel",
+    "Deku.DOM.Attr.AriaLabelledby",
+    "Deku.DOM.Attr.AriaLevel",
+    "Deku.DOM.Attr.AriaLive",
+    "Deku.DOM.Attr.AriaModal",
+    "Deku.DOM.Attr.AriaMultiline",
+    "Deku.DOM.Attr.AriaMultiselectable",
+    "Deku.DOM.Attr.AriaOrientation",
+    "Deku.DOM.Attr.AriaOwns",
+    "Deku.DOM.Attr.AriaPlaceholder",
+    "Deku.DOM.Attr.AriaPosinset",
+    "Deku.DOM.Attr.AriaPressed",
+    "Deku.DOM.Attr.AriaReadonly",
+    "Deku.DOM.Attr.AriaRelevant",
+    "Deku.DOM.Attr.AriaRequired",
+    "Deku.DOM.Attr.AriaRoledescription",
+    "Deku.DOM.Attr.AriaRowcount",
+    "Deku.DOM.Attr.AriaRowindex",
+    "Deku.DOM.Attr.AriaRowspan",
+    "Deku.DOM.Attr.AriaSelected",
+    "Deku.DOM.Attr.AriaSetsize",
+    "Deku.DOM.Attr.AriaSort",
+    "Deku.DOM.Attr.AriaValuemax",
+    "Deku.DOM.Attr.AriaValuemin",
+    "Deku.DOM.Attr.AriaValuenow",
+    "Deku.DOM.Attr.AriaValuetext",
+    "Deku.DOM.Attr.Async",
+    "Deku.DOM.Attr.AttributeName",
+    "Deku.DOM.Attr.AttributeType",
+    "Deku.DOM.Attr.Autocapitalize",
+    "Deku.DOM.Attr.Autocomplete",
+    "Deku.DOM.Attr.Autofocus",
+    "Deku.DOM.Attr.Autoplay",
+    "Deku.DOM.Attr.AutoReverse",
+    "Deku.DOM.Attr.Azimuth",
+    "Deku.DOM.Attr.Background",
+    "Deku.DOM.Attr.BaseFrequency",
+    "Deku.DOM.Attr.BaselineShift",
+    "Deku.DOM.Attr.BaseProfile",
+    "Deku.DOM.Attr.Begin",
+    "Deku.DOM.Attr.Bgcolor",
+    "Deku.DOM.Attr.Bias",
+    "Deku.DOM.Attr.Border",
+    "Deku.DOM.Attr.Buffered",
+    "Deku.DOM.Attr.By",
+    "Deku.DOM.Attr.CalcMode",
+    "Deku.DOM.Attr.Capture",
+    "Deku.DOM.Attr.Challenge",
+    "Deku.DOM.Attr.Charset",
+    "Deku.DOM.Attr.Checked",
+    "Deku.DOM.Attr.Cite",
+    "Deku.DOM.Attr.Class",
+    "Deku.DOM.Attr.Clip",
+    "Deku.DOM.Attr.ClipPath",
+    "Deku.DOM.Attr.ClipPathUnits",
+    "Deku.DOM.Attr.ClipRule",
+    "Deku.DOM.Attr.Code",
+    "Deku.DOM.Attr.Codebase",
+    "Deku.DOM.Attr.Color",
+    "Deku.DOM.Attr.ColorInterpolation",
+    "Deku.DOM.Attr.ColorInterpolationFilters",
+    "Deku.DOM.Attr.ColorProfile",
+    "Deku.DOM.Attr.ColorRendering",
+    "Deku.DOM.Attr.Cols",
+    "Deku.DOM.Attr.Colspan",
+    "Deku.DOM.Attr.Content",
+    "Deku.DOM.Attr.Contenteditable",
+    "Deku.DOM.Attr.ContentScriptType",
+    "Deku.DOM.Attr.ContentStyleType",
+    "Deku.DOM.Attr.Contextmenu",
+    "Deku.DOM.Attr.Controls",
+    "Deku.DOM.Attr.Coords",
+    "Deku.DOM.Attr.Crossorigin",
+    "Deku.DOM.Attr.Csp",
+    "Deku.DOM.Attr.Cursor",
+    "Deku.DOM.Attr.Cx",
+    "Deku.DOM.Attr.Cy",
+    "Deku.DOM.Attr.D",
+    "Deku.DOM.Attr.Data",
+    "Deku.DOM.Attr.Datetime",
+    "Deku.DOM.Attr.Decelerate",
+    "Deku.DOM.Attr.Decoding",
+    "Deku.DOM.Attr.Default",
+    "Deku.DOM.Attr.Defer",
+    "Deku.DOM.Attr.DiffuseConstant",
+    "Deku.DOM.Attr.Dir",
+    "Deku.DOM.Attr.Direction",
+    "Deku.DOM.Attr.Dirname",
+    "Deku.DOM.Attr.Disabled",
+    "Deku.DOM.Attr.Display",
+    "Deku.DOM.Attr.Divisor",
+    "Deku.DOM.Attr.DominantBaseline",
+    "Deku.DOM.Attr.Download",
+    "Deku.DOM.Attr.Draggable",
+    "Deku.DOM.Attr.Dur",
+    "Deku.DOM.Attr.Dx",
+    "Deku.DOM.Attr.Dy",
+    "Deku.DOM.Attr.EdgeMode",
+    "Deku.DOM.Attr.Elevation",
+    "Deku.DOM.Attr.EnableBackground",
+    "Deku.DOM.Attr.Enctype",
+    "Deku.DOM.Attr.End",
+    "Deku.DOM.Attr.Enterkeyhint",
+    "Deku.DOM.Attr.Exponent",
+    "Deku.DOM.Attr.Fill",
+    "Deku.DOM.Attr.FillOpacity",
+    "Deku.DOM.Attr.FillRule",
+    "Deku.DOM.Attr.Filter",
+    "Deku.DOM.Attr.FilterRes",
+    "Deku.DOM.Attr.FilterUnits",
+    "Deku.DOM.Attr.FloodColor",
+    "Deku.DOM.Attr.FloodOpacity",
+    "Deku.DOM.Attr.FontFamily",
+    "Deku.DOM.Attr.FontSize",
+    "Deku.DOM.Attr.FontSizeAdjust",
+    "Deku.DOM.Attr.FontStretch",
+    "Deku.DOM.Attr.FontStyle",
+    "Deku.DOM.Attr.FontVariant",
+    "Deku.DOM.Attr.FontWeight",
+    "Deku.DOM.Attr.For",
+    "Deku.DOM.Attr.Form",
+    "Deku.DOM.Attr.Formaction",
+    "Deku.DOM.Attr.Formenctype",
+    "Deku.DOM.Attr.Formmethod",
+    "Deku.DOM.Attr.Formnovalidate",
+    "Deku.DOM.Attr.Formtarget",
+    "Deku.DOM.Attr.Fr",
+    "Deku.DOM.Attr.From",
+    "Deku.DOM.Attr.Fx",
+    "Deku.DOM.Attr.Fy",
+    "Deku.DOM.Attr.GlyphOrientationHorizontal",
+    "Deku.DOM.Attr.GlyphOrientationVertical",
+    "Deku.DOM.Attr.GradientTransform",
+    "Deku.DOM.Attr.GradientUnits",
+    "Deku.DOM.Attr.Headers",
+    "Deku.DOM.Attr.Height",
+    "Deku.DOM.Attr.Hidden",
+    "Deku.DOM.Attr.High",
+    "Deku.DOM.Attr.Href",
+    "Deku.DOM.Attr.Hreflang",
+    "Deku.DOM.Attr.HttpEquiv",
+    "Deku.DOM.Attr.Icon",
+    "Deku.DOM.Attr.Id",
+    "Deku.DOM.Attr.ImageRendering",
+    "Deku.DOM.Attr.Importance",
+    "Deku.DOM.Attr.In",
+    "Deku.DOM.Attr.In",
+    "Deku.DOM.Attr.Inputmode",
+    "Deku.DOM.Attr.Integrity",
+    "Deku.DOM.Attr.Intercept",
+    "Deku.DOM.Attr.Intrinsicsize",
+    "Deku.DOM.Attr.Ismap",
+    "Deku.DOM.Attr.Itemprop",
+    "Deku.DOM.Attr.K",
+    "Deku.DOM.Attr.K",
+    "Deku.DOM.Attr.K",
+    "Deku.DOM.Attr.K",
+    "Deku.DOM.Attr.KernelMatrix",
+    "Deku.DOM.Attr.KernelUnitLength",
+    "Deku.DOM.Attr.Kerning",
+    "Deku.DOM.Attr.KeyPoints",
+    "Deku.DOM.Attr.KeySplines",
+    "Deku.DOM.Attr.KeyTimes",
+    "Deku.DOM.Attr.Keytype",
+    "Deku.DOM.Attr.Kind",
+    "Deku.DOM.Attr.Label",
+    "Deku.DOM.Attr.Lang",
+    "Deku.DOM.Attr.Language",
+    "Deku.DOM.Attr.LengthAdjust",
+    "Deku.DOM.Attr.LetterSpacing",
+    "Deku.DOM.Attr.LightingColor",
+    "Deku.DOM.Attr.LimitingConeAngle",
+    "Deku.DOM.Attr.List",
+    "Deku.DOM.Attr.Loading",
+    "Deku.DOM.Attr.Loop",
+    "Deku.DOM.Attr.Low",
+    "Deku.DOM.Attr.Manifest",
+    "Deku.DOM.Attr.MarkerEnd",
+    "Deku.DOM.Attr.MarkerHeight",
+    "Deku.DOM.Attr.MarkerMid",
+    "Deku.DOM.Attr.MarkerStart",
+    "Deku.DOM.Attr.MarkerUnits",
+    "Deku.DOM.Attr.MarkerWidth",
+    "Deku.DOM.Attr.Mask",
+    "Deku.DOM.Attr.MaskContentUnits",
+    "Deku.DOM.Attr.MaskUnits",
+    "Deku.DOM.Attr.Max",
+    "Deku.DOM.Attr.Maxlength",
+    "Deku.DOM.Attr.Media",
+    "Deku.DOM.Attr.Method",
+    "Deku.DOM.Attr.Min",
+    "Deku.DOM.Attr.Minlength",
+    "Deku.DOM.Attr.Mode",
+    "Deku.DOM.Attr.Multiple",
+    "Deku.DOM.Attr.Muted",
+    "Deku.DOM.Attr.Name",
+    "Deku.DOM.Attr.Novalidate",
+    "Deku.DOM.Attr.NumOctaves",
+    "Deku.DOM.Attr.Offset",
+    "Deku.DOM.Attr.OnAbort",
+    "Deku.DOM.Attr.OnAnimationcancel",
+    "Deku.DOM.Attr.OnAnimationend",
+    "Deku.DOM.Attr.OnAnimationiteration",
+    "Deku.DOM.Attr.OnAnimationstart",
+    "Deku.DOM.Attr.OnAuxclick",
+    "Deku.DOM.Attr.OnBlur",
+    "Deku.DOM.Attr.OnCancel",
+    "Deku.DOM.Attr.OnCanplay",
+    "Deku.DOM.Attr.OnCanplaythrough",
+    "Deku.DOM.Attr.OnChange",
+    "Deku.DOM.Attr.OnClick",
+    "Deku.DOM.Attr.OnClose",
+    "Deku.DOM.Attr.OnContextmenu",
+    "Deku.DOM.Attr.OnDblclick",
+    "Deku.DOM.Attr.OnDrag",
+    "Deku.DOM.Attr.OnDragend",
+    "Deku.DOM.Attr.OnDragenter",
+    "Deku.DOM.Attr.OnDragleave",
+    "Deku.DOM.Attr.OnDragover",
+    "Deku.DOM.Attr.OnDragstart",
+    "Deku.DOM.Attr.OnDrop",
+    "Deku.DOM.Attr.OnDurationchange",
+    "Deku.DOM.Attr.OnEmptied",
+    "Deku.DOM.Attr.OnEnded",
+    "Deku.DOM.Attr.OnError",
+    "Deku.DOM.Attr.OnFocus",
+    "Deku.DOM.Attr.OnFormdata",
+    "Deku.DOM.Attr.OnGotpointercapture",
+    "Deku.DOM.Attr.OnInput",
+    "Deku.DOM.Attr.OnInvalid",
+    "Deku.DOM.Attr.OnKeydown",
+    "Deku.DOM.Attr.OnKeypress",
+    "Deku.DOM.Attr.OnKeyup",
+    "Deku.DOM.Attr.OnLoad",
+    "Deku.DOM.Attr.OnLoadeddata",
+    "Deku.DOM.Attr.OnLoadedmetadata",
+    "Deku.DOM.Attr.OnLoadend",
+    "Deku.DOM.Attr.OnLoadstart",
+    "Deku.DOM.Attr.OnLostpointercapture",
+    "Deku.DOM.Attr.OnMousedown",
+    "Deku.DOM.Attr.OnMouseenter",
+    "Deku.DOM.Attr.OnMouseleave",
+    "Deku.DOM.Attr.OnMousemove",
+    "Deku.DOM.Attr.OnMouseout",
+    "Deku.DOM.Attr.OnMouseover",
+    "Deku.DOM.Attr.OnMouseup",
+    "Deku.DOM.Attr.OnMousewheel",
+    "Deku.DOM.Attr.OnPause",
+    "Deku.DOM.Attr.OnPlay",
+    "Deku.DOM.Attr.OnPlaying",
+    "Deku.DOM.Attr.OnPointercancel",
+    "Deku.DOM.Attr.OnPointerdown",
+    "Deku.DOM.Attr.OnPointerenter",
+    "Deku.DOM.Attr.OnPointerleave",
+    "Deku.DOM.Attr.OnPointerlockchange",
+    "Deku.DOM.Attr.OnPointerlockerror",
+    "Deku.DOM.Attr.OnPointermove",
+    "Deku.DOM.Attr.OnPointerout",
+    "Deku.DOM.Attr.OnPointerover",
+    "Deku.DOM.Attr.OnPointerup",
+    "Deku.DOM.Attr.OnProgress",
+    "Deku.DOM.Attr.OnRatechange",
+    "Deku.DOM.Attr.OnReset",
+    "Deku.DOM.Attr.OnResize",
+    "Deku.DOM.Attr.OnScroll",
+    "Deku.DOM.Attr.OnSecuritypolicyviolation",
+    "Deku.DOM.Attr.OnSeeked",
+    "Deku.DOM.Attr.OnSeeking",
+    "Deku.DOM.Attr.OnSelect",
+    "Deku.DOM.Attr.OnSelectionchange",
+    "Deku.DOM.Attr.OnSelectstart",
+    "Deku.DOM.Attr.OnShow",
+    "Deku.DOM.Attr.OnSlotchange",
+    "Deku.DOM.Attr.OnStalled",
+    "Deku.DOM.Attr.OnSubmit",
+    "Deku.DOM.Attr.OnSuspend",
+    "Deku.DOM.Attr.OnTimeupdate",
+    "Deku.DOM.Attr.OnTouchcancel",
+    "Deku.DOM.Attr.OnTouchend",
+    "Deku.DOM.Attr.OnTouchmove",
+    "Deku.DOM.Attr.OnTouchstart",
+    "Deku.DOM.Attr.OnTransitioncancel",
+    "Deku.DOM.Attr.OnTransitionend",
+    "Deku.DOM.Attr.OnTransitionrun",
+    "Deku.DOM.Attr.OnTransitionstart",
+    "Deku.DOM.Attr.OnVolumechange",
+    "Deku.DOM.Attr.OnWaiting",
+    "Deku.DOM.Attr.OnWheel",
+    "Deku.DOM.Attr.Opacity",
+    "Deku.DOM.Attr.Open",
+    "Deku.DOM.Attr.Operator",
+    "Deku.DOM.Attr.Optimum",
+    "Deku.DOM.Attr.Order",
+    "Deku.DOM.Attr.Orient",
+    "Deku.DOM.Attr.Overflow",
+    "Deku.DOM.Attr.Path",
+    "Deku.DOM.Attr.PathLength",
+    "Deku.DOM.Attr.Pattern",
+    "Deku.DOM.Attr.PatternContentUnits",
+    "Deku.DOM.Attr.PatternTransform",
+    "Deku.DOM.Attr.PatternUnits",
+    "Deku.DOM.Attr.Ping",
+    "Deku.DOM.Attr.Placeholder",
+    "Deku.DOM.Attr.PointerEvents",
+    "Deku.DOM.Attr.Points",
+    "Deku.DOM.Attr.PointsAtX",
+    "Deku.DOM.Attr.PointsAtY",
+    "Deku.DOM.Attr.PointsAtZ",
+    "Deku.DOM.Attr.Poster",
+    "Deku.DOM.Attr.Preload",
+    "Deku.DOM.Attr.PreserveAlpha",
+    "Deku.DOM.Attr.PreserveAspectRatio",
+    "Deku.DOM.Attr.PrimitiveUnits",
+    "Deku.DOM.Attr.R",
+    "Deku.DOM.Attr.Radiogroup",
+    "Deku.DOM.Attr.Radius",
+    "Deku.DOM.Attr.Readonly",
+    "Deku.DOM.Attr.Referrerpolicy",
+    "Deku.DOM.Attr.RefX",
+    "Deku.DOM.Attr.RefY",
+    "Deku.DOM.Attr.Rel",
+    "Deku.DOM.Attr.RepeatCount",
+    "Deku.DOM.Attr.RepeatDur",
+    "Deku.DOM.Attr.Required",
+    "Deku.DOM.Attr.RequiredExtensions",
+    "Deku.DOM.Attr.RequiredFeatures",
+    "Deku.DOM.Attr.Restart",
+    "Deku.DOM.Attr.Result",
+    "Deku.DOM.Attr.Reversed",
+    "Deku.DOM.Attr.Role",
+    "Deku.DOM.Attr.Rotate",
+    "Deku.DOM.Attr.Rows",
+    "Deku.DOM.Attr.Rowspan",
+    "Deku.DOM.Attr.Rx",
+    "Deku.DOM.Attr.Ry",
+    "Deku.DOM.Attr.Sandbox",
+    "Deku.DOM.Attr.Scale",
+    "Deku.DOM.Attr.Scope",
+    "Deku.DOM.Attr.Scoped",
+    "Deku.DOM.Attr.Seed",
+    "Deku.DOM.Attr.Selected",
+    "Deku.DOM.Attr.Shape",
+    "Deku.DOM.Attr.ShapeRendering",
+    "Deku.DOM.Attr.Side",
+    "Deku.DOM.Attr.Size",
+    "Deku.DOM.Attr.Sizes",
+    "Deku.DOM.Attr.Slope",
+    "Deku.DOM.Attr.Slot",
+    "Deku.DOM.Attr.Spacing",
+    "Deku.DOM.Attr.Span",
+    "Deku.DOM.Attr.SpecularConstant",
+    "Deku.DOM.Attr.SpecularExponent",
+    "Deku.DOM.Attr.Spellcheck",
+    "Deku.DOM.Attr.SpreadMethod",
+    "Deku.DOM.Attr.Src",
+    "Deku.DOM.Attr.Srcdoc",
+    "Deku.DOM.Attr.Srclang",
+    "Deku.DOM.Attr.Srcset",
+    "Deku.DOM.Attr.Start",
+    "Deku.DOM.Attr.StartOffset",
+    "Deku.DOM.Attr.StdDeviation",
+    "Deku.DOM.Attr.Step",
+    "Deku.DOM.Attr.StitchTiles",
+    "Deku.DOM.Attr.StopColor",
+    "Deku.DOM.Attr.StopOpacity",
+    "Deku.DOM.Attr.Stroke",
+    "Deku.DOM.Attr.StrokeDasharray",
+    "Deku.DOM.Attr.StrokeDashoffset",
+    "Deku.DOM.Attr.StrokeLinecap",
+    "Deku.DOM.Attr.StrokeLinejoin",
+    "Deku.DOM.Attr.StrokeMiterlimit",
+    "Deku.DOM.Attr.StrokeOpacity",
+    "Deku.DOM.Attr.StrokeWidth",
+    "Deku.DOM.Attr.Style",
+    "Deku.DOM.Attr.Summary",
+    "Deku.DOM.Attr.SurfaceScale",
+    "Deku.DOM.Attr.SystemLanguage",
+    "Deku.DOM.Attr.Tabindex",
+    "Deku.DOM.Attr.TableValues",
+    "Deku.DOM.Attr.Target",
+    "Deku.DOM.Attr.TargetX",
+    "Deku.DOM.Attr.TargetY",
+    "Deku.DOM.Attr.TextAnchor",
+    "Deku.DOM.Attr.TextDecoration",
+    "Deku.DOM.Attr.TextLength",
+    "Deku.DOM.Attr.TextRendering",
+    "Deku.DOM.Attr.Title",
+    "Deku.DOM.Attr.To",
+    "Deku.DOM.Attr.Transform",
+    "Deku.DOM.Attr.TransformOrigin",
+    "Deku.DOM.Attr.Translate",
+    "Deku.DOM.Attr.Type",
+    "Deku.DOM.Attr.UnicodeBidi",
+    "Deku.DOM.Attr.Usemap",
+    "Deku.DOM.Attr.Value",
+    "Deku.DOM.Attr.Values",
+    "Deku.DOM.Attr.VectorEffect",
+    "Deku.DOM.Attr.Version",
+    "Deku.DOM.Attr.ViewBox",
+    "Deku.DOM.Attr.ViewTarget",
+    "Deku.DOM.Attr.Visibility",
+    "Deku.DOM.Attr.Width",
+    "Deku.DOM.Attr.WordSpacing",
+    "Deku.DOM.Attr.WritingMode",
+    "Deku.DOM.Attr.X",
+    "Deku.DOM.Attr.X",
+    "Deku.DOM.Attr.X",
+    "Deku.DOM.Attr.XChannelSelector",
+    "Deku.DOM.Attr.XlinkActuate",
+    "Deku.DOM.Attr.XlinkArcrole",
+    "Deku.DOM.Attr.XlinkHref",
+    "Deku.DOM.Attr.XlinkRole",
+    "Deku.DOM.Attr.XlinkShow",
+    "Deku.DOM.Attr.XlinkTitle",
+    "Deku.DOM.Attr.XlinkType",
+    "Deku.DOM.Attr.XmlBase",
+    "Deku.DOM.Attr.XmlLang",
+    "Deku.DOM.Attr.XmlSpace",
+    "Deku.DOM.Attr.Xtype",
+    "Deku.DOM.Attr.Y",
+    "Deku.DOM.Attr.Y",
+    "Deku.DOM.Attr.Y",
+    "Deku.DOM.Attr.YChannelSelector",
+    "Deku.DOM.Attr.Z",
+    "Deku.DOM.Attr.ZoomAndPan",
+    "Deku.DOM.Elt.A",
+    "Deku.DOM.Elt.Abbr",
+    "Deku.DOM.Elt.Acronym",
+    "Deku.DOM.Elt.Address",
+    "Deku.DOM.Elt.Animate",
+    "Deku.DOM.Elt.AnimateMotion",
+    "Deku.DOM.Elt.AnimateTransform",
+    "Deku.DOM.Elt.Applet",
+    "Deku.DOM.Elt.Area",
+    "Deku.DOM.Elt.Article",
+    "Deku.DOM.Elt.Aside",
+    "Deku.DOM.Elt.Audio",
+    "Deku.DOM.Elt.B",
+    "Deku.DOM.Elt.Base",
+    "Deku.DOM.Elt.Basefont",
+    "Deku.DOM.Elt.Bdi",
+    "Deku.DOM.Elt.Bdo",
+    "Deku.DOM.Elt.Big",
+    "Deku.DOM.Elt.Blockquote",
+    "Deku.DOM.Elt.Body",
+    "Deku.DOM.Elt.Br",
+    "Deku.DOM.Elt.Button",
+    "Deku.DOM.Elt.Canvas",
+    "Deku.DOM.Elt.Caption",
+    "Deku.DOM.Elt.Center",
+    "Deku.DOM.Elt.Circle",
+    "Deku.DOM.Elt.Cite",
+    "Deku.DOM.Elt.ClipPath",
+    "Deku.DOM.Elt.Code",
+    "Deku.DOM.Elt.Col",
+    "Deku.DOM.Elt.Colgroup",
+    "Deku.DOM.Elt.Datalist",
+    "Deku.DOM.Elt.Dd",
+    "Deku.DOM.Elt.Defs",
+    "Deku.DOM.Elt.Del",
+    "Deku.DOM.Elt.Desc",
+    "Deku.DOM.Elt.Details",
+    "Deku.DOM.Elt.Dfn",
+    "Deku.DOM.Elt.Dialog",
+    "Deku.DOM.Elt.Dir",
+    "Deku.DOM.Elt.Discard",
+    "Deku.DOM.Elt.Div",
+    "Deku.DOM.Elt.Dl",
+    "Deku.DOM.Elt.Dt",
+    "Deku.DOM.Elt.Ellipse",
+    "Deku.DOM.Elt.Em",
+    "Deku.DOM.Elt.Embed",
+    "Deku.DOM.Elt.FeBlend",
+    "Deku.DOM.Elt.FeColorMatrix",
+    "Deku.DOM.Elt.FeComponentTransfer",
+    "Deku.DOM.Elt.FeComposite",
+    "Deku.DOM.Elt.FeConvolveMatrix",
+    "Deku.DOM.Elt.FeDiffuseLighting",
+    "Deku.DOM.Elt.FeDisplacementMap",
+    "Deku.DOM.Elt.FeDistantLight",
+    "Deku.DOM.Elt.FeDropShadow",
+    "Deku.DOM.Elt.FeFlood",
+    "Deku.DOM.Elt.FeFuncA",
+    "Deku.DOM.Elt.FeFuncB",
+    "Deku.DOM.Elt.FeFuncG",
+    "Deku.DOM.Elt.FeFuncR",
+    "Deku.DOM.Elt.FeGaussianBlur",
+    "Deku.DOM.Elt.FeImage",
+    "Deku.DOM.Elt.FeMerge",
+    "Deku.DOM.Elt.FeMergeNode",
+    "Deku.DOM.Elt.FeMorphology",
+    "Deku.DOM.Elt.FeOffset",
+    "Deku.DOM.Elt.FePointLight",
+    "Deku.DOM.Elt.FeSpecularLighting",
+    "Deku.DOM.Elt.FeSpotLight",
+    "Deku.DOM.Elt.FeTile",
+    "Deku.DOM.Elt.FeTurbulence",
+    "Deku.DOM.Elt.Fieldset",
+    "Deku.DOM.Elt.Figcaption",
+    "Deku.DOM.Elt.Figure",
+    "Deku.DOM.Elt.Filter",
+    "Deku.DOM.Elt.Font",
+    "Deku.DOM.Elt.Footer",
+    "Deku.DOM.Elt.ForeignObject",
+    "Deku.DOM.Elt.Form",
+    "Deku.DOM.Elt.Frame",
+    "Deku.DOM.Elt.Frameset",
+    "Deku.DOM.Elt.G",
+    "Deku.DOM.Elt.H",
+    "Deku.DOM.Elt.H",
+    "Deku.DOM.Elt.H",
+    "Deku.DOM.Elt.H",
+    "Deku.DOM.Elt.H",
+    "Deku.DOM.Elt.H",
+    "Deku.DOM.Elt.Head",
+    "Deku.DOM.Elt.Header",
+    "Deku.DOM.Elt.Hr",
+    "Deku.DOM.Elt.Html",
+    "Deku.DOM.Elt.I",
+    "Deku.DOM.Elt.Iframe",
+    "Deku.DOM.Elt.Image",
+    "Deku.DOM.Elt.Img",
+    "Deku.DOM.Elt.Input",
+    "Deku.DOM.Elt.Ins",
+    "Deku.DOM.Elt.Kbd",
+    "Deku.DOM.Elt.Label",
+    "Deku.DOM.Elt.Legend",
+    "Deku.DOM.Elt.Li",
+    "Deku.DOM.Elt.Line",
+    "Deku.DOM.Elt.LinearGradient",
+    "Deku.DOM.Elt.Link",
+    "Deku.DOM.Elt.Main",
+    "Deku.DOM.Elt.Map",
+    "Deku.DOM.Elt.Mark",
+    "Deku.DOM.Elt.Marker",
+    "Deku.DOM.Elt.Mask",
+    "Deku.DOM.Elt.Meta",
+    "Deku.DOM.Elt.Metadata",
+    "Deku.DOM.Elt.Meter",
+    "Deku.DOM.Elt.Mpath",
+    "Deku.DOM.Elt.Nav",
+    "Deku.DOM.Elt.Noframes",
+    "Deku.DOM.Elt.Noscript",
+    "Deku.DOM.Elt.Object",
+    "Deku.DOM.Elt.Ol",
+    "Deku.DOM.Elt.Optgroup",
+    "Deku.DOM.Elt.Option",
+    "Deku.DOM.Elt.Output",
+    "Deku.DOM.Elt.P",
+    "Deku.DOM.Elt.Param",
+    "Deku.DOM.Elt.Path",
+    "Deku.DOM.Elt.Pattern",
+    "Deku.DOM.Elt.Picture",
+    "Deku.DOM.Elt.Polygon",
+    "Deku.DOM.Elt.Polyline",
+    "Deku.DOM.Elt.Pre",
+    "Deku.DOM.Elt.Progress",
+    "Deku.DOM.Elt.Q",
+    "Deku.DOM.Elt.RadialGradient",
+    "Deku.DOM.Elt.Rect",
+    "Deku.DOM.Elt.Rp",
+    "Deku.DOM.Elt.Rt",
+    "Deku.DOM.Elt.Ruby",
+    "Deku.DOM.Elt.S",
+    "Deku.DOM.Elt.Samp",
+    "Deku.DOM.Elt.Script",
+    "Deku.DOM.Elt.Section",
+    "Deku.DOM.Elt.Select",
+    "Deku.DOM.Elt.Set",
+    "Deku.DOM.Elt.Small",
+    "Deku.DOM.Elt.Source",
+    "Deku.DOM.Elt.Span",
+    "Deku.DOM.Elt.Stop",
+    "Deku.DOM.Elt.Strike",
+    "Deku.DOM.Elt.Strong",
+    "Deku.DOM.Elt.Style",
+    "Deku.DOM.Elt.Sub",
+    "Deku.DOM.Elt.Summary",
+    "Deku.DOM.Elt.Sup",
+    "Deku.DOM.Elt.Svg",
+    "Deku.DOM.Elt.Switch",
+    "Deku.DOM.Elt.Symbol",
+    "Deku.DOM.Elt.Table",
+    "Deku.DOM.Elt.Tbody",
+    "Deku.DOM.Elt.Td",
+    "Deku.DOM.Elt.Template",
+    "Deku.DOM.Elt.Text",
+    "Deku.DOM.Elt.Textarea",
+    "Deku.DOM.Elt.TextPath",
+    "Deku.DOM.Elt.Tfoot",
+    "Deku.DOM.Elt.Th",
+    "Deku.DOM.Elt.Thead",
+    "Deku.DOM.Elt.Time",
+    "Deku.DOM.Elt.Title",
+    "Deku.DOM.Elt.Tr",
+    "Deku.DOM.Elt.Track",
+    "Deku.DOM.Elt.Tspan",
+    "Deku.DOM.Elt.Tt",
+    "Deku.DOM.Elt.U",
+    "Deku.DOM.Elt.Ul",
+    "Deku.DOM.Elt.Use",
+    "Deku.DOM.Elt.Var",
+    "Deku.DOM.Elt.Video",
+    "Deku.DOM.Elt.View",
+    "Deku.DOM.Elt.Wbr",
+    "Deku.DOM.Elt.Xdata",
+    "Deku.DOM",
+    "Deku.Hooks",
+    "Deku.Interpret",
+    "Deku.Lifecycle",
+    "Deku.Listeners",
+    "Deku.Pursx.Anonymous",
+    "Deku.Pursx",
+    "Deku.SSR",
+    "Deku.Toplevel"
+  ],
+  "deno": [
+    "Deno.Crypto",
+    "Deno.DateTime",
+    "Deno.Dotenv",
+    "Deno.Fs",
+    "Deno.Http.Request",
+    "Deno.Http",
+    "Deno.Internal",
+    "Deno.Log",
+    "Deno.Uuid.Type",
+    "Deno.Uuid.V",
+    "Deno.Uuid.V",
+    "Deno.Uuid.V",
+    "Deno.Uuid",
+    "Deno"
+  ],
+  "dissect": [
+    "Dissect.Class",
+    "Dissect.Generic",
+    "Dissect.Record",
+    "Dissect.Variant"
+  ],
+  "distributive": [
+    "Data.Distributive"
+  ],
+  "dodo-printer": [
+    "provides",
+    "Dodo.Box",
+    "Dodo.Common",
+    "Dodo.Internal.Buffer",
+    "Dodo.Internal",
+    "Dodo"
+  ],
+  "dom-filereader": [
+    "Web.File.FileReader.Aff"
+  ],
+  "dom-indexed": [
+    "DOM.HTML.Indexed.AutocompleteType",
+    "DOM.HTML.Indexed.ButtonType",
+    "DOM.HTML.Indexed.CrossOriginValue",
+    "DOM.HTML.Indexed.DirValue",
+    "DOM.HTML.Indexed.FormMethod",
+    "DOM.HTML.Indexed.InputAcceptType",
+    "DOM.HTML.Indexed.InputType",
+    "DOM.HTML.Indexed.KindValue",
+    "DOM.HTML.Indexed.MenuitemType",
+    "DOM.HTML.Indexed.MenuType",
+    "DOM.HTML.Indexed.OrderedListType",
+    "DOM.HTML.Indexed.PreloadValue",
+    "DOM.HTML.Indexed.ScopeValue",
+    "DOM.HTML.Indexed.StepValue",
+    "DOM.HTML.Indexed.WrapValue",
+    "DOM.HTML.Indexed"
+  ],
+  "dotenv": [
+    "encapsulates",
+    "encapsulates",
+    "encapsulates",
+    "encapsulates",
+    "encapsulates",
+    "contains",
+    "for"
+  ],
+  "droplet": [
+    "Droplet.Driver.Internal.Migration",
+    "Droplet.Driver.Internal.Pool",
+    "Droplet.Driver.Internal.Query",
+    "Droplet.Driver.Migration",
+    "Droplet.Driver.Unsafe",
+    "Exported",
+    "Droplet.Driver",
+    "Exported",
+    "directly",
+    "directly",
+    "Droplet.Language.Internal.Function",
+    "defines",
+    "Droplet.Language.Internal.Token",
+    "directly",
+    "Droplet.Language",
+    "Exported"
+  ],
+  "dynamic-buffer": [
+    "DynamicBuffer"
+  ],
+  "echarts-simple": [
+    "ECharts"
+  ],
+  "effect": [
+    "Effect.Class",
+    "defines",
+    "Effect.Unsafe",
+    "provides"
+  ],
+  "either": [
+    "Data.Either.Inject",
+    "will",
+    "Data.Either"
+  ],
+  "elmish": [
+    "Elmish.Boot",
+    "Elmish.Component",
+    "Elmish.Dispatch",
+    "Elmish.Foreign",
+    "is",
+    "Elmish.React.DOM",
+    "provides",
+    "Elmish.React.Ref",
+    "Elmish.React",
+    "Elmish.State",
+    "Elmish.Trace",
+    "Elmish"
+  ],
+  "elmish-enzyme": [
+    "Elmish.Enzyme.Adapter",
+    "Elmish.Enzyme.Foreign",
+    ""
+  ],
+  "elmish-hooks": [
+    "Elmish.Hooks.Type",
+    "Elmish.Hooks.UseEffect",
+    "Elmish.Hooks.UseRef",
+    "Elmish.Hooks.UseState",
+    "Elmish.Hooks"
+  ],
+  "elmish-html": [
+    "Elmish.HTML.Generated",
+    "Elmish.HTML.Internal",
+    "Elmish.HTML.Styled.Generated",
+    "exports",
+    "Elmish.HTML"
+  ],
+  "elmish-testing-library": [
+    "Elmish.Test.Bootstrap",
+    "Elmish.Test.Combinators",
+    "Elmish.Test.Discover",
+    "Elmish.Test.DomProps",
+    "Elmish.Test.Events",
+    "Elmish.Test.Query",
+    "Elmish.Test.SpinWait",
+    "Elmish.Test.State",
+    "Elmish.Test"
+  ],
+  "email-validate": [
+    "Text.Email.Parser",
+    "Text.Email.Validate"
+  ],
+  "encoding": [
+    "Data.TextDecoder",
+    "Data.TextEncoder"
+  ],
+  "enums": [
+    "Data.Enum.Gen",
+    "Data.Enum.Generic",
+    "Data.Enum"
+  ],
+  "error": [
+    "Error.Class",
+    "Error"
+  ],
+  "exceptions": [
+    "Effect.Exception.Unsafe",
+    "defines"
+  ],
+  "exists": [
+    "Data.Exists"
+  ],
+  "exitcodes": [
+    "ExitCodes"
+  ],
+  "expect-inferred": [
+    "ExpectInferred"
+  ],
+  "fahrtwind": [
+    "Fahrtwind.Animation",
+    "Fahrtwind.Icon.BrandIcon",
+    "Fahrtwind.Icon.Common",
+    "Fahrtwind.Icon.Heroicons",
+    "Fahrtwind.Layer",
+    "Fahrtwind.Style.BlendMode.Types",
+    "Fahrtwind.Style.BlendMode",
+    "Fahrtwind.Style.Border",
+    "Fahrtwind.Style.BoxModel",
+    "Fahrtwind.Style.BoxShadow",
+    "Fahrtwind.Style.Breakpoint",
+    "Fahrtwind.Style.Child",
+    "Fahrtwind.Style.Color.Background",
+    "Fahrtwind.Style.Color.Tailwind",
+    "Fahrtwind.Style.Color.Text",
+    "Fahrtwind.Style.Color.Util",
+    "Fahrtwind.Style.Cursor",
+    "Fahrtwind.Style.Display.Flex",
+    "Fahrtwind.Style.Display.Grid",
+    "Fahrtwind.Style.Display",
+    "Fahrtwind.Style.Divide",
+    "Fahrtwind.Style.Global",
+    "Fahrtwind.Style.Input",
+    "Fahrtwind.Style.Inset",
+    "Fahrtwind.Style.Isolation",
+    "Fahrtwind.Style.Nesting",
+    "Fahrtwind.Style.Opacity",
+    "Fahrtwind.Style.Overflow",
+    "Fahrtwind.Style.PointerEvents",
+    "Fahrtwind.Style.Position",
+    "Fahrtwind.Style.PseudoClasses",
+    "Fahrtwind.Style.PseudoElements",
+    "Fahrtwind.Style.ScrollBar",
+    "Fahrtwind.Style.Size",
+    "Fahrtwind.Style.Text",
+    "Fahrtwind.Style.Transform",
+    "Fahrtwind.Style.Transition",
+    "Fahrtwind.Style.UserSelect",
+    "Fahrtwind.Style.Visibility",
+    "Fahrtwind.Style",
+    "Fahrtwind"
+  ],
+  "fallback": [
+    "Fallback.Fallback"
+  ],
+  "fast-vect": [
+    "Data.FastVect.Common.Matrix",
+    "Data.FastVect.Common",
+    "Data.FastVect.FastVect.Matrix",
+    "Data.FastVect.FastVect",
+    "Data.FastVect.Sparse.Read",
+    "Data.FastVect.Sparse.Write"
+  ],
+  "fetch": [
+    "Fetch.Internal.Request",
+    "Fetch.Internal.RequestBody",
+    "Fetch.Internal.Response",
+    "Fetch"
+  ],
+  "fetch-argonaut": [
+    "Fetch.Argonaut.Json"
+  ],
+  "fetch-core": [
+    "Fetch.Core.AbortController",
+    "Fetch.Core.Headers",
+    "Fetch.Core.Integrity",
+    "Fetch.Core.Referrer",
+    "Fetch.Core.ReferrerPolicy",
+    "Fetch.Core.Request",
+    "Fetch.Core.RequestBody",
+    "Fetch.Core.RequestCache",
+    "Fetch.Core.RequestCredentials",
+    "Fetch.Core.RequestMode",
+    "Fetch.Core.RequestRedirect",
+    "Fetch.Core.Response",
+    "Fetch.Core"
+  ],
+  "fetch-yoga-json": [
+    "Fetch.Yoga.Json"
+  ],
+  "filterable": [
+    "Data.Compactable",
+    "Data.Filterable",
+    "Data.Witherable"
+  ],
+  "fixed-points": [
+    "Data.Functor.Mu",
+    "Data.Functor.Nu",
+    "Data.TacitString"
+  ],
+  "fixed-precision": [
+    "defines"
+  ],
+  "flame": [
+    "Flame.Application.Effectful",
+    "Flame.Application.EffectList",
+    "Flame.Application.Internal.Dom",
+    "Flame.Application.Internal.PreMount",
+    "Flame.Application.NoEffects",
+    "Flame.Html.Event",
+    "Flame.Html.Attribute.Internal",
+    "to",
+    "Flame.Html.Element",
+    "Flame.Internal.Equality",
+    "Flame.Internal.Fragment",
+    "Flame.Renderer.Internal.Dom",
+    "Flame.Renderer.String",
+    "Flame.Serialization",
+    "Flame.Subscription.Document",
+    "Flame.Subscription.Internal.Listener",
+    "Flame.Subscription.Internal.Create",
+    "Flame.Subscription.Unsafe.CustomEvent",
+    "Flame.Subscription.Window",
+    "Flame.Subscription",
+    "",
+    "for"
+  ],
+  "float32": [
+    "Data.Float",
+    "Data.Float"
+  ],
+  "foldable-traversable": [
+    "Data.Bifoldable",
+    "Data.Bitraversable",
+    "Data.Foldable",
+    "Data.FoldableWithIndex",
+    "Data.FunctorWithIndex",
+    "Data.Semigroup.Foldable",
+    "Data.Semigroup.Traversable",
+    "Data.Traversable.Accum.Internal",
+    "Data.Traversable.Accum",
+    "Data.Traversable",
+    "Data.TraversableWithIndex"
+  ],
+  "foreign": [
+    "defines",
+    "provides",
+    "defines"
+  ],
+  "foreign-object": [
+    "Foreign.Object.Gen",
+    "Foreign.Object.ST.Unsafe",
+    "can",
+    "Foreign.Object.Unsafe",
+    "defines"
+  ],
+  "foreign-readwrite": [
+    "Foreign.ReadWrite"
+  ],
+  "fork": [
+    "Control.Monad.Fork.Class"
+  ],
+  "form-urlencoded": [
+    "Data.FormURLEncoded"
+  ],
+  "formatters": [
+    "Data.Formatter.DateTime",
+    "Data.Formatter.Internal",
+    "Data.Formatter.Interval",
+    "has",
+    "Data.Formatter.Parser.Interval",
+    "Data.Formatter.Parser.Number",
+    "Data.Formatter.Parser.Utils"
+  ],
+  "framer-motion": [
+    "Framer.Motion.Hook",
+    "Framer.Motion.MotionComponent",
+    "Framer.Motion.Types",
+    "Framer.Motion",
+    "MotionValue"
+  ],
+  "free": [
+    "Control.Comonad.Cofree.Class",
+    "Control.Comonad.Cofree",
+    "Control.Monad.Free.Class",
+    "Control.Monad.Free",
+    "Control.Monad.Trampoline",
+    "Data.Coyoneda",
+    "Data.Yoneda"
+  ],
+  "freeap": [
+    "Control.Applicative.Free.Gen",
+    "Control.Applicative.Free"
+  ],
+  "freer-free": [
+    "Control.Monad.Freer.Free"
+  ],
+  "freet": [
+    "defines",
+    "defines"
+  ],
+  "functions": [
+    "Data.Function.Uncurried"
+  ],
+  "functor1": [
+    "Data.Foldable",
+    "Data.Functor",
+    "Data.Identity",
+    "Data.Traversable"
+  ],
+  "functors": [
+    "Data.Functor.App",
+    "Data.Functor.Clown",
+    "Data.Functor.Compose",
+    "Data.Functor.Coproduct.Inject",
+    "Data.Functor.Coproduct.Nested",
+    "Data.Functor.Coproduct",
+    "Data.Functor.Costar",
+    "Data.Functor.Flip",
+    "Data.Functor.Joker",
+    "Data.Functor.Product.Nested",
+    "Data.Functor.Product",
+    "Data.Functor.Product"
+  ],
+  "fuzzy": [
+    "provides"
+  ],
+  "gen": [
+    "Control.Monad.Gen.Class",
+    "Control.Monad.Gen.Common",
+    "Control.Monad.Gen"
+  ],
+  "generate-values": [
+    "defines"
+  ],
+  "generic-router": [
+    "Router.Method",
+    "Router"
+  ],
+  "geometry-plane": [
+    "Data.Geometry.Plane"
+  ],
+  "github-actions-toolkit": [
+    "provided",
+    "provided",
+    "provided",
+    "provided",
+    "provided"
+  ],
+  "grain": [
+    "Grain.Class.GProxy",
+    "Grain.Class.KGProxy",
+    "Grain.Class.LProxy",
+    "Grain.Class",
+    "Grain.Internal.Diff",
+    "Grain.Internal.Element",
+    "Grain.Internal.Emitter",
+    "Grain.Internal.Handler",
+    "Grain.Internal.MArray",
+    "Grain.Internal.MMap",
+    "Grain.Internal.MObject",
+    "Grain.Internal.Prop",
+    "Grain.Internal.PropDiff",
+    "Grain.Internal.Ref",
+    "Grain.Internal.SpecialProp",
+    "Grain.Internal.Store",
+    "Grain.Internal.Styler",
+    "Grain.Internal.Util",
+    "Grain.Markup.Element",
+    "Grain.Markup.Handler",
+    "Grain.Markup.Prop",
+    "Grain.Markup",
+    "Exports",
+    "Grain.TypeRef",
+    "Grain.UI",
+    "Grain"
+  ],
+  "grain-router": [
+    "Grain.Router.Parser",
+    "Grain.Router"
+  ],
+  "grain-virtualized": [
+    "Grain.Virtualized"
+  ],
+  "graphql-client": [
+    "Data.GraphQL.AST",
+    "Data.GraphQL.Parser",
+    "GraphQL.Client.Alias.Dynamic",
+    "GraphQL.Client.Alias",
+    "GraphQL.Client.Args",
+    "GraphQL.Client.BaseClients.Affjax.Internal",
+    "GraphQL.Client.BaseClients.Affjax.Node",
+    "GraphQL.Client.BaseClients.Affjax.Web",
+    "GraphQL.Client.BaseClients.Apollo.ErrorPolicy",
+    "GraphQL.Client.BaseClients.Apollo.FetchPolicy",
+    "GraphQL.Client.BaseClients.Apollo",
+    "GraphQL.Client.BaseClients.Urql",
+    "GraphQL.Client.CodeGen.GetSymbols",
+    "GraphQL.Client.CodeGen.Js",
+    "GraphQL.Client.CodeGen.Lines",
+    "GraphQL.Client.CodeGen.Query",
+    "GraphQL.Client.CodeGen.Schema",
+    "GraphQL.Client.CodeGen.Template.Enum",
+    "GraphQL.Client.CodeGen.Template.Schema",
+    "GraphQL.Client.CodeGen.Transform.NullableOverrides",
+    "GraphQL.Client.CodeGen.Types",
+    "GraphQL.Client.ID",
+    "GraphQL.Client.Query",
+    "GraphQL.Client.QueryReturns",
+    "GraphQL.Client.SafeQueryName",
+    "GraphQL.Client.Subscription",
+    "GraphQL.Client.ToGqlString",
+    "GraphQL.Client.Types",
+    "GraphQL.Client.Union",
+    "GraphQL.Client.Variable",
+    "GraphQL.Client.Variables.TypeName",
+    "GraphQL.Client.Variables",
+    "GraphQL.Client.WatchQuery",
+    "GraphQL.Hasura.Array",
+    "GraphQL.Hasura.ComparisonExp",
+    "GraphQL.Hasura.Decode",
+    "GraphQL.Hasura.DecodeLiberal",
+    "GraphQL.Hasura.Encode"
+  ],
+  "graphs": [
+    "Data.Graph"
+  ],
+  "group": [
+    "Data.Group.Action",
+    "Data.Group.Free",
+    "Data.Group",
+    "Data.Semigroup.Commutative"
+  ],
+  "halogen": [
+    "Halogen.Aff.Driver.Eval",
+    "Halogen.Aff.Driver.State",
+    "Halogen.Aff.Driver",
+    "Halogen.Aff.Util",
+    "Halogen.Aff",
+    "Halogen.Component.Profunctor",
+    "Halogen.Component",
+    "Halogen.Data.OrdBox",
+    "Halogen.Data.Slot",
+    "Halogen.HTML.Core",
+    "Halogen.HTML.Elements.Keyed",
+    "Halogen.HTML.Elements",
+    "Halogen.HTML.Events",
+    "provides",
+    "Halogen.HTML.Properties",
+    "re",
+    "Halogen.Query.ChildQuery",
+    "Halogen.Query.Event",
+    "Halogen.Query.HalogenM",
+    "Halogen.Query.HalogenQ",
+    "Halogen.Query.Input",
+    "Halogen.Query",
+    "Halogen.VDom.Driver",
+    "re"
+  ],
+  "halogen-bootstrap5": [
+    "Halogen.Themes.Bootstrap"
+  ],
+  "halogen-css": [
+    "defines"
+  ],
+  "halogen-echarts-simple": [
+    "Halogen.ECharts"
+  ],
+  "halogen-formless": [
+    "Formless"
+  ],
+  "halogen-hooks": [
+    "Halogen.Hooks.Component",
+    "Halogen.Hooks.Hook",
+    "Halogen.Hooks.HookM",
+    "Halogen.Hooks.Internal.Eval.Types",
+    "Halogen.Hooks.Internal.Eval",
+    "Halogen.Hooks.Internal.Types",
+    "Halogen.Hooks.Internal.UseHookF",
+    "Halogen.Hooks.Types",
+    "implements"
+  ],
+  "halogen-hooks-extra": [
+    "Halogen.Hooks.Extra.Actions.Events",
+    "Halogen.Hooks.Extra.Hooks.UseDebouncer",
+    "Halogen.Hooks.Extra.Hooks.UseEvent",
+    "Halogen.Hooks.Extra.Hooks.UseGet",
+    "Halogen.Hooks.Extra.Hooks.UseStateFn",
+    "Halogen.Hooks.Extra.Hooks.UseThrottle",
+    "Halogen.Hooks.Extra.Hooks"
+  ],
+  "halogen-store": [
+    "Halogen.Store.Connect",
+    "Halogen.Store.Monad",
+    "Halogen.Store.Select",
+    "Halogen.Store.UseSelector"
+  ],
+  "halogen-storybook": [
+    "Halogen.Storybook.Proxy",
+    "Halogen.Storybook"
+  ],
+  "halogen-subscriptions": [
+    "Halogen.Subscription"
+  ],
+  "halogen-svg-elems": [
+    "Halogen.Svg.Attributes.Align",
+    "Halogen.Svg.Attributes.Baseline",
+    "Halogen.Svg.Attributes.Color",
+    "Halogen.Svg.Attributes.CSSLength",
+    "Halogen.Svg.Attributes.Duration",
+    "Halogen.Svg.Attributes.FillState",
+    "Halogen.Svg.Attributes.FontSize",
+    "Halogen.Svg.Attributes.FontStretch",
+    "Halogen.Svg.Attributes.FontStyle",
+    "Halogen.Svg.Attributes.FontWeight",
+    "Halogen.Svg.Attributes.MarkerUnit",
+    "Halogen.Svg.Attributes.MaskUnit",
+    "Halogen.Svg.Attributes.MeetOrSlice",
+    "Halogen.Svg.Attributes.Orient",
+    "Halogen.Svg.Attributes.Path",
+    "Halogen.Svg.Attributes.StrokeLineCap",
+    "Halogen.Svg.Attributes.StrokeLineJoin",
+    "Halogen.Svg.Attributes.TextAnchor",
+    "Halogen.Svg.Attributes.Transform",
+    "",
+    "via",
+    "alias",
+    "Halogen.Svg.Indexed"
+  ],
+  "halogen-vdom": [
+    "Halogen.VDom.DOM.Prop",
+    "Halogen.VDom.DOM",
+    "Halogen.VDom.Machine",
+    "Halogen.VDom.Thunk",
+    "Halogen.VDom.Types",
+    "Halogen.VDom.Util",
+    "Halogen.VDom"
+  ],
+  "halogen-vdom-string-renderer": [
+    "Halogen.VDom.DOM.StringRenderer",
+    "Halogen.VDom.StringRenderer.Util",
+    "Halogen.VDom.StringRenderer"
+  ],
+  "heckin": [
+    "Data.String.Casing"
+  ],
+  "heterogeneous": [
+    "Heterogeneous.Folding",
+    "Heterogeneous.Mapping"
+  ],
+  "homogeneous": [
+    "Data.Homogeneous.Record",
+    "Data.Homogeneous.Variant",
+    "Data.Homogeneous"
+  ],
+  "http-methods": [
+    "Data.HTTP.Method"
+  ],
+  "httpure": [
+    "HTTPure.Body",
+    "HTTPure.Headers",
+    "HTTPure.Lookup",
+    "HTTPure.Method",
+    "HTTPure.MultiHeaders",
+    "HTTPure.Path",
+    "HTTPure.Query",
+    "HTTPure.Request",
+    "HTTPure.Response",
+    "HTTPure.Server",
+    "HTTPure.Status",
+    "HTTPure.Utils",
+    "HTTPure.Version",
+    "HTTPure"
+  ],
+  "httpurple": [
+    "HTTPurple",
+    "HTTPurple.Body",
+    "HTTPurple.Cont",
+    "HTTPurple.Headers",
+    "HTTPurple.Json",
+    "HTTPurple.Lookup",
+    "HTTPurple.Method",
+    "HTTPurple.Middleware",
+    "HTTPurple.NodeMiddleware",
+    "HTTPurple.Path",
+    "HTTPurple.Query",
+    "HTTPurple.Request",
+    "HTTPurple.Response",
+    "HTTPurple.Routes",
+    "HTTPurple.Server",
+    "HTTPurple.Status",
+    "HTTPurple.Utils",
+    "HTTPurple.Validation",
+    "HTTPurple.Version"
+  ],
+  "httpurple-argonaut": [
+    "HTTPurple.Json.Argonaut"
+  ],
+  "httpurple-yoga-json": [
+    "HTTPurple.Json.Yoga"
+  ],
+  "humdrum": [
+    "HumDrum"
+  ],
+  "hyrule": [
+    "FRP.Behavior.Keyboard",
+    "FRP.Behavior.Mouse",
+    "FRP.Behavior.Time",
+    "FRP.Behavior",
+    "FRP.Event.AnimationFrame",
+    "FRP.Event.Class",
+    "FRP.Event.Keyboard",
+    "FRP.Event.Mouse",
+    "FRP.Event.Time",
+    "FRP.Event.VBus",
+    "FRP.Event"
+  ],
+  "identity": [
+    "Data.Identity"
+  ],
+  "identy": [
+    "Identy.Normalizer",
+    "Identy.ObjectMap",
+    "Identy.Populater",
+    "Identy.Selector"
+  ],
+  "indexed-monad": [
+    "Control.Applicative.Indexed",
+    "Control.Apply.Indexed",
+    "Control.Bind.Indexed",
+    "Control.Monad.Indexed",
+    "to",
+    "Data.Functor.Indexed",
+    "Data.Indexed"
+  ],
+  "int64": [
+    "Data.Int",
+    "Data.Int",
+    "Data.Int",
+    "Data.UInt",
+    "Data.UInt"
+  ],
+  "integers": [
+    "defines",
+    "Data.Int"
+  ],
+  "interpolate": [
+    "Data.Interpolate"
+  ],
+  "invariant": [
+    "Data.Functor.Invariant"
+  ],
+  "jarilo": [
+    "Jarilo.FromComponent",
+    "Jarilo.Junction",
+    "Jarilo.Method",
+    "Jarilo.Path",
+    "Jarilo.Query.QueryPairs",
+    "Jarilo.Query",
+    "Jarilo.Route",
+    "Jarilo.Segment"
+  ],
+  "jelly": [
+    "Jelly.Aff",
+    "Jelly.Component",
+    "Jelly.Element",
+    "Jelly.Hydrate",
+    "Jelly.Prop",
+    "Jelly.Render"
+  ],
+  "jelly-hooks": [
+    "Jelly.Hooks"
+  ],
+  "jelly-router": [
+    "Jelly.Router"
+  ],
+  "jelly-signal": [
+    "Jelly.Signal"
+  ],
+  "jest": [
+    "Jest"
+  ],
+  "js-bigints": [
+    "Js.BigInt.BigInt"
+  ],
+  "js-date": [
+    "providing"
+  ],
+  "js-fileio": [
+    "JS.FileIO"
+  ],
+  "js-promise": [
+    "Promise.Internal",
+    "Promise.Lazy",
+    "Promise.Rejection",
+    "Promise"
+  ],
+  "js-promise-aff": [
+    "Promise.Aff"
+  ],
+  "js-timers": [
+    "Effect.Timer"
+  ],
+  "js-uri": [
+    "JSURI"
+  ],
+  "justifill": [
+    "Justifill.Fillable",
+    "Justifill.Justifiable",
+    "Justifill"
+  ],
+  "jwt": [
+    ""
+  ],
+  "language-cst-parser": [
+    "PureScript.CST.Errors",
+    "PureScript.CST.Layout",
+    "PureScript.CST.Lexer",
+    "PureScript.CST.ModuleGraph",
+    "PureScript.CST.Parser.Monad",
+    "PureScript.CST.Parser",
+    "PureScript.CST.Print",
+    "PureScript.CST.Range.TokenList",
+    "PureScript.CST.Range",
+    "PureScript.CST.TokenStream",
+    "PureScript.CST.Traversal",
+    "PureScript.CST.Types",
+    "PureScript.CST"
+  ],
+  "lazy": [
+    "Data.Lazy"
+  ],
+  "lazy-joe": [
+    "Lazy.Joe"
+  ],
+  "lcg": [
+    "Random.LCG"
+  ],
+  "leibniz": [
+    "defines"
+  ],
+  "linalg": [
+    "Data.LinearAlgebra.Matrix",
+    "Data.LinearAlgebra.Vector"
+  ],
+  "lists": [
+    "Data.List.Internal",
+    "Data.List.Lazy.NonEmpty",
+    "Data.List.Lazy.Types",
+    "defines",
+    "Data.List.NonEmpty",
+    "Data.List.Partial",
+    "Data.List.Types",
+    "defines",
+    "defines"
+  ],
+  "literals": [
+    "Literals.Boolean",
+    "Literals.Int",
+    "Literals.Literal",
+    "Literals.Null",
+    "Literals.Number",
+    "Literals.String",
+    "Literals.Undefined",
+    "Literals"
+  ],
+  "logging": [
+    "Control.Logger.Console",
+    "Control.Logger.Writer",
+    "Control.Logger"
+  ],
+  "logging-journald": [
+    "Control.Logger.Journald.Types",
+    "Control.Logger.Journald"
+  ],
+  "machines": [
+    "provides"
+  ],
+  "marionette": [
+    "Marionette.Controllers.ControlAPI",
+    "provides",
+    "Marionette.Controllers.Pure",
+    "contains",
+    "of"
+  ],
+  "marionette-commander": [
+    "Marionette.Renderers.Commander",
+    "Marionette.Renderers.Eventless"
+  ],
+  "marionette-react-basic-hooks": [
+    "Marionette.ReactBasic"
+  ],
+  "matrices": [
+    "Matrix"
+  ],
+  "matryoshka": [
+    "Matryoshka.Algebra",
+    "Matryoshka.Class.Corecursive",
+    "Matryoshka.Class.Recursive",
+    "Matryoshka.Coalgebra",
+    "Matryoshka.DistributiveLaw",
+    "Matryoshka.Fold",
+    "Matryoshka.Pattern.CoEnvT",
+    "Matryoshka.Refold",
+    "Matryoshka.Transform",
+    "Matryoshka.Unfold",
+    "Matryoshka.Util",
+    "Matryoshka"
+  ],
+  "maybe": [
+    "Data.Maybe.First",
+    "Data.Maybe.Last",
+    "Data.Maybe"
+  ],
+  "mdast-util-from-markdown": [
+    "MdAst.MdAst"
+  ],
+  "media-types": [
+    "Data.MediaType.Common",
+    "Data.MediaType"
+  ],
+  "metadata": [
+    "PureScript.Metadata"
+  ],
+  "midi": [
+    "Data.Midi.Generate",
+    "Data.Midi.Instrument",
+    "Data.Midi.Parser",
+    "provides",
+    "Data.Midi"
+  ],
+  "milkis": [
+    "Milkis.Impl.Node",
+    "Milkis.Impl",
+    "Milkis.Impl.Window",
+    "Milkis"
+  ],
+  "minibench": [
+    "provides"
+  ],
+  "mmorph": [
+    "Control.Monad.Morph"
+  ],
+  "monad-control": [
+    "Control.Monad.Base",
+    "Control.Monad.Trans.Control",
+    "Data.Functor.Singleton"
+  ],
+  "monad-logger": [
+    "Control.Monad.Logger.Class",
+    "Control.Monad.Logger.Trans",
+    "Data.Log.Filter",
+    "Data.Log.Formatter.JSON",
+    "Data.Log.Formatter.Pretty",
+    "Data.Log.Level",
+    "Data.Log.Message",
+    "Data.Log.Tag"
+  ],
+  "monad-loops": [
+    "Control.Monad.Loops",
+    "Control.Monad.Rec.Loops"
+  ],
+  "monad-unlift": [
+    "Control.Monad.Trans.Unlift"
+  ],
+  "monoid-extras": [
+    "Data.Monoid.Action",
+    "Data.Monoid.Always",
+    "Data.Monoid.Coproduct",
+    "Data.Monoid.Cut",
+    "Data.Monoid.Deletable",
+    "Data.Monoid.Inf",
+    "Data.Monoid.MList",
+    "Data.Monoid.Recommend",
+    "Data.Monoid.SemiDirectProduct",
+    "Data.Monoid.Split"
+  ],
+  "monoidal": [
+    "Control.Category.Tensor",
+    "Data.Bifunctor.ApplicativeDo",
+    "P",
+    "Data.Bifunctor.Module",
+    "Data.Bifunctor.Monoidal.Specialized",
+    "Data.Bifunctor.Monoidal",
+    "Data.Functor.ApplicativeDo",
+    "P",
+    "Data.Functor.Module",
+    "Data.Functor.Monoidal",
+    "Data.Trifunctor.ApplicativeDo",
+    "P",
+    "Data.Trifunctor.Module",
+    "Data.Trifunctor.Monoidal"
+  ],
+  "morello": [
+    "Morello.Morello.Core",
+    "Morello.Morello.Simple",
+    "Morello.Morello.Validated",
+    "Morello.Morello"
+  ],
+  "mote": [
+    "Mote.Description",
+    "Mote.Entry",
+    "Mote.Monad",
+    "Mote.Plan",
+    "Mote"
+  ],
+  "motsunabe": [
+    "Motsunabe"
+  ],
+  "mysql": [
+    "MySQL.Connection",
+    "MySQL.Internal",
+    "MySQL.Pool",
+    "MySQL.QueryValue",
+    "MySQL.Transaction"
+  ],
+  "n3": [
+    "N"
+  ],
+  "nano-id": [
+    "Nano"
+  ],
+  "naturals": [
+    "Data.Natural"
+  ],
+  "nested-functor": [
+    "Data.Functor.Nested"
+  ],
+  "newtype": [
+    "Data.Newtype"
+  ],
+  "nextui": [
+    "NextUI.NextUI"
+  ],
+  "node-buffer": [
+    "Node.Buffer.Class",
+    "Node.Buffer.Immutable",
+    "",
+    "Node.Buffer.ST",
+    "Node.Buffer.Types",
+    "Node.Buffer",
+    "Node.Encoding"
+  ],
+  "node-buffer-blob": [
+    "Node.Buffer.Blob"
+  ],
+  "node-child-process": [
+    "contains"
+  ],
+  "node-fs": [
+    "Node.FS.Async",
+    "Node.FS.Perms",
+    "Node.FS.Stats",
+    "Node.FS.Stream",
+    "Node.FS.Sync",
+    "Node.FS"
+  ],
+  "node-fs-aff": [
+    "Node.FS.Aff"
+  ],
+  "node-http": [
+    "defines",
+    "defines",
+    "",
+    "defines",
+    ""
+  ],
+  "node-net": [
+    "Node.Net.Server",
+    "Node.Net.Socket",
+    "Node.Net"
+  ],
+  "node-path": [
+    "Node.Path"
+  ],
+  "node-process": [
+    "defines",
+    "Node.Process"
+  ],
+  "node-readline": [
+    "provides"
+  ],
+  "node-sqlite3": [
+    "SQLite",
+    "SQLite"
+  ],
+  "node-streams": [
+    "provides"
+  ],
+  "node-streams-aff": [
+    "all",
+    ""
+  ],
+  "node-url": [
+    "defines"
+  ],
+  "nodemailer": [
+    "NodeMailer.Attachment",
+    "NodeMailer.AttachmentStream",
+    "NodeMailer"
+  ],
+  "nonempty": [
+    "defines"
+  ],
+  "now": [
+    "Effect.Now"
+  ],
+  "npm-package-json": [
+    "Npm.PackageJson"
+  ],
+  "nullable": [
+    "defines"
+  ],
+  "numbers": [
+    "defines",
+    "for",
+    "Data.Number"
+  ],
+  "object-maps": [
+    "Data.ObjectMap"
+  ],
+  "ocarina": [
+    "FRP.Event.Animate",
+    "FRP.Event.MIDI",
+    "Ocarina.Clock",
+    "Ocarina.Common",
+    "Ocarina.Control",
+    "Ocarina.Core",
+    "Ocarina.Interpret",
+    "Ocarina.Math",
+    "Ocarina.Properties",
+    "Ocarina.Run",
+    "Ocarina.WebAPI",
+    "Row.Extra"
+  ],
+  "open-folds": [
+    "provides"
+  ],
+  "open-memoize": [
+    "defines"
+  ],
+  "open-pairing": [
+    "Data.Functor.Pairing.Co",
+    "Data.Functor.Pairing"
+  ],
+  "options": [
+    "provides"
+  ],
+  "optparse": [
+    "to",
+    "Options.Applicative.Builder.Completer",
+    "Options.Applicative.Builder.Internal",
+    "contains",
+    "Options.Applicative.Common",
+    "contains",
+    "Options.Applicative.Help.Chunk",
+    "Options.Applicative.Help.Core",
+    "Options.Applicative.Help.Levenshtein",
+    "Options.Applicative.Help.Pretty",
+    "Options.Applicative.Help.Types",
+    "which",
+    "Options.Applicative.Internal.Utils",
+    "Options.Applicative.Internal",
+    "Options.Applicative.Types",
+    "Options.Applicative",
+    "Text.PrettyPrint.Leijen"
+  ],
+  "ordered-collections": [
+    "Data.Map.Gen",
+    "defines",
+    "Data.Map",
+    "Data.Set.NonEmpty",
+    "defines"
+  ],
+  "ordered-set": [
+    "Data.Set.Ordered"
+  ],
+  "orders": [
+    "Data.Ord.Down",
+    "Data.Ord.Max",
+    "Data.Ord.Min"
+  ],
+  "pairs": [
+    "defines"
+  ],
+  "parallel": [
+    "Control.Parallel.Class",
+    "Control.Parallel"
+  ],
+  "parsing": [
+    "",
+    "are",
+    "is",
+    "is",
+    "is",
+    "depend",
+    "is",
+    "in",
+    "is",
+    ""
+  ],
+  "parsing-dataview": [
+    "Parsing.DataView.Basic",
+    "operate"
+  ],
+  "partial": [
+    "Partial.Unsafe",
+    "Partial"
+  ],
+  "pathy": [
+    "Pathy.Gen",
+    "Pathy.Name",
+    "Pathy.Parser",
+    "Pathy.Path",
+    "Pathy.Phantom",
+    "Pathy.Printer",
+    "Pathy.Sandboxed",
+    "Pathy"
+  ],
+  "pha": [
+    "Pha.App.Internal",
+    "Pha.App",
+    "Pha.Html.Attributes",
+    "Pha.Html.Core",
+    "Pha.Html.Elements",
+    "Pha.Html.Events",
+    "Pha.Html.Keyed",
+    "Pha.Html.Util",
+    "Pha.Html",
+    "Export",
+    "Pha.Subscriptions",
+    "Pha.Update.Lens",
+    "Pha.Update"
+  ],
+  "phaser": [
+    "Graphics.Phaser.ArcadePhysics",
+    "Graphics.Phaser.Camera",
+    "Graphics.Phaser.Container",
+    "Graphics.Phaser.CoreTypes",
+    "Graphics.Phaser.Events",
+    "Utils.FFI",
+    "Graphics.Phaser.ForeignTypes",
+    "Graphics.Phaser.GameConfig",
+    "Graphics.Phaser.GameObject",
+    "Graphics.Phaser.Graphics",
+    "Graphics.Phaser.Image",
+    "Graphics.Phaser.Input",
+    "Phaser.Graphics.Input.KeyCodes",
+    "Graphics.Phaser.Loader",
+    "Graphics.Phaser",
+    "Graphics.Phaser.Input.Pointer",
+    "Graphics.Phaser.Scene",
+    "Graphics.Phaser.SceneManager",
+    "Graphics.Phaser.Sprite",
+    "Graphics.Phaser.Text",
+    "Graphics.Phaser.TileMap",
+    "Graphics.Phaser.Time",
+    "Graphics.Phaser.Tween",
+    "Internal.Utils"
+  ],
+  "pipes": [
+    "Pipes.Core",
+    "Pipes.Internal",
+    "Pipes.ListT",
+    "Pipes.Prelude",
+    "Pipes"
+  ],
+  "pirates-charm": [
+    "FRP.Event.Aff",
+    "FRP.Event.Effect"
+  ],
+  "point-free": [
+    "PointFree"
+  ],
+  "pointed-list": [
+    "Data.List.Pointed"
+  ],
+  "polymorphic-vectors": [
+    "Data.Vector.Polymorphic.Class",
+    "Data.Vector.Polymorphic.Types",
+    "Data.Vector.Polymorphic"
+  ],
+  "posix-types": [
+    "Data.Posix.Signal",
+    "Data.Posix"
+  ],
+  "precise": [
+    "Data.Digit",
+    "Data.HugeInt.Gen",
+    "Data.HugeInt",
+    "Data.HugeNum.Gen",
+    "Data.HugeNum"
+  ],
+  "precise-datetime": [
+    "Data.PreciseDate.Component",
+    "Data.PreciseDateTime.Internal",
+    "Data.PreciseDateTime",
+    "Data.RFC",
+    "Data.RFC",
+    "Data.Time.PreciseDuration.Format",
+    "Data.Time.PreciseDuration"
+  ],
+  "prelude": [
+    "Control.Applicative",
+    "Control.Apply",
+    "Control.Bind",
+    "Control.Category",
+    "Control.Monad",
+    "Control.Semigroupoid",
+    "Data.Boolean",
+    "Data.BooleanAlgebra",
+    "Data.Bounded.Generic",
+    "Data.Bounded",
+    "Data.CommutativeRing",
+    "Data.DivisionRing",
+    "Data.Eq.Generic",
+    "Data.Eq",
+    "Data.EuclideanRing",
+    "Data.Field",
+    "Data.Function",
+    "Data.Functor",
+    "Data.Generic.Rep",
+    "Data.HeytingAlgebra.Generic",
+    "Data.HeytingAlgebra",
+    "Data.Monoid.Additive",
+    "Data.Monoid.Conj",
+    "Data.Monoid.Disj",
+    "Data.Monoid.Dual",
+    "Data.Monoid.Endo",
+    "Data.Monoid.Generic",
+    "Data.Monoid.Multiplicative",
+    "Data.Monoid",
+    "Data.NaturalTransformation",
+    "Data.Ord.Generic",
+    "Data.Ord",
+    "Data.Ordering",
+    "Data.Reflectable",
+    "Data.Ring.Generic",
+    "Data.Ring",
+    "Data.Semigroup.First",
+    "Data.Semigroup.Generic",
+    "Data.Semigroup.Last",
+    "Data.Semigroup",
+    "Data.Semiring.Generic",
+    "Data.Semiring",
+    "Data.Show.Generic",
+    "Data.Show",
+    "Data.Symbol",
+    "Data.Unit",
+    "Data.Void",
+    "that",
+    "",
+    "are",
+    "Type.Proxy"
+  ],
+  "prettier-printer": [
+    "Prettier.Printer"
+  ],
+  "profunctor": [
+    "Data.Profunctor.Choice",
+    "Data.Profunctor.Closed",
+    "Data.Profunctor.Cochoice",
+    "Data.Profunctor.Costrong",
+    "Data.Profunctor.Join",
+    "Data.Profunctor.Split",
+    "Data.Profunctor.Star",
+    "Data.Profunctor.Strong",
+    "Data.Profunctor"
+  ],
+  "profunctor-lenses": [
+    "defines",
+    "Data.Lens.At",
+    "defines",
+    "Data.Lens.Fold.Partial",
+    "defines",
+    "defines",
+    "defines",
+    "Data.Lens.Index",
+    "Data.Lens.Indexed",
+    "Data.Lens.Internal.Bazaar",
+    "defines",
+    "defines",
+    "Data.Lens.Internal.Forget",
+    "Data.Lens.Internal.Grating",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "Data.Lens.Internal.Zipping",
+    "Data.Lens.Iso.Newtype",
+    "defines",
+    "Data.Lens.Lens.Product",
+    "Data.Lens.Lens.Tuple",
+    "Data.Lens.Lens.Unit",
+    "Data.Lens.Lens.Void",
+    "defines",
+    "Data.Lens.Prism.Coproduct",
+    "Data.Lens.Prism.Either",
+    "Data.Lens.Prism.Maybe",
+    "Data.Lens.Prism",
+    "Data.Lens.Record",
+    "defines",
+    "Data.Lens.Traversal",
+    "defines",
+    "defines",
+    "re",
+    ""
+  ],
+  "protobuf": [
+    "Protobuf.Internal.Common",
+    "Protobuf.Internal.Decode",
+    "Protobuf.Internal.Encode",
+    "Protobuf.Internal.Prelude",
+    "is",
+    "",
+    "Protobuf.Library"
+  ],
+  "ps-cst": [
+    "Language.PS.CST.Printers.PrintImports",
+    "Language.PS.CST.Printers.PrintModuleModuleNameAndExports",
+    "Language.PS.CST.Printers.TypeLevel",
+    "Language.PS.CST.Printers.Utils",
+    "Language.PS.CST.Printers",
+    "Language.PS.CST.ReservedNames",
+    "Language.PS.CST.Sugar.Declaration",
+    "Language.PS.CST.Sugar.Leafs",
+    "Language.PS.CST.Sugar.QualifiedName",
+    "Language.PS.CST.Types.Declaration",
+    "Language.PS.CST.Types.Leafs",
+    "Language.PS.CST.Types.Module",
+    "Language.PS.CST.Types.QualifiedName",
+    "Language.PS.CST",
+    "Language.PS.SmartCST.ProcessModule",
+    "Language.PS.SmartCST.ProcessSmartDeclaration.Utils",
+    "Language.PS.SmartCST.ProcessSmartDeclaration",
+    "Language.PS.SmartCST.Sugar.Declaration",
+    "Language.PS.SmartCST.Types.Declaration",
+    "Language.PS.SmartCST.Types.SmartQualifiedName",
+    "Language.PS.SmartCST.Types.SmartQualifiedNameConstructor",
+    "Language.PS.SmartCST"
+  ],
+  "psa-utils": [
+    "Psa.Output",
+    "Psa.Printer.Default",
+    "Psa.Printer.Json",
+    "Psa.Printer",
+    "Psa.Types",
+    "Psa.Util",
+    "Psa"
+  ],
+  "psc-ide": [
+    "Node.Which",
+    "PscIde.Command",
+    "PscIde.Project",
+    "PscIde.Server",
+    "PscIde"
+  ],
+  "psci-support": [
+    "provides"
+  ],
+  "qualified-do": [
+    "QualifiedDo.Alt",
+    "QualifiedDo.FoldMap",
+    "Exports",
+    "QualifiedDo.Kleisli",
+    "QualifiedDo.OneOfMap",
+    "Exports",
+    "QualifiedDo.ParAlt",
+    "QualifiedDo.ParApply",
+    "QualifiedDo.ParOneOfMap",
+    "Exports",
+    "QualifiedDo.Semigroup",
+    "QualifiedDo.Semigroupoid",
+    "is",
+    "QualifiedDo.Unfoldable",
+    "Exports"
+  ],
+  "quantities": [
+    "defines",
+    "defines",
+    "defines",
+    "Data.Units.Astronomical",
+    "defines",
+    "Data.Units.CGS",
+    "Data.Units.Currency",
+    "Data.Units.Imperial",
+    "Data.Units.Misc",
+    "Data.Units.Nautical",
+    "Data.Units.PartsPerX",
+    "Data.Units.SI.Accepted",
+    "Data.Units.SI.Derived",
+    "defines",
+    "Data.Units.Time",
+    "Data.Units.USCustomary",
+    "defines",
+    "which",
+    ""
+  ],
+  "quickcheck": [
+    "Test.QuickCheck.Arbitrary",
+    "defines",
+    "is"
+  ],
+  "quickcheck-combinators": [
+    "Test.QuickCheck.Combinators"
+  ],
+  "quickcheck-laws": [
+    "Test.QuickCheck.Laws.Control.Alt",
+    "Test.QuickCheck.Laws.Control.Alternative",
+    "Test.QuickCheck.Laws.Control.Applicative",
+    "Test.QuickCheck.Laws.Control.Apply",
+    "Test.QuickCheck.Laws.Control.Bind",
+    "Test.QuickCheck.Laws.Control.Category",
+    "Test.QuickCheck.Laws.Control.Comonad",
+    "Test.QuickCheck.Laws.Control.Extend",
+    "Test.QuickCheck.Laws.Control.Monad",
+    "Test.QuickCheck.Laws.Control.MonadPlus",
+    "Test.QuickCheck.Laws.Control.Plus",
+    "Test.QuickCheck.Laws.Control.Semigroupoid",
+    "Test.QuickCheck.Laws.Control",
+    "Exports",
+    "Test.QuickCheck.Laws.Data.BooleanAlgebra",
+    "Test.QuickCheck.Laws.Data.Bounded",
+    "Test.QuickCheck.Laws.Data.BoundedEnum",
+    "Test.QuickCheck.Laws.Data.CommutativeRing",
+    "Test.QuickCheck.Laws.Data.DivisionRing",
+    "Test.QuickCheck.Laws.Data.Enum",
+    "Test.QuickCheck.Laws.Data.Eq",
+    "Test.QuickCheck.Laws.Data.EuclideanRing",
+    "Test.QuickCheck.Laws.Data.Field",
+    "Test.QuickCheck.Laws.Data.Foldable",
+    "Test.QuickCheck.Laws.Data.Functor",
+    "Test.QuickCheck.Laws.Data.FunctorWithIndex",
+    "Test.QuickCheck.Laws.Data.HeytingAlgebra",
+    "Test.QuickCheck.Laws.Data.Monoid",
+    "Test.QuickCheck.Laws.Data.Ord",
+    "Test.QuickCheck.Laws.Data.Ring",
+    "Test.QuickCheck.Laws.Data.Semigroup",
+    "Test.QuickCheck.Laws.Data.Semiring",
+    "Test.QuickCheck.Laws.Data",
+    "Exports",
+    "Test.QuickCheck.Laws"
+  ],
+  "quickcheck-utf8": [
+    "Test.QuickCheck.UTF"
+  ],
+  "random": [
+    "Effect.Random"
+  ],
+  "rationals": [
+    "Data.Ratio",
+    "Data.Rational"
+  ],
+  "rdf": [
+    "RDF.Prefixes",
+    "RDF"
+  ],
+  "react": [
+    "React.DOM.Dynamic",
+    "React.DOM.Props",
+    "React.DOM.SVG.Dynamic",
+    "React.DOM.SVG",
+    "React.DOM",
+    "React.Ref",
+    "React.SyntheticEvent",
+    "defines"
+  ],
+  "react-aria": [
+    "React.Aria.Button",
+    "React.Aria.Combobox",
+    "React.Aria.Focus",
+    "React.Aria.Interactions",
+    "React.Aria.JSSet",
+    "React.Aria.Listbox",
+    "React.Aria.Overlays",
+    "React.Aria.Types",
+    "React.Aria.Utils"
+  ],
+  "react-basic": [
+    "React.Basic.Events",
+    "React.Basic.StrictMode",
+    "React.Basic"
+  ],
+  "react-basic-classic": [
+    "React.Basic.Classic.Components.Async",
+    "React.Basic.Classic"
+  ],
+  "react-basic-dnd": [
+    "React.Basic.ReactDND.Backends.HTML",
+    "React.Basic.ReactDND.Backends.TestBackend",
+    "React.Basic.ReactDND.Backends.TouchBackend",
+    "React.Basic.ReactDND"
+  ],
+  "react-basic-dom": [
+    "React.Basic.DOM.Client",
+    "React.Basic.DOM.Components.GlobalEvents",
+    "provides",
+    "defines",
+    "React.Basic.DOM.Generated",
+    "React.Basic.DOM.Internal",
+    "React.Basic.DOM.Server",
+    "React.Basic.DOM.Simplified.Generated",
+    "React.Basic.DOM.Simplified.ToJSX",
+    "React.Basic.DOM.SVG",
+    "defines"
+  ],
+  "react-basic-emotion": [
+    "React.Basic.Emotion"
+  ],
+  "react-basic-hooks": [
+    "React.Basic.Hooks.Aff",
+    "React.Basic.Hooks.ErrorBoundary",
+    "React.Basic.Hooks.Internal",
+    "React.Basic.Hooks.ResetToken",
+    "React.Basic.Hooks.Suspense.Store",
+    "React.Basic.Hooks.Suspense",
+    "React.Basic.Hooks"
+  ],
+  "react-basic-storybook": [
+    "Storybook.Addon.Actions",
+    "Storybook.Addon.Docs",
+    "Storybook.TestingLibrary.Types",
+    "Storybook.TestingLibrary",
+    "Storybook.Types",
+    "Storybook"
+  ],
+  "react-dom": [
+    "ReactDOM"
+  ],
+  "react-halo": [
+    "React.Halo.Component",
+    "React.Halo.Hook",
+    "React.Halo.Internal.Control",
+    "React.Halo.Internal.Eval",
+    "React.Halo.Internal.State",
+    "React.Halo.Internal.Types",
+    "React.Halo"
+  ],
+  "react-icons": [
+    "React.Icons.Ai",
+    "React.Icons.Bi",
+    "React.Icons.Bs",
+    "React.Icons.Cg",
+    "React.Icons.Di",
+    "React.Icons.Fa",
+    "React.Icons.Fc",
+    "React.Icons.Fi",
+    "React.Icons.Gi",
+    "React.Icons.Go",
+    "React.Icons.Gr",
+    "React.Icons.Hi",
+    "React.Icons.Im",
+    "React.Icons.Io",
+    "React.Icons.Md",
+    "React.Icons.Ri",
+    "React.Icons.Si",
+    "React.Icons.Tb",
+    "React.Icons.Ti",
+    "React.Icons.Types",
+    "React.Icons.Vsc",
+    "React.Icons.Wi",
+    "React.Icons"
+  ],
+  "react-testing-library": [
+    "React.TestingLibrary",
+    "Test.Spec.Assertions.DOM"
+  ],
+  "react-virtuoso": [
+    "React.Virtuoso"
+  ],
+  "read": [
+    "Data.String.Read"
+  ],
+  "record": [
+    "Record.Builder",
+    "Record.Unsafe.Union",
+    "Record"
+  ],
+  "record-extra": [
+    "Record.Extra"
+  ],
+  "record-studio": [
+    "Record.Studio.Keys",
+    "Record.Studio.Map",
+    "Record.Studio.MapKind",
+    "Record.Studio.MapUniform",
+    "Record.Studio.Merge",
+    "Record.Studio.SameKeys",
+    "Record.Studio.Sequence",
+    "Record.Studio.Shrink",
+    "Record.Studio.SingletonRecord",
+    "Record.Studio"
+  ],
+  "refs": [
+    "defines"
+  ],
+  "remotedata": [
+    "Network.RemoteData"
+  ],
+  "resource": [
+    "",
+    "Ran",
+    "provides",
+    "provides"
+  ],
+  "resourcet": [
+    "Control.Monad.Resource.Aff.Pool",
+    "Control.Monad.Resource.Class",
+    "Control.Monad.Resource.Internal.Registry",
+    "Control.Monad.Resource.Trans",
+    "Control.Monad.Resource"
+  ],
+  "result": [
+    "Data.Result"
+  ],
+  "return": [
+    "Return.Folds",
+    "Return"
+  ],
+  "ring-modules": [
+    "Data.Ring.Module"
+  ],
+  "rito": [
+    "Rito.BlendDst",
+    "Rito.BlendEquation",
+    "Rito.Blending",
+    "Rito.BlendSrc",
+    "Rito.Box",
+    "Rito.BufferAttribute",
+    "Rito.BufferAttributeUnsafe",
+    "Rito.Cameras.PerspectiveCamera",
+    "Rito.Color",
+    "Rito.CombineOperation",
+    "Rito.Core",
+    "Rito.CSS.CSS",
+    "Rito.CSS.CSS",
+    "Rito.CubeTexture",
+    "Rito.DepthMode",
+    "Rito.Euler",
+    "Rito.FogExp",
+    "Rito.Geometries.Box",
+    "Rito.Geometries.BufferGeometry",
+    "Rito.Geometries.Capsule",
+    "Rito.Geometries.Cylinder",
+    "Rito.Geometries.Plane",
+    "Rito.Geometries.Sphere",
+    "Rito.GLTF",
+    "Rito.Group",
+    "Rito.InstancedBufferAttribute",
+    "Rito.Interpret",
+    "Rito.Lights.AmbientLight",
+    "Rito.Lights.DirectionalLight",
+    "Rito.Lights.PointLight",
+    "Rito.Materials.MeshBasicMaterial",
+    "Rito.Materials.MeshLambertMaterial",
+    "Rito.Materials.MeshPhongMaterial",
+    "Rito.Materials.MeshStandardMaterial",
+    "Rito.Materials.RawShaderMaterial",
+    "Rito.Materials.ShaderMaterial",
+    "Rito.Matrix",
+    "Rito.Mesh",
+    "Rito.NormalMapType",
+    "Rito.Points",
+    "Rito.Portal",
+    "Rito.Precision",
+    "Rito.Properties",
+    "Rito.Quaternion",
+    "Rito.Renderers.CSS",
+    "Rito.Renderers.CSS",
+    "Rito.Renderers.Raycaster",
+    "Rito.Renderers.WebGL.BloomPass",
+    "Rito.Renderers.WebGL.EffectComposer",
+    "Rito.Renderers.WebGL.EffectComposerPass",
+    "Rito.Renderers.WebGL.GlitchPass",
+    "Rito.Renderers.WebGL.RenderPass",
+    "Rito.Renderers.WebGL.UnrealBloomPass",
+    "Rito.Renderers.WebGL",
+    "Rito.Renderers.WebGLRenderingPowerPreference",
+    "Rito.Renderers.WebGLRenderingPrecision",
+    "Rito.RoundRobin",
+    "Rito.Run",
+    "Rito.Scene",
+    "Rito.Side",
+    "Rito.Sphere",
+    "Rito.ST.ForEach",
+    "Rito.Texture",
+    "Rito.THREE",
+    "Rito.Undefinable",
+    "Rito.Uniforms",
+    "Rito.Vector",
+    "Rito.Vector",
+    "Rito.WireframeLinecap",
+    "Rito.WireframeLinejoin"
+  ],
+  "routing": [
+    "Routing.Hash",
+    "Routing.Match.Error",
+    "Routing.Match",
+    "Routing.Parser",
+    "Routing.PushState",
+    "Routing.Types",
+    "Routing"
+  ],
+  "routing-duplex": [
+    "Routing.Duplex.Generic.Syntax",
+    "Routing.Duplex.Generic",
+    "Routing.Duplex.Parser",
+    "Routing.Duplex.Printer",
+    "Routing.Duplex.Types",
+    "Routing.Duplex"
+  ],
+  "run": [
+    "Run.Choose",
+    "Run.Except",
+    "Run.Internal",
+    "Run.Reader",
+    "Run.State",
+    "Run.Writer",
+    "Run"
+  ],
+  "safe-coerce": [
+    "Safe.Coerce"
+  ],
+  "safely": [
+    "Control.Safely"
+  ],
+  "school-of-music": [
+    "Data.Euterpea.DSL.Parser",
+    "Data.Euterpea.Dynamics",
+    "Data.Euterpea.Midi.MEvent",
+    "Data.Euterpea.Music",
+    "Data.Euterpea.Music",
+    "Data.Euterpea.Notes",
+    "Data.Euterpea.Transform"
+  ],
+  "selection-foldable": [
+    "docs",
+    "Data.SelectionFoldableWithData"
+  ],
+  "semirings": [
+    "Data.Semiring.Free"
+  ],
+  "signal": [
+    "Signal.Aff",
+    "Signal.Channel",
+    "Signal.DOM",
+    "Signal.Effect",
+    "Signal.Time",
+    "Signal"
+  ],
+  "simple-emitter": [
+    "SimpleEmitter"
+  ],
+  "simple-i18n": [
+    "Simple.I",
+    "Simple.I"
+  ],
+  "simple-json": [
+    "Simple.JSON"
+  ],
+  "simple-jwt": [
+    "Node.Simple.Jwt"
+  ],
+  "simple-ulid": [
+    "Simple.ULID.Node",
+    "Simple.ULID.PRNG",
+    "Simple.ULID.Window",
+    "Simple.ULID"
+  ],
+  "sized-matrices": [
+    "Data.Matrix.Algorithms",
+    "Data.Matrix.Operations",
+    "Data.Matrix.RegularMatrices",
+    "Data.Matrix.Reps",
+    "Data.Matrix.Transformations",
+    "Data.Matrix"
+  ],
+  "sized-vectors": [
+    "Data.Vec"
+  ],
+  "slug": [
+    "Slug"
+  ],
+  "small-ffi": [
+    "Data.Foreign.SmallFFI"
+  ],
+  "soundfonts": [
+    "Audio.SoundFont.Decoder",
+    "Audio.SoundFont.Gleitz",
+    "Audio.SoundFont.Melody.Class",
+    "Audio.SoundFont.Melody.Maker",
+    "Audio.SoundFont.Melody",
+    "Audio.SoundFont"
+  ],
+  "sparse-matrices": [
+    "Data.Sparse.Matrix",
+    "Data.Sparse.Matrix"
+  ],
+  "sparse-polynomials": [
+    "Data.Sparse.Polynomial",
+    "Data.Sparse.Polynomial"
+  ],
+  "spec": [
+    "Test.Spec.Assertions.String",
+    "Test.Spec.Assertions",
+    "Test.Spec.Console",
+    "Test.Spec.Reporter.Base",
+    "Test.Spec.Reporter.Console",
+    "Test.Spec.Reporter.Dot",
+    "Test.Spec.Reporter.Spec",
+    "Test.Spec.Reporter.Tap",
+    "Test.Spec.Reporter.TeamCity",
+    "Test.Spec.Reporter",
+    "Reexport",
+    "Test.Spec.Result",
+    "Test.Spec.Runner.Event",
+    "Test.Spec.Runner",
+    "Test.Spec.Speed",
+    "Test.Spec.Style",
+    "Test.Spec.Summary",
+    "Test.Spec.Tree",
+    "Test.Spec"
+  ],
+  "spec-discovery": [
+    "Test.Spec.Discovery"
+  ],
+  "spec-quickcheck": [
+    "Test.Spec.QuickCheck"
+  ],
+  "splitmix": [
+    "Random.SplitMix"
+  ],
+  "ssrs": [
+    "SSRS.Algebra",
+    "SSRS.Coalgebra",
+    "SSRS.Fold",
+    "SSRS.Refold",
+    "SSRS.Transform",
+    "SSRS.Unfold",
+    "SSRS",
+    "Exported"
+  ],
+  "st": [
+    "Control.Monad.ST.Class",
+    "Control.Monad.ST.Global",
+    "Control.Monad.ST.Internal",
+    "Control.Monad.ST.Ref",
+    "Internal",
+    "defines",
+    "Control.Monad.ST",
+    "Internal"
+  ],
+  "strictlypositiveint": [
+    "Data.StrictlyPositiveInt"
+  ],
+  "string-parsers": [
+    "StringParser.CodePoints",
+    "StringParser.CodeUnits",
+    "defines",
+    "defines",
+    "defines",
+    "StringParser"
+  ],
+  "strings": [
+    "Data.Char.Gen",
+    "Data.Char",
+    "Data.String.CaseInsensitive",
+    "Data.String.CodePoints",
+    "Data.String.CodeUnits",
+    "Data.String.Common",
+    "Data.String.Gen",
+    "Data.String.NonEmpty.CaseInsensitive",
+    "Data.String.NonEmpty.CodePoints",
+    "Data.String.NonEmpty.CodeUnits",
+    "is",
+    "does",
+    "Data.String.NonEmpty",
+    "Data.String.Pattern",
+    "Data.String.Regex.Flags",
+    "Data.String.Regex.Unsafe",
+    "Data.String.Regex",
+    "Data.String.Unsafe",
+    "Data.String"
+  ],
+  "strings-extra": [
+    "Data.String.Extra"
+  ],
+  "stringutils": [
+    "Data.Char.Utils",
+    "Data.String.Utils"
+  ],
+  "substitute": [
+    "Substitute"
+  ],
+  "sunde": [
+    "Sunde"
+  ],
+  "supply": [
+    "Supply"
+  ],
+  "svg-parser": [
+    "to"
+  ],
+  "systemd-journald": [
+    "Node.Systemd.Journald"
+  ],
+  "tagged": [
+    "Data.Functor.Tagged"
+  ],
+  "tailrec": [
+    "Control.Monad.Rec.Class"
+  ],
+  "tecton": [
+    "Tecton.Internal",
+    "Tecton.Rule",
+    "Tecton",
+    "T"
+  ],
+  "tecton-halogen": [
+    "Tecton.Halogen.Internal",
+    "Tecton.Halogen",
+    "X"
+  ],
+  "test-unit": [
+    "Test.Unit.Assert",
+    "Test.Unit.Console",
+    "Test.Unit.Main",
+    "Test.Unit.Output.Fancy",
+    "Test.Unit.Output.Simple",
+    "Test.Unit.Output.TAP",
+    "Test.Unit.QuickCheck",
+    "Test.Unit"
+  ],
+  "thermite": [
+    "Thermite"
+  ],
+  "thermite-dom": [
+    "Thermite.DOM"
+  ],
+  "these": [
+    "Data.Align",
+    "Data.These.Gen",
+    "Data.These",
+    "Test.QuickCheck.Laws.Control.Align",
+    "Test.QuickCheck.Laws.Control.Alignable",
+    "Test.QuickCheck.Laws.Control.Crosswalk"
+  ],
+  "toppokki": [
+    "Toppokki"
+  ],
+  "transformers": [
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "Control.Monad.Except",
+    "Control.Monad.Identity.Trans",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines"
+  ],
+  "tree-rose": [
+    "Data.Tree.Zipper",
+    "Data.Tree"
+  ],
+  "tuples": [
+    "Data.Tuple.Nested",
+    "Data.Tuple"
+  ],
+  "two-or-more": [
+    "Data.TwoOrMore"
+  ],
+  "type-equality": [
+    "Type.Equality"
+  ],
+  "typelevel": [
+    "Data.Typelevel.Bool",
+    "Data.Typelevel.Num.Aliases",
+    "Data.Typelevel.Num.Ops",
+    "Data.Typelevel.Num.Reps",
+    "Data.Typelevel.Num.Sets",
+    "Data.Typelevel.Num",
+    "Data.Typelevel.Undefined"
+  ],
+  "typelevel-lists": [
+    "Type.Data.List"
+  ],
+  "typelevel-peano": [
+    "Type.Data.Peano.Int.Definition",
+    "Type.Data.Peano.Int.Parse",
+    "Type.Data.Peano.Int.TypeAliases",
+    "Type.Data.Peano.Int",
+    "Type.Data.Peano.Int.Definition",
+    "Type.Data.Peano.Int.Parse",
+    "Type.Data.Peano.Int.TypeAliases",
+    "Type.Data.Peano.Nat.Definition",
+    "Type.Data.Peano.Nat.Parse",
+    "Type.Data.Peano.Nat.TypeAliases",
+    "Type.Data.Peano.Nat",
+    "Type.Data.Peano.Nat.TypeAliases",
+    "Type.Data.Peano.Nat.Definition",
+    "Type.Data.Peano.Nat.Parse",
+    "Type.Data.Peano"
+  ],
+  "typelevel-prelude": [
+    "Type.Data.Boolean",
+    "Type.Data.Ordering",
+    "Type.Data.Symbol",
+    "Type.Function",
+    "Type.Prelude",
+    "Type.Row.Homogeneous",
+    "Type.Row",
+    "Type.RowList"
+  ],
+  "typelevel-rows": [
+    "Rows.Map"
+  ],
+  "uint": [
+    "Data.UInt.Gen",
+    "Data.UInt"
+  ],
+  "ulid": [
+    "Ulid"
+  ],
+  "uncurried-transformers": [
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "defines",
+    "",
+    "defines"
+  ],
+  "undefined": [
+    "Undefined"
+  ],
+  "undefined-is-not-a-problem": [
+    "Data.Undefined.NoProblem.Closed",
+    "Data.Undefined.NoProblem.Open",
+    "Data.Undefined.NoProblem"
+  ],
+  "unfoldable": [
+    "provides",
+    "Data.Unfoldable"
+  ],
+  "unicode": [
+    "Data.CodePoint.Unicode.Internal.Casing",
+    "Data.CodePoint.Unicode.Internal",
+    "Data.CodePoint.Unicode",
+    "Data.String.Unicode"
+  ],
+  "unlift": [
+    "Control.Monad.Unlift",
+    "Effect.Aff.Unlift",
+    "Effect.Unlift"
+  ],
+  "unordered-collections": [
+    "Data.Hashable",
+    "Data.HashMap",
+    "Data.HashSet"
+  ],
+  "unsafe-coerce": [
+    "Unsafe.Coerce"
+  ],
+  "unsafe-reference": [
+    "Unsafe.Reference"
+  ],
+  "untagged-to-tagged": [
+    "Data.UntaggedToTagged.Tagged",
+    "Data.UntaggedToTagged.Untagged"
+  ],
+  "untagged-union": [
+    "Untagged.Castable",
+    "Untagged.TypeCheck",
+    "Untagged.Union"
+  ],
+  "uri": [
+    "URI.AbsoluteURI",
+    "URI.Authority",
+    "URI.Common",
+    "URI.Extra.MultiHostPortPair",
+    "URI.Extra.QueryPairs",
+    "URI.Extra.UserPassInfo",
+    "URI.Fragment",
+    "URI.HierarchicalPart",
+    "URI.Host.Gen",
+    "URI.Host.IPv",
+    "URI.Host.IPv",
+    "URI.Host.RegName",
+    "URI.Host",
+    "URI.HostPortPair.Gen",
+    "URI.HostPortPair",
+    "URI.Path.Absolute",
+    "URI.Path.NoScheme",
+    "URI.Path.Rootless",
+    "URI.Path.Segment",
+    "URI.Path",
+    "URI.Port.Gen",
+    "URI.Port",
+    "URI.Query",
+    "URI.RelativePart",
+    "URI.RelativeRef",
+    "URI.Scheme.Common",
+    "URI.Scheme",
+    "URI.URI",
+    "URI.URIRef",
+    "URI.UserInfo",
+    "URI"
+  ],
+  "uuid": [
+    "Data.UUID"
+  ],
+  "uuidv4": [
+    "Data.UUID.Random"
+  ],
+  "validation": [
+    "defines",
+    "defines"
+  ],
+  "variant": [
+    "Data.Functor.Variant",
+    "Data.Variant.Internal",
+    "Data.Variant"
+  ],
+  "vectorfield": [
+    "Data.VectorField"
+  ],
+  "vectors": [
+    "Data.Vector",
+    "Data.Vector"
+  ],
+  "versions": [
+    "",
+    "Data.Version.Internal",
+    "defines"
+  ],
+  "visx": [
+    "D",
+    "D",
+    "Topojson.Client",
+    "VISX.Annotation",
+    "VISX.Axis",
+    "VISX.Curve",
+    "VISX.FFI",
+    "VISX.Glyph",
+    "VISX.Grid",
+    "VISX.Interaction.Brush",
+    "VISX.Interaction.Drag",
+    "VISX.Interaction.Voronoi",
+    "VISX.Interaction.Zoom",
+    "VISX.Layout.Chord",
+    "VISX.Layout.Geo",
+    "VISX.Layout.Heatmap",
+    "VISX.Layout.Hierarchy",
+    "VISX.Layout.Network",
+    "VISX.Layout.Stats",
+    "VISX.Layout.Threshold",
+    "VISX.Layout.XYChart",
+    "VISX.Legend",
+    "VISX.Marker",
+    "VISX.Scale",
+    "VISX.Shape",
+    "VISX.Tooltip",
+    "VISX.Util.Data.Bounds",
+    "VISX.Util.Data.MockData",
+    "VISX.Util.Data.Point",
+    "VISX.Util.Data.Responsive",
+    "VISX.Util.SVG.ClipPath",
+    "VISX.Util.SVG.Event",
+    "VISX.Util.SVG.Gradient",
+    "VISX.Util.SVG.Group",
+    "VISX.Util.SVG.Pattern"
+  ],
+  "web-clipboard": [
+    "Web.Clipboard",
+    "Web.Clipboard.ClipboardEvent.EventTypes",
+    "Web.Clipboard.ClipboardEvent"
+  ],
+  "web-cssom": [
+    "Web.CSSOM.CSSStyleDeclaration",
+    "Web.DOM.CSSStyleSheet",
+    "Web.CSSOM.ElementCSSInlineStyle",
+    "Web.CSSOM.Internal.Types",
+    "Web.CSSOM.MouseEvent",
+    "Web.DOM.StyleSheetList",
+    "Web.CSSOM"
+  ],
+  "web-dom": [
+    "Web.DOM.CharacterData",
+    "Web.DOM.ChildNode",
+    "Web.DOM.Comment",
+    "provides",
+    "Web.DOM.DocumentFragment",
+    "Web.DOM.DocumentType",
+    "Web.DOM.DOMTokenList",
+    "Web.DOM.Element",
+    "Web.DOM.HTMLCollection",
+    "Web.DOM.Internal.Types",
+    "Web.DOM.MutationObserver",
+    "Web.DOM.MutationRecord",
+    "Web.DOM.Node",
+    "Web.DOM.NodeList",
+    "Web.DOM.NodeType",
+    "Web.DOM.NonDocumentTypeChildNode",
+    "Web.DOM.NonElementParentNode",
+    "Web.DOM.ParentNode",
+    "Web.DOM.ProcessingInstruction",
+    "Web.DOM.ShadowRoot",
+    "Web.DOM.Text",
+    "Web.DOM",
+    "Exports"
+  ],
+  "web-dom-parser": [
+    "Web.DOM.DOMParser",
+    "Web.DOM.XMLSerializer"
+  ],
+  "web-dom-xpath": [
+    "Web.DOM.Document.XPath.ResultType",
+    "Web.DOM.Document.XPath"
+  ],
+  "web-encoding": [
+    "Web.Encoding.TextDecoder",
+    "Web.Encoding.TextEncoder",
+    "Web.Encoding.UtfLabel"
+  ],
+  "web-events": [
+    "Web.Event.CustomEvent",
+    "Web.Event.Event",
+    "Web.Event.EventPhase",
+    "Web.Event.EventTarget",
+    "Web.Event.Internal.Types",
+    "Web.Internal.FFI"
+  ],
+  "web-fetch": [
+    "Web.Fetch.AbortController",
+    "Web.Fetch.Headers",
+    "Web.Fetch.Integrity",
+    "Web.Fetch.Referrer",
+    "Web.Fetch.ReferrerPolicy",
+    "Web.Fetch.Request",
+    "Web.Fetch.RequestBody",
+    "Web.Fetch.RequestCache",
+    "Web.Fetch.RequestCredentials",
+    "Web.Fetch.RequestMode",
+    "Web.Fetch.RequestRedirect",
+    "Web.Fetch.Response",
+    "Web.Fetch"
+  ],
+  "web-file": [
+    "Web.File.Blob",
+    "Web.File.File",
+    "Web.File.FileList",
+    "Web.File.FileReader.ReadyState",
+    "Web.File.FileReader",
+    "Web.File.Url"
+  ],
+  "web-html": [
+    "Web.HTML.Common",
+    "Web.HTML.Event.BeforeUnloadEvent.EventTypes",
+    "Web.HTML.Event.BeforeUnloadEvent",
+    "Web.HTML.Event.DataTransfer.DataTransferItem",
+    "Web.HTML.Event.DataTransfer",
+    "Web.HTML.Event.DragEvent.EventTypes",
+    "Web.HTML.Event.DragEvent",
+    "Web.HTML.Event.ErrorEvent",
+    "Web.HTML.Event.EventTypes",
+    "Web.HTML.Event.HashChangeEvent.EventTypes",
+    "Web.HTML.Event.HashChangeEvent",
+    "Web.HTML.Event.PageTransitionEvent.EventTypes",
+    "Web.HTML.Event.PageTransitionEvent",
+    "Web.HTML.Event.PopStateEvent.EventTypes",
+    "Web.HTML.Event.PopStateEvent",
+    "Web.HTML.Event.TrackEvent.EventTypes",
+    "Web.HTML.Event.TrackEvent",
+    "Web.HTML.History",
+    "Web.HTML.HTMLAnchorElement",
+    "Web.HTML.HTMLAreaElement",
+    "Web.HTML.HTMLAudioElement",
+    "Web.HTML.HTMLBaseElement",
+    "Web.HTML.HTMLBodyElement",
+    "Web.HTML.HTMLBRElement",
+    "Web.HTML.HTMLButtonElement",
+    "Web.HTML.HTMLCanvasElement",
+    "Web.HTML.HTMLDataElement",
+    "Web.HTML.HTMLDataListElement",
+    "Web.HTML.HTMLDivElement",
+    "Web.HTML.HTMLDListElement",
+    "Web.HTML.HTMLDocument.ReadyState",
+    "Web.HTML.HTMLDocument.VisibilityState",
+    "Web.HTML.HTMLDocument",
+    "Web.HTML.HTMLElement",
+    "Web.HTML.HTMLEmbedElement",
+    "Web.HTML.HTMLFieldSetElement",
+    "Web.HTML.HTMLFormElement",
+    "Web.HTML.HTMLHeadElement",
+    "Web.HTML.HTMLHeadingElement",
+    "Web.HTML.HTMLHRElement",
+    "Web.HTML.HTMLHtmlElement",
+    "Web.HTML.HTMLHyperlinkElementUtils",
+    "Web.HTML.HTMLIFrameElement",
+    "Web.HTML.HTMLImageElement.CORSMode",
+    "Web.HTML.HTMLImageElement.DecodingHint",
+    "Web.HTML.HTMLImageElement.Laziness",
+    "Web.HTML.HTMLImageElement",
+    "Web.HTML.HTMLInputElement",
+    "Web.HTML.HTMLKeygenElement",
+    "Web.HTML.HTMLLabelElement",
+    "Web.HTML.HTMLLegendElement",
+    "Web.HTML.HTMLLIElement",
+    "Web.HTML.HTMLLinkElement",
+    "Web.HTML.HTMLMapElement",
+    "Web.HTML.HTMLMediaElement.CanPlayType",
+    "Web.HTML.HTMLMediaElement.NetworkState",
+    "Web.HTML.HTMLMediaElement.ReadyState",
+    "Web.HTML.HTMLMediaElement",
+    "Web.HTML.HTMLMetaElement",
+    "Web.HTML.HTMLMeterElement",
+    "Web.HTML.HTMLModElement",
+    "Web.HTML.HTMLObjectElement",
+    "Web.HTML.HTMLOListElement",
+    "Web.HTML.HTMLOptGroupElement",
+    "Web.HTML.HTMLOptionElement",
+    "Web.HTML.HTMLOutputElement",
+    "Web.HTML.HTMLParagraphElement",
+    "Web.HTML.HTMLParamElement",
+    "Web.HTML.HTMLPreElement",
+    "Web.HTML.HTMLProgressElement",
+    "Web.HTML.HTMLQuoteElement",
+    "Web.HTML.HTMLScriptElement",
+    "Web.HTML.HTMLSelectElement",
+    "Web.HTML.HTMLSourceElement",
+    "Web.HTML.HTMLSpanElement",
+    "Web.HTML.HTMLStyleElement",
+    "Web.HTML.HTMLTableCaptionElement",
+    "Web.HTML.HTMLTableCellElement",
+    "Web.HTML.HTMLTableColElement",
+    "Web.HTML.HTMLTableDataCellElement",
+    "Web.HTML.HTMLTableElement",
+    "Web.HTML.HTMLTableHeaderCellElement",
+    "Web.HTML.HTMLTableRowElement",
+    "Web.HTML.HTMLTableSectionElement",
+    "Web.HTML.HTMLTemplateElement",
+    "Web.HTML.HTMLTextAreaElement",
+    "Web.HTML.HTMLTimeElement",
+    "Web.HTML.HTMLTitleElement",
+    "Web.HTML.HTMLTrackElement.ReadyState",
+    "Web.HTML.HTMLTrackElement",
+    "Web.HTML.HTMLUListElement",
+    "Web.HTML.HTMLVideoElement",
+    "Web.HTML.Location",
+    "Web.HTML.Navigator",
+    "Web.HTML.SelectionMode",
+    "Web.HTML.ValidityState",
+    "Web.HTML.Window",
+    "Web.HTML"
+  ],
+  "web-pointerevents": [
+    "Web.PointerEvent.Element",
+    "Web.PointerEvent.EventTypes",
+    "Web.PointerEvent.Navigator",
+    "Web.PointerEvent.PointerEvent",
+    "Web.PointerEvent",
+    "Exports"
+  ],
+  "web-proletarian": [
+    "Yoga.WebBoss",
+    "Yoga.WebProletarian.Types",
+    "Yoga.WebWorker"
+  ],
+  "web-promise": [
+    "Web.Promise.Internal",
+    "Web.Promise.Lazy",
+    "Web.Promise.Rejection",
+    "Web.Promise"
+  ],
+  "web-resize-observer": [
+    "Web.ResizeObserver"
+  ],
+  "web-router": [
+    "Web.Router.Hash",
+    "Web.Router.Internal.Control",
+    "Web.Router.Internal.Types",
+    "Web.Router.PushState",
+    "Web.Router"
+  ],
+  "web-socket": [
+    "Web.Socket.BinaryType",
+    "Web.Socket.Event.CloseEvent",
+    "Web.Socket.Event.EventTypes",
+    "Web.Socket.Event.MessageEvent",
+    "Web.Socket.ReadyState",
+    "Web.Socket.WebSocket"
+  ],
+  "web-storage": [
+    "Web.Storage.Event.StorageEvent",
+    "defines"
+  ],
+  "web-streams": [
+    "Web.Streams.QueuingStrategy",
+    "Web.Streams.ReadableStream",
+    "Web.Streams.ReadableStreamController",
+    "Web.Streams.Reader",
+    "Web.Streams.Source"
+  ],
+  "web-touchevents": [
+    "Web.TouchEvent.EventTypes",
+    "Web.TouchEvent.Touch",
+    "Web.TouchEvent.TouchEvent",
+    "Web.TouchEvent.TouchList",
+    "Web.TouchEvent",
+    "Exports"
+  ],
+  "web-uievents": [
+    "Web.UIEvent.CompositionEvent.EventTypes",
+    "Web.UIEvent.CompositionEvent",
+    "Web.UIEvent.EventTypes",
+    "Web.UIEvent.FocusEvent.EventTypes",
+    "Web.UIEvent.FocusEvent",
+    "Web.UIEvent.InputEvent.EventTypes",
+    "Web.UIEvent.InputEvent",
+    "Web.UIEvent.KeyboardEvent.EventTypes",
+    "Web.UIEvent.KeyboardEvent",
+    "Web.UIEvent.MouseEvent.EventTypes",
+    "Web.UIEvent.MouseEvent",
+    "Web.UIEvent.UIEvent",
+    "Web.UIEvent.WheelEvent.EventTypes",
+    "Web.UIEvent.WheelEvent"
+  ],
+  "web-url": [
+    "Web.URL.URLSearchParams",
+    "Web.URL"
+  ],
+  "web-workers": [],
+  "web-xhr": [
+    "Web.XHR.EventTypes",
+    "Web.XHR.FormData",
+    "Web.XHR.ProgressEvent",
+    "Web.XHR.ReadyState",
+    "Web.XHR.ResponseType",
+    "Web.XHR.XMLHttpRequest",
+    "Web.XHR.XMLHttpRequestUpload"
+  ],
+  "which": [
+    "Which"
+  ],
+  "yoga-fetch": [
+    "Yoga.Fetch",
+    "Yoga.Fetch.Impl",
+    "Yoga.Fetch.Impl.Node",
+    "Yoga.Fetch.Impl.Window"
+  ],
+  "yoga-json": [
+    "Yoga.JSON.Error",
+    "Yoga.JSON.Generics.EnumSumRep",
+    "Yoga.JSON.Generics.TaggedSumRep",
+    "Yoga.JSON.Generics.UntaggedProductRep",
+    "Yoga.JSON.Generics.UntaggedSumRep",
+    "Yoga.JSON.Generics",
+    "Yoga.JSON.Variant",
+    "Yoga.JSON"
+  ],
+  "yoga-om": [
+    "Yoga.Om.Error",
+    "Yoga.Om"
+  ],
+  "yoga-postgres": [
+    "Yoga.Postgres.SqlValue",
+    "Yoga.Postgres.Transaction",
+    "Yoga.Postgres"
+  ],
+  "yoga-tree": [
+    "Yoga.Tree.Zipper",
+    "Yoga.Tree"
+  ]
+}
