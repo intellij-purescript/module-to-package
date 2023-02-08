@@ -15,10 +15,11 @@ import Node.FS.Sync (readTextFile, readdir, stat)
 import Node.Path (FilePath)
 import Node.Process (argv)
 import PureScript.CST (RecoveredParserResult(..), parseModule)
-import PureScript.CST.Types (Export(..), Ident(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..))
+import PureScript.CST.Types (Declaration(..), Export(..), Ident(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..))
 import Data.Array (catMaybes, drop, intercalate) as Array
 import Node.Path (concat, extname) as Path
 import Data.Tuple (snd) as Tuple
+import PureScript.CST.Traversal (defaultMonoidalVisitor, foldMapModule)
 
 main :: Effect Unit
 main = do
@@ -32,19 +33,28 @@ main = do
         ParseSucceededWithErrors _ _ -> Nothing
         ParseFailed _ -> Nothing
     log $
-     "{" <> (Array.catMaybes modules # Array.intercalate ", ") <>"}"
-
+      "{" <> (Array.catMaybes modules # Array.intercalate ", ") <> "}"
 
 toJson :: forall e. Module e -> String
 toJson m = "\"" <> moduleName <> "\": [" <> exports <> "]"
   where
   moduleName = getName m
-  exports = getExports m
-    <#> case _ of
-      ExportValue (Name { name: (Ident name) }) -> Just $ "\"" <> name <> "\""
-      _ -> Nothing
-    # Array.catMaybes
-    # Array.intercalate ", "
+  exports = case getExports m of
+    [] -> m # foldMapModule
+      ( defaultMonoidalVisitor
+          { onDecl = case _ of
+              (DeclValue {name: (Name {name: (Ident name)})}) -> ["\"" <> name <> "\""]
+              _ -> mempty
+          }
+      )
+      # Array.intercalate ", "
+
+    list -> list
+      <#> case _ of
+        ExportValue (Name { name: (Ident name) }) -> Just $ "\"" <> name <> "\""
+        _ -> Nothing
+      # Array.catMaybes
+      # Array.intercalate ", "
 
 getExports :: forall e. Module e -> Array (Export e)
 getExports (Module { header: ModuleHeader { exports } }) = case exports of

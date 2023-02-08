@@ -7,7 +7,9 @@ function spago-packages () {
 
 function packages () {
   spago-packages | while read -r package version location url ; do
-    echo "\"$package\": $(spago run -a "packages/$package/src")"
+    if [ -d "packages/$package/src" ]; then
+      echo "\"$package\": $(spago run -a "packages/$package/src")"
+    fi
   done | paste -s -d, -
 }
 
