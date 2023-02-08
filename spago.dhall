@@ -17,11 +17,14 @@ to generate this file without the comments in this block.
   , "effect"
   , "foldable-traversable"
   , "language-cst-parser"
+  , "maybe"
+  , "newtype"
   , "node-buffer"
   , "node-fs"
   , "node-path"
   , "node-process"
   , "prelude"
+  , "tuples"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
