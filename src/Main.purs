@@ -15,7 +15,7 @@ import Node.FS.Sync (readTextFile, readdir, stat)
 import Node.Path (FilePath)
 import Node.Process (argv)
 import PureScript.CST (RecoveredParserResult(..), parseModule)
-import PureScript.CST.Types (Declaration(..), Export(..), Ident(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..))
+import PureScript.CST.Types (Declaration(..), Export(..), Foreign(..), Ident(..), Labeled(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..))
 import Data.Array (catMaybes, drop, fromFoldable, intercalate) as Array
 import Node.Path (concat, extname) as Path
 import Data.Tuple (snd) as Tuple
@@ -41,20 +41,23 @@ toJson m = "\"" <> moduleName <> "\": [" <> exports <> "]"
   where
   moduleName = getName m
   exports = case getExports m of
-    [] -> m # foldMapModule
-      ( defaultMonoidalVisitor
-          { onDecl = case _ of
-              (DeclValue {name: (Name {name: (Ident name)})}) -> ["\"" <> name <> "\""]
-              (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
-                <#> unwrap
-                <#> _.label
-                <#> unwrap
-                <#> _.name
-                <#> unwrap
-                <#> \ name -> "\"" <> name <> "\""
-              _ -> mempty
-          }
-      )
+    [] -> m
+      # foldMapModule
+          ( defaultMonoidalVisitor
+              { onDecl = case _ of
+                  (DeclValue { name: (Name { name: (Ident name) }) }) -> [ "\"" <> name <> "\"" ]
+                  (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
+                    <#> unwrap
+                    <#> _.label
+                    <#> unwrap
+                    <#> _.name
+                    <#> unwrap
+                    <#> \name -> "\"" <> name <> "\""
+                  (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
+                    [ "\"" <> name <> "\"" ]
+                  _ -> mempty
+              }
+          )
       # Array.intercalate ", "
 
     list -> list
