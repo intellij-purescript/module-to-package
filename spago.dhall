@@ -12,7 +12,8 @@ to generate this file without the comments in this block.
 -}
 { name = "my-project"
 , dependencies =
-  [ "arrays"
+  [ "aff"
+  , "arrays"
   , "console"
   , "effect"
   , "foldable-traversable"
@@ -21,8 +22,10 @@ to generate this file without the comments in this block.
   , "newtype"
   , "node-buffer"
   , "node-fs"
+  , "node-fs-aff"
   , "node-path"
   , "node-process"
+  , "parallel"
   , "prelude"
   , "tuples"
   ]

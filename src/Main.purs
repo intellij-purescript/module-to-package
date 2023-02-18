@@ -8,10 +8,8 @@ import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Traversable (for)
 import Effect (Effect)
-import Effect.Console (log)
 import Node.Encoding (Encoding(..))
 import Node.FS.Stats (Stats, isDirectory, isFile)
-import Node.FS.Sync (readTextFile, readdir, stat)
 import Node.Path (FilePath)
 import Node.Process (argv)
 import PureScript.CST (RecoveredParserResult(..), parseModule)
@@ -21,13 +19,17 @@ import Node.Path (concat, extname) as Path
 import Data.Tuple (snd) as Tuple
 import PureScript.CST.Traversal (defaultMonoidalVisitor, foldMapModule)
 import Data.Tuple (Tuple(..))
+import Node.FS.Aff (readTextFile, readdir, stat)
+import Effect.Aff (Aff, launchAff_)
+import Effect.Class.Console (log)
+import Control.Parallel (parTraverse)
 
 main :: Effect Unit
 main = do
   args <- argv
-  for_ (args # Array.drop 2) \filename -> do
+  launchAff_ $ for_ (args # Array.drop 2) \filename -> do
     filenames <- allFiles filename
-    modules <- for filenames \pursFilePath -> do
+    modules <- filenames # parTraverse \pursFilePath -> do
       file <- readTextFile UTF8 pursFilePath
       pure case parseModule file of
         ParseSucceeded m -> Just $ toJson m
@@ -79,7 +81,7 @@ getExports (Module { header: ModuleHeader { exports } }) = case exports of
 getName :: forall e7. Module e7 -> String
 getName (Module { header: (ModuleHeader { name: (Name { name: (ModuleName name) }) }) }) = name
 
-allFiles :: FilePath -> Effect (Array FilePath)
+allFiles :: FilePath -> Aff (Array FilePath)
 allFiles (path :: FilePath) = do
   (stats :: Stats) <- stat (path :: FilePath)
   if (stats # isDirectory) then do

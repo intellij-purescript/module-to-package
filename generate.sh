@@ -6,9 +6,10 @@ function spago-packages () {
 }
 
 function packages () {
+  spago bundle-app -p node -t index.mjs
   spago-packages | while read -r package version location url ; do
     if [ -d "packages/$package/src" ]; then
-      echo "\"$package\": $(spago run -a "packages/$package/src")"
+      echo "\"$package\": $(node index.mjs "packages/$package/src")"
     fi
   done | paste -s -d, -
 }
