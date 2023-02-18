@@ -90,9 +90,6 @@ allFiles (path :: FilePath) = do
       paths = do
         p <- files
         pure $ Path.concat [ path, p ]
-    pps <- for paths allFiles
-    pure do
-      p <- pps
-      p
+    for paths allFiles <#> join
   else if isFile stats && Path.extname path == ".purs" then pure [ path ]
   else pure []
