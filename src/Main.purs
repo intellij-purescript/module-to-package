@@ -14,7 +14,7 @@ import Node.Path (FilePath)
 import Node.Process (argv)
 import PureScript.CST (RecoveredParserResult(..), parseModule)
 import PureScript.CST.Types (Declaration(..), Export(..), Foreign(..), Ident(..), Labeled(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..))
-import Data.Array (catMaybes, drop, fromFoldable, intercalate) as Array
+import Data.Array (catMaybes, drop, fold, fromFoldable, intercalate) as Array
 import Node.Path (concat, extname) as Path
 import Data.Tuple (snd) as Tuple
 import PureScript.CST.Traversal (defaultMonoidalVisitor, foldMapModule)
@@ -23,6 +23,9 @@ import Node.FS.Aff (readTextFile, readdir, stat)
 import Effect.Aff (Aff, launchAff_)
 import Effect.Class.Console (log)
 import Control.Parallel (parTraverse)
+import Yoga.JSON (writeJSON) as JSON
+import Foreign.Object (Object)
+import Foreign.Object (singleton) as Object
 
 main :: Effect Unit
 main = do
@@ -35,39 +38,37 @@ main = do
         ParseSucceeded m -> Just $ toJson m
         ParseSucceededWithErrors _ _ -> Nothing
         ParseFailed _ -> Nothing
-    log $
-      "{" <> (Array.catMaybes modules # Array.intercalate ", ") <> "}"
+    let package = Array.fold modules
+    log $ JSON.writeJSON package
 
-toJson :: forall e. Module e -> String
-toJson m = "\"" <> moduleName <> "\": [" <> exports <> "]"
-  where
-  moduleName = getName m
-  exports = case getExports m of
-    [] -> m
-      # foldMapModule
-          ( defaultMonoidalVisitor
-              { onDecl = case _ of
-                  (DeclValue { name: (Name { name: (Ident name) }) }) -> [ "\"" <> name <> "\"" ]
-                  (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
-                    <#> unwrap
-                    <#> _.label
-                    <#> unwrap
-                    <#> _.name
-                    <#> unwrap
-                    <#> \name -> "\"" <> name <> "\""
-                  (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
-                    [ "\"" <> name <> "\"" ]
-                  _ -> mempty
-              }
-          )
-      # Array.intercalate ", "
+extractExports :: forall e. Module e -> Array String
+extractExports m = case getExports m of
+  [] -> m
+    # foldMapModule
+        ( defaultMonoidalVisitor
+            { onDecl = case _ of
+                (DeclValue { name: (Name { name: (Ident name) }) }) -> [ name ]
+                (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
+                  <#> unwrap
+                  <#> _.label
+                  <#> unwrap
+                  <#> _.name
+                  <#> unwrap
+                  <#> \name -> name
+                (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
+                  [ name ]
+                _ -> mempty
+            }
+        )
 
-    list -> list
-      <#> case _ of
-        ExportValue (Name { name: (Ident name) }) -> Just $ "\"" <> name <> "\""
-        _ -> Nothing
-      # Array.catMaybes
-      # Array.intercalate ", "
+  list -> list
+    <#> case _ of
+      ExportValue (Name { name: (Ident name) }) -> Just name
+      _ -> Nothing
+    # Array.catMaybes
+
+toJson :: forall e. Module e -> Object (Array String)
+toJson m = Object.singleton (getName m) (extractExports m)
 
 getExports :: forall e. Module e -> Array (Export e)
 getExports (Module { header: ModuleHeader { exports } }) = case exports of

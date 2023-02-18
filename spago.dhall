@@ -17,6 +17,7 @@ to generate this file without the comments in this block.
   , "console"
   , "effect"
   , "foldable-traversable"
+  , "foreign-object"
   , "language-cst-parser"
   , "maybe"
   , "newtype"
@@ -28,6 +29,7 @@ to generate this file without the comments in this block.
   , "parallel"
   , "prelude"
   , "tuples"
+  , "yoga-json"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
