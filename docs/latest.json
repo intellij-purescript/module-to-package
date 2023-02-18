@@ -258,6 +258,7 @@
       "readDocumentEventType",
       "readDocumentEventType",
       "readDocumentEventType",
+      "DocumentEvent",
       "readDocumentEvent",
       "showNewlineMode",
       "showNewlineMode",
@@ -266,9 +267,11 @@
       "readNewlineMode",
       "readNewlineMode",
       "readNewlineMode",
+      "Position",
       "readPosition",
       "getRow",
-      "getColumn"
+      "getColumn",
+      "TextMode"
     ],
     "Ace.Tokenizer": [
       "create",
@@ -754,6 +757,7 @@
   },
   "aff-coroutines": {
     "Control.Coroutine.Aff": [
+      "Emitter",
       "emit",
       "close",
       "produce",
@@ -802,7 +806,9 @@
       "patch",
       "patch_"
     ],
-    "Affjax.StatusCode": [],
+    "Affjax.StatusCode": [
+      "StatusCode"
+    ],
     "Affjax.ResponseHeader": [
       "name",
       "value"
@@ -1094,6 +1100,7 @@
       "print",
       "print",
       "print",
+      "JsonPrim",
       "runJsonPrim",
       "primNull",
       "primBool",
@@ -1155,6 +1162,7 @@
   },
   "array-builder": {
     "Data.Array.Builder": [
+      "Builder",
       "unsafeCons",
       "unsafeConsArray",
       "unsafeSnoc",
@@ -1755,7 +1763,9 @@
       "lmap",
       "rmap"
     ],
-    "Data.Bifunctor.Join": [],
+    "Data.Bifunctor.Join": [
+      "Join"
+    ],
     "Control.Biapply": [
       "biapply",
       "biapplyFirst",
@@ -1798,6 +1808,10 @@
   },
   "bolson": {
     "Bolson.Core": [
+      "Element",
+      "DynamicChildren",
+      "FixedChildren",
+      "EventfulElement",
       "fixed",
       "dyn",
       "envy",
@@ -1987,8 +2001,12 @@
     "Bucketchain.SimpleAPI.Body": [
       "decodeBody"
     ],
-    "Bucketchain.SimpleAPI.Batch": [],
-    "Bucketchain.SimpleAPI.Auth": [],
+    "Bucketchain.SimpleAPI.Batch": [
+      "Batch"
+    ],
+    "Bucketchain.SimpleAPI.Auth": [
+      "Auth"
+    ],
     "Bucketchain.SimpleAPI.Auth.Class": [
       "authenticate"
     ]
@@ -2310,6 +2328,8 @@
   },
   "channel": {
     "Concurrent.Channel": [
+      "Output",
+      "Input",
       "recv",
       "send",
       "newChannel",
@@ -2475,6 +2495,7 @@
     "Data.Codec.Argonaut.Record": [
       "object",
       "record",
+      "Optional",
       "optional",
       "rowListCodec"
     ],
@@ -2604,6 +2625,7 @@
     "Concur.Core": [],
     "Concur.Core.Types": [
       "displayStep",
+      "Widget",
       "unWidget",
       "flipEither",
       "flipEither",
@@ -2643,6 +2665,7 @@
     ],
     "Concur.Core.IsWidget": [],
     "Concur.Core.Gen": [
+      "GenStep",
       "yield",
       "runWidget",
       "yieldAndThen",
@@ -3466,11 +3489,17 @@
     ]
   },
   "const": {
-    "Data.Const": []
+    "Data.Const": [
+      "Const"
+    ]
   },
   "contravariant": {
-    "Data.Predicate": [],
-    "Data.Op": [],
+    "Data.Predicate": [
+      "Predicate"
+    ],
+    "Data.Op": [
+      "Op"
+    ],
     "Data.Functor.Contravariant": [
       "cmap",
       "cmapFlipped",
@@ -3478,6 +3507,7 @@
       "imapC"
     ],
     "Data.Equivalence": [
+      "Equivalence",
       "defaultEquivalence",
       "comparisonEquivalence"
     ],
@@ -3497,11 +3527,14 @@
       "lost"
     ],
     "Data.Comparison": [
+      "Comparison",
       "defaultComparison"
     ]
   },
   "control": {
-    "Data.Monoid.Alternate": [],
+    "Data.Monoid.Alternate": [
+      "Alternate"
+    ],
     "Control.Plus": [
       "empty"
     ],
@@ -3624,6 +3657,7 @@
       "transitionDelays"
     ],
     "CSS.Transform": [
+      "Transformation",
       "transform",
       "transforms",
       "translate",
@@ -3656,10 +3690,12 @@
       "transformOrigin"
     ],
     "CSS.Time": [
+      "Time",
       "sec",
       "ms"
     ],
     "CSS.TextAlign": [
+      "TextAlign",
       "textAlign",
       "center",
       "justify",
@@ -3671,6 +3707,7 @@
     ],
     "CSS.Text": [
       "letterSpacing",
+      "TextDecoration",
       "noneTextDecoration",
       "underline",
       "overline",
@@ -3707,6 +3744,8 @@
       "rtl"
     ],
     "CSS.Stylesheet": [
+      "MediaType",
+      "S",
       "runS",
       "rule",
       "key",
@@ -3746,10 +3785,12 @@
       "calcMultFlipped",
       "calcDiv",
       "sym",
+      "Angle",
       "deg",
       "rad"
     ],
     "CSS.Selector": [
+      "Refinement",
       "star",
       "element",
       "deep",
@@ -3769,7 +3810,9 @@
       "attrHyph"
     ],
     "CSS.Render": [
+      "Inline",
       "getInline",
+      "Sheet",
       "getSheet",
       "renderedInline",
       "renderedSheet",
@@ -3824,11 +3867,15 @@
       "plain",
       "plain",
       "quote",
+      "Key",
       "cast",
+      "Value",
       "value",
+      "Literal",
       "noCommas"
     ],
     "CSS.Overflow": [
+      "Overflow",
       "overflow",
       "overflowX",
       "overflowY",
@@ -3924,6 +3971,7 @@
     ],
     "CSS.Font": [
       "color",
+      "GenericFontFamily",
       "serif",
       "sansSerif",
       "cursive",
@@ -3939,6 +3987,7 @@
       "fangsong",
       "fontFamily",
       "fontSize",
+      "FontWeight",
       "bold",
       "bolder",
       "lighter",
@@ -3951,11 +4000,15 @@
       "spaceAround",
       "spaceBetween",
       "stretch",
+      "AlignContentValue",
       "alignContent",
+      "AlignItemsValue",
       "alignItems",
+      "AlignSelfValue",
       "alignSelf",
       "flex",
       "flexBasis",
+      "FlexDirection",
       "row",
       "rowReverse",
       "column",
@@ -3964,10 +4017,12 @@
       "flexFlow",
       "flexGrow",
       "flexShrink",
+      "FlexWrap",
       "nowrap",
       "wrap",
       "wrapReverse",
       "flexWrap",
+      "JustifyContentValue",
       "justifyContent",
       "order"
     ],
@@ -4059,11 +4114,13 @@
       "var"
     ],
     "CSS.Display": [
+      "Position",
       "position",
       "static",
       "absolute",
       "fixed",
       "relative",
+      "Display",
       "inline",
       "block",
       "listItem",
@@ -4096,6 +4153,7 @@
       "clearInlineEnd",
       "clear",
       "opacity",
+      "Visibility",
       "collapse",
       "visibility",
       "zIndex"
@@ -4238,15 +4296,19 @@
       "location"
     ],
     "CSS.Animation": [
+      "AnimationDirection",
       "normalAnimationDirection",
       "alternate",
       "reverse",
       "alternateReverse",
+      "IterationCount",
       "infinite",
       "iterationCount",
+      "FillMode",
       "forwards",
       "backwards",
-      "animation"
+      "animation",
+      "AnimationName"
     ]
   },
   "datetime": {
@@ -4266,6 +4328,11 @@
       "genTime"
     ],
     "Data.Time.Duration": [
+      "Milliseconds",
+      "Seconds",
+      "Minutes",
+      "Hours",
+      "Days",
       "fromDuration",
       "toDuration",
       "convertDuration",
@@ -4439,6 +4506,7 @@
       "__internalDekuFlatten"
     ],
     "Deku.SSR": [
+      "SortableDyn",
       "fromSortableDyns",
       "sortSortableDyns",
       "toSortableDyns",
@@ -6045,13 +6113,17 @@
   },
   "dissect": {
     "Dissect.Variant": [
+      "VariantFRep",
       "injF",
+      "VariantBRep",
       "injB",
       "onMatch",
       "match"
     ],
     "Dissect.Record": [
+      "RecordFRep",
       "mapRecordF",
+      "RecordBRep",
       "bimapRecordF",
       "initRecordF",
       "nextRecordF",
@@ -6061,6 +6133,7 @@
     ],
     "Dissect.Generic": [],
     "Dissect.Class": [
+      "Result",
       "yield",
       "return",
       "init",
@@ -6120,6 +6193,7 @@
       "isEmpty"
     ],
     "Dodo.Internal.Buffer": [
+      "Buffer",
       "branch",
       "commit",
       "revert",
@@ -6197,6 +6271,7 @@
       "renderInputType"
     ],
     "DOM.HTML.Indexed.InputAcceptType": [
+      "InputAcceptType",
       "mediaType",
       "extension",
       "renderInputAcceptType",
@@ -7110,6 +7185,7 @@
   "elmish-testing-library": {
     "Elmish.Test": [],
     "Elmish.Test.State": [
+      "TestState",
       "currentNode",
       "crash"
     ],
@@ -7137,6 +7213,7 @@
     ],
     "Elmish.Test.DomProps": [
       "defaultValue",
+      "DomProp",
       "value",
       "disabled",
       "checked"
@@ -8117,7 +8194,9 @@
       "toString",
       "fromString"
     ],
-    "Fetch.Core.Integrity": [],
+    "Fetch.Core.Integrity": [
+      "Integrity"
+    ],
     "Fetch.Core.Headers": [
       "fromFoldable",
       "fromRecord",
@@ -9533,6 +9612,7 @@
   },
   "form-urlencoded": {
     "Data.FormURLEncoded": [
+      "FormURLEncoded",
       "fromArray",
       "toArray",
       "encode",
@@ -9613,6 +9693,7 @@
       "stopAnimation"
     ],
     "Framer.Motion.Types": [
+      "VariantLabel",
       "prop",
       "dragMomentum",
       "dragElastic",
@@ -9653,6 +9734,7 @@
       "layout",
       "makeVariantLabels",
       "infinity",
+      "AnimateSharedLayoutType",
       "switch",
       "crossfade"
     ],
@@ -9767,6 +9849,7 @@
       "runFreeT"
     ],
     "Control.Comonad.Cofree.Trans": [
+      "CofreeT",
       "cofreeT",
       "cofreeT'",
       "runCofreeT",
@@ -9822,6 +9905,7 @@
   "functors": {
     "Data.Functor.Product2": [],
     "Data.Functor.Product": [
+      "Product",
       "product",
       "bihoistProduct"
     ],
@@ -9848,13 +9932,18 @@
       "get10"
     ],
     "Data.Functor.Joker": [
+      "Joker",
       "hoistJoker"
     ],
-    "Data.Functor.Flip": [],
+    "Data.Functor.Flip": [
+      "Flip"
+    ],
     "Data.Functor.Costar": [
+      "Costar",
       "hoistCostar"
     ],
     "Data.Functor.Coproduct": [
+      "Coproduct",
       "left",
       "right",
       "coproduct",
@@ -9898,12 +9987,15 @@
       "prj"
     ],
     "Data.Functor.Compose": [
+      "Compose",
       "bihoistCompose"
     ],
     "Data.Functor.Clown": [
+      "Clown",
       "hoistClown"
     ],
     "Data.Functor.App": [
+      "App",
       "hoistApp",
       "hoistLiftApp",
       "hoistLowerApp"
@@ -10001,13 +10093,16 @@
   },
   "geometry-plane": {
     "Data.Geometry.Plane": [
+      "Point",
       "point",
       "abs",
       "ord",
       "coords",
       "rename",
+      "Segment",
       "segment",
       "middle",
+      "Vector",
       "vector",
       "scale",
       "length",
@@ -10017,12 +10112,17 @@
       "projection",
       "plus",
       "cosAngle",
+      "HalfLine",
       "halfline",
+      "Line",
       "line",
       "aPointOnLine",
       "aVectorOfLine",
+      "Circle",
       "circle",
+      "Arc",
       "arc",
+      "RightAngle",
       "rightangle",
       "meets"
     ]
@@ -10542,7 +10642,9 @@
       "decodeHasuraField"
     ],
     "GraphQL.Hasura.ComparisonExp": [],
-    "GraphQL.Hasura.Array": [],
+    "GraphQL.Hasura.Array": [
+      "Hasura_text"
+    ],
     "GraphQL.Client.WatchQuery": [
       "watchQueryOpts",
       "watchQueryOptsWithDecoder",
@@ -10564,6 +10666,8 @@
     ],
     "GraphQL.Client.Variable": [],
     "GraphQL.Client.Union": [
+      "GqlUnion",
+      "UnionReturned",
       "decodeUnion",
       "decodeHasuraUnion",
       "decodeJsonUnionWith",
@@ -10572,6 +10676,7 @@
       "__typename"
     ],
     "GraphQL.Client.Types": [
+      "Client",
       "clientQuery",
       "clientMutation",
       "defQueryOpts",
@@ -10641,7 +10746,9 @@
       "decodeErrorsMaybe",
       "decodeError"
     ],
-    "GraphQL.Client.ID": [],
+    "GraphQL.Client.ID": [
+      "ID"
+    ],
     "GraphQL.Client.CodeGen.Types": [
       "defaultInputOptions"
     ],
@@ -10709,12 +10816,16 @@
       "makeAffjaxGqlRequest"
     ],
     "GraphQL.Client.Args": [
+      "NotNull",
       "andArg",
       "guardArg",
-      "onlyArgs"
+      "onlyArgs",
+      "ArgPropToGql",
+      "ArgsSatisifyNotNullsProps"
     ],
     "GraphQL.Client.Alias": [],
     "GraphQL.Client.Alias.Dynamic": [
+      "SpreadRes",
       "decodeSpreadRes",
       "encodeSpreadRes"
     ],
@@ -10850,6 +10961,7 @@
     ],
     "Data.GraphQL.AST": [
       "_Document",
+      "Document",
       "_Definition_ExecutableDefinition",
       "_Definition_TypeSystemDefinition",
       "_Definition_TypeSystemExtension",
@@ -10861,16 +10973,24 @@
       "_Mutation",
       "_Subscription",
       "_SelectionSet",
+      "SelectionSet",
       "_Selection_Field",
       "_Selection_FragmentSpread",
       "_Selection_InlineFragment",
       "_Field",
+      "Field",
       "_Arguments",
+      "Arguments",
       "_Argument",
+      "Argument",
       "_FragmentSpread",
+      "FragmentSpread",
       "_InlineFragment",
+      "InlineFragment",
       "_FragmentDefinition",
+      "FragmentDefinition",
       "_TypeCondition",
+      "TypeCondition",
       "_Value_Variable",
       "_Value_IntValue",
       "_Value_FloatValue",
@@ -10881,36 +11001,54 @@
       "_Value_ListValue",
       "_Value_ObjectValue",
       "_IntValue",
+      "IntValue",
       "_FloatValue",
+      "FloatValue",
       "_BooleanValue",
+      "BooleanValue",
       "_StringValue",
+      "StringValue",
       "_NullValue",
       "_EnumValue",
+      "EnumValue",
       "_ListValue",
+      "ListValue",
       "_ObjectValue",
+      "ObjectValue",
       "_VariableDefinitions",
+      "VariableDefinitions",
       "_VariableDefinition",
+      "VariableDefinition",
       "_Variable",
+      "Variable",
       "_DefaultValue",
+      "DefaultValue",
       "_Type_NamedType",
       "_Type_ListType",
       "_Type_NonNullType",
       "_NamedType",
+      "NamedType",
       "_ListType",
+      "ListType",
       "_NonNullType_NamedType",
       "_NonNullType_ListType",
       "_Directives",
+      "Directives",
       "_Directive",
+      "Directive",
       "_TypeSystemDefinition_SchemaDefinition",
       "_TypeSystemDefinition_TypeDefinition",
       "_TypeSystemDefinition_DirectiveDefinition",
       "_TypeSystemExtension_SchemaExtension",
       "_TypeSystemExtension_TypeExtension",
       "_SchemaDefinition",
+      "SchemaDefinition",
       "_RootOperationTypeDefinition",
+      "RootOperationTypeDefinition",
       "_SchemaExtension_With_OperationTypeDefinition",
       "_SchemaExtension_With_Directives",
       "_OperationTypeDefinition",
+      "OperationTypeDefinition",
       "_TypeDefinition_ScalarTypeDefinition",
       "_TypeDefinition_ObjectTypeDefinition",
       "_TypeDefinition_InterfaceTypeDefinition",
@@ -10924,34 +11062,52 @@
       "_TypeExtension_EnumTypeExtension",
       "_TypeExtension_InputObjectTypeExtension",
       "_ScalarTypeDefinition",
+      "ScalarTypeDefinition",
       "_ScalarTypeExtension",
+      "ScalarTypeExtension",
       "_ObjectTypeDefinition",
+      "ObjectTypeDefinition",
       "_ObjectTypeExtension_With_FieldsDefinition",
       "_ObjectTypeExtension_With_Directives",
       "_ObjectTypeExtension_With_ImplementsInterfaces",
       "_ImplementsInterfaces",
+      "ImplementsInterfaces",
       "_FieldsDefinition",
+      "FieldsDefinition",
       "_FieldDefinition",
+      "FieldDefinition",
       "_ArgumentsDefinition",
+      "ArgumentsDefinition",
       "_InputValueDefinition",
+      "InputValueDefinition",
       "_InterfaceTypeDefinition",
+      "InterfaceTypeDefinition",
       "_InterfaceTypeExtension_With_FieldsDefinition",
       "_InterfaceTypeExtension_With_Directives",
       "_UnionTypeDefinition",
+      "UnionTypeDefinition",
       "_UnionMemberTypes",
+      "UnionMemberTypes",
       "_UnionTypeExtension_With_UnionMemberTypes",
       "_UnionTypeExtension_With_Directives",
       "_EnumTypeDefinition",
+      "EnumTypeDefinition",
       "_EnumValuesDefinition",
+      "EnumValuesDefinition",
       "_EnumValueDefinition",
+      "EnumValueDefinition",
       "_EnumTypeExtension_With_EnumValuesDefinition",
       "_EnumTypeExtension_With_Directives",
       "_InputObjectTypeDefinition",
+      "InputObjectTypeDefinition",
       "_InputFieldsDefinition",
+      "InputFieldsDefinition",
       "_InputObjectTypeExtension_With_InputFieldsDefinition",
       "_InputObjectTypeExtension_With_Directives",
       "_DirectiveDefinition",
+      "DirectiveDefinition",
       "_DirectiveLocations",
+      "DirectiveLocations",
       "_DirectiveLocation_ExecutableDirectiveLocation",
       "_DirectiveLocation_TypeSystemDirectiveLocation",
       "_QUERY",
@@ -11015,15 +11171,21 @@
       "requestAll",
       "getHTMLElementRef"
     ],
-    "Halogen.Query.Input": [],
+    "Halogen.Query.Input": [
+      "RefLabel"
+    ],
     "Halogen.Query.HalogenQ": [],
     "Halogen.Query.HalogenM": [
+      "HalogenM",
+      "HalogenAp",
       "raise",
       "query",
       "queryAll",
+      "SubscriptionId",
       "subscribe",
       "subscribe'",
       "unsubscribe",
+      "ForkId",
       "fork",
       "join",
       "kill",
@@ -13388,7 +13550,9 @@
       "capturesWith",
       "wrap"
     ],
-    "Halogen.Hooks.Types": [],
+    "Halogen.Hooks.Types": [
+      "StateId"
+    ],
     "Halogen.Hooks.Internal.UseHookF": [],
     "Halogen.Hooks.Internal.Types": [
       "toStateValue",
@@ -13417,9 +13581,12 @@
     "Halogen.Hooks.Internal.Eval.Types": [
       "toHalogenM",
       "toQueryFn",
-      "fromQueryFn"
+      "fromQueryFn",
+      "HookState"
     ],
     "Halogen.Hooks.HookM": [
+      "HookM",
+      "HookAp",
       "get",
       "modify_",
       "modify",
@@ -13481,6 +13648,7 @@
       "useSelector"
     ],
     "Halogen.Store.Select": [
+      "Selector",
       "select",
       "selectEq",
       "selectAll",
@@ -13490,6 +13658,7 @@
       "getStore",
       "updateStore",
       "emitSelected",
+      "StoreT",
       "runStoreT",
       "runAndEmitStoreT",
       "mapStoreT"
@@ -13774,6 +13943,7 @@
     "Heterogeneous.Mapping": [
       "mapping",
       "mappingWithIndex",
+      "ConstMapping",
       "hmap",
       "hmapWithIndex",
       "mapRecordWithIndexBuilder",
@@ -13785,6 +13955,7 @@
       "foldingWithIndex",
       "hfoldl",
       "hfoldlWithIndex",
+      "ConstFolding",
       "foldlRecordRowList",
       "foldlVariantRowList",
       "foldlVariantFRowList"
@@ -14462,7 +14633,9 @@
     ]
   },
   "identity": {
-    "Data.Identity": []
+    "Data.Identity": [
+      "Identity"
+    ]
   },
   "identy": {
     "Identy.Selector": [
@@ -14501,7 +14674,9 @@
     ]
   },
   "indexed-monad": {
-    "Data.Indexed": [],
+    "Data.Indexed": [
+      "Indexed"
+    ],
     "Data.Functor.Indexed": [
       "imap",
       "ivoid",
@@ -14755,6 +14930,7 @@
       "pathRouter"
     ],
     "Jarilo.Method": [
+      "MethodError",
       "checkMethod",
       "methodRouter"
     ],
@@ -15013,6 +15189,7 @@
       "template'"
     ],
     "Jelly.Component": [
+      "ComponentM",
       "foldComponentM",
       "el",
       "el'",
@@ -15053,6 +15230,7 @@
       "useUpdate",
       "useNub",
       "useStateEq",
+      "Hooks",
       "runHooks",
       "runHooks_",
       "liftHooks"
@@ -15063,6 +15241,7 @@
       "usePushRoute",
       "useReplaceRoute",
       "useCurrentRoute",
+      "RouterT",
       "runRouterT",
       "runMockRouterT",
       "initRouter",
@@ -15196,6 +15375,7 @@
       "toError"
     ],
     "Promise.Lazy": [
+      "LazyPromise",
       "new",
       "catch",
       "finally",
@@ -15370,9 +15550,20 @@
       "typeHintMsg",
       "ctorHintMsg",
       "subtermHintMsg",
-      "fieldHintMsg"
+      "fieldHintMsg",
+      "JsonErrorHandlers"
     ],
-    "Codec.Json.Newtypes": [],
+    "Codec.Json.Newtypes": [
+      "Optional",
+      "K0",
+      "K1",
+      "K2",
+      "K3",
+      "WithType",
+      "WithCtor",
+      "WithSubterm",
+      "WithField"
+    ],
     "Codec.Json.JsonDecoder": [
       "addOffset",
       "onError",
@@ -15398,13 +15589,16 @@
       "addFieldHintC",
       "refinedValue"
     ],
-    "Codec.Json.Errors.Tree": [],
+    "Codec.Json.Errors.Tree": [
+      "TreeError"
+    ],
     "Codec.Json.Errors.PrimitiveJsonError": [
       "printJsonLeafError",
       "printTypeMismatchErr",
       "printMissingField",
       "printMissingIndex",
       "printTypeHint",
+      "PrimitiveJsonError",
       "pjeHandlers",
       "printPrimitiveJsonError",
       "runJsonDecoderPJE",
@@ -15515,6 +15709,7 @@
       "codecJsonVariant"
     ],
     "Codec.Decoder": [
+      "DecoderFn",
       "getPath",
       "getInput",
       "altAccumulate",
@@ -15566,7 +15761,28 @@
       "printModule",
       "toRecovered"
     ],
-    "PureScript.CST.Types": [],
+    "PureScript.CST.Types": [
+      "ModuleName",
+      "Ident",
+      "Proper",
+      "Label",
+      "Operator",
+      "Name",
+      "QualifiedName",
+      "Wrapped",
+      "Separated",
+      "Labeled",
+      "Row",
+      "Module",
+      "ModuleHeader",
+      "ModuleBody",
+      "Instance",
+      "ImportDecl",
+      "DataCtor",
+      "GuardedExpr",
+      "PatternGuard",
+      "Where"
+    ],
     "PureScript.CST.Traversal": [
       "defaultVisitorM",
       "rewriteModuleBottomUpM",
@@ -16052,9 +16268,11 @@
       "scanlLazy"
     ],
     "Data.List.Lazy.Types": [
+      "List",
       "step",
       "nil",
       "cons",
+      "NonEmptyList",
       "toList"
     ],
     "Data.List.Lazy.NonEmpty": [
@@ -16256,6 +16474,7 @@
       "convertTo"
     ],
     "Matryoshka.Pattern.CoEnvT": [
+      "CoEnvT",
       "runEnvT",
       "withEnvT",
       "mapEnvT"
@@ -16335,8 +16554,12 @@
       "fromJust",
       "optional"
     ],
-    "Data.Maybe.Last": [],
-    "Data.Maybe.First": []
+    "Data.Maybe.Last": [
+      "Last"
+    ],
+    "Data.Maybe.First": [
+      "First"
+    ]
   },
   "mdast-util-from-markdown": {
     "MdAst.MdAst": [
@@ -16345,7 +16568,9 @@
     ]
   },
   "media-types": {
-    "Data.MediaType": [],
+    "Data.MediaType": [
+      "MediaType"
+    ],
     "Data.MediaType.Common": [
       "applicationFormURLEncoded",
       "applicationJSON",
@@ -16527,10 +16752,12 @@
   "monad-unlift": {
     "Control.Monad.Trans.Unlift": [
       "mkUnlift",
+      "Unlift",
       "unlift",
       "askUnlift",
       "askRun",
       "mkUnliftBase",
+      "UnliftBase",
       "unliftBase",
       "askUnliftBase",
       "askRunBase"
@@ -16622,7 +16849,8 @@
     ],
     "Data.Bifunctor.Monoidal": [
       "combine",
-      "introduce"
+      "introduce",
+      "StrongCategory"
     ],
     "Data.Bifunctor.Monoidal.Specialized": [
       "mux",
@@ -16688,6 +16916,7 @@
     ],
     "Morello.Morello.Simple": [],
     "Morello.Morello.Core": [
+      "PickE",
       "applyPick",
       "branch",
       "dual",
@@ -16703,9 +16932,11 @@
   "mote": {
     "Mote": [],
     "Mote.Plan": [
+      "Plan",
       "foldPlan"
     ],
     "Mote.Monad": [
+      "MoteT",
       "hoist",
       "mapTest",
       "group",
@@ -16718,6 +16949,7 @@
     ],
     "Mote.Entry": [
       "entry",
+      "Bracket",
       "bracket",
       "unBracket"
     ],
@@ -16893,11 +17125,13 @@
       "_head"
     ],
     "Next.GetStaticProps": [
+      "Locale",
       "toGetStaticProps",
       "decodeContextOrCrash",
       "mkGetStaticProps"
     ],
     "Next.GetServerSideProps": [
+      "Locale",
       "toGetServerSideProps",
       "decodeContextOrCrash",
       "mkGetServerSideProps"
@@ -17144,6 +17378,7 @@
     ],
     "Node.Library.Execa.Utils": [
       "utf8",
+      "CustomError",
       "toError",
       "getErrorOption",
       "buildCustomErrorImpl",
@@ -17786,7 +18021,10 @@
   },
   "ocarina": {
     "Row.Extra": [],
-    "Ocarina.WebAPI": [],
+    "Ocarina.WebAPI": [
+      "AnalyserNodeCb",
+      "MediaRecorderCb"
+    ],
     "Ocarina.Run": [
       "run2_",
       "run2",
@@ -18621,9 +18859,15 @@
     ]
   },
   "orders": {
-    "Data.Ord.Min": [],
-    "Data.Ord.Max": [],
-    "Data.Ord.Down": []
+    "Data.Ord.Min": [
+      "Min"
+    ],
+    "Data.Ord.Max": [
+      "Max"
+    ],
+    "Data.Ord.Down": [
+      "Down"
+    ]
   },
   "pairs": {
     "Data.Pair": [
@@ -18646,7 +18890,8 @@
     ],
     "Control.Parallel.Class": [
       "parallel",
-      "sequential"
+      "sequential",
+      "ParCont"
     ]
   },
   "parsing": {
@@ -18904,6 +19149,7 @@
       "parseAbsDir"
     ],
     "Pathy.Name": [
+      "Name",
       "splitName",
       "joinName",
       "extension",
@@ -19764,6 +20010,7 @@
       "toListM"
     ],
     "Pipes.ListT": [
+      "Select",
       "enumerate",
       "runListT",
       "runListTRec",
@@ -19772,6 +20019,7 @@
     ],
     "Pipes.Internal": [
       "observe",
+      "X",
       "closed"
     ],
     "Pipes.Core": [
@@ -19840,6 +20088,7 @@
   },
   "pointed-list": {
     "Data.List.Pointed": [
+      "Pointed",
       "fromFoldable",
       "fromFoldable1",
       "singleton",
@@ -19903,7 +20152,11 @@
     ]
   },
   "posix-types": {
-    "Data.Posix": [],
+    "Data.Posix": [
+      "Pid",
+      "Gid",
+      "Uid"
+    ],
     "Data.Posix.Signal": [
       "toString",
       "fromString"
@@ -20010,6 +20263,7 @@
       "formatPreciseDuration'"
     ],
     "Data.RFC3339String": [
+      "RFC3339String",
       "trim",
       "fromDateTime",
       "toDateTime"
@@ -20085,12 +20339,16 @@
       "append",
       "appendRecord"
     ],
-    "Data.Semigroup.Last": [],
+    "Data.Semigroup.Last": [
+      "Last"
+    ],
     "Data.Semigroup.Generic": [
       "genericAppend'",
       "genericAppend"
     ],
-    "Data.Semigroup.First": [],
+    "Data.Semigroup.First": [
+      "First"
+    ],
     "Data.Ring": [
       "sub",
       "negate",
@@ -20134,16 +20392,28 @@
       "guard",
       "memptyRecord"
     ],
-    "Data.Monoid.Multiplicative": [],
+    "Data.Monoid.Multiplicative": [
+      "Multiplicative"
+    ],
     "Data.Monoid.Generic": [
       "genericMempty'",
       "genericMempty"
     ],
-    "Data.Monoid.Endo": [],
-    "Data.Monoid.Dual": [],
-    "Data.Monoid.Disj": [],
-    "Data.Monoid.Conj": [],
-    "Data.Monoid.Additive": [],
+    "Data.Monoid.Endo": [
+      "Endo"
+    ],
+    "Data.Monoid.Dual": [
+      "Dual"
+    ],
+    "Data.Monoid.Disj": [
+      "Disj"
+    ],
+    "Data.Monoid.Conj": [
+      "Conj"
+    ],
+    "Data.Monoid.Additive": [
+      "Additive"
+    ],
     "Data.HeytingAlgebra": [
       "tt",
       "ff",
@@ -20310,6 +20580,7 @@
       "fanout"
     ],
     "Data.Profunctor.Star": [
+      "Star",
       "hoistStar"
     ],
     "Data.Profunctor.Split": [
@@ -20319,7 +20590,9 @@
       "lowerSplit",
       "hoistSplit"
     ],
-    "Data.Profunctor.Join": [],
+    "Data.Profunctor.Join": [
+      "Join"
+    ],
     "Data.Profunctor.Costrong": [
       "unfirst",
       "unsecond"
@@ -20452,21 +20725,36 @@
       "_Newtype",
       "unto"
     ],
-    "Data.Lens.Internal.Zipping": [],
+    "Data.Lens.Internal.Zipping": [
+      "Zipping"
+    ],
     "Data.Lens.Internal.Wander": [
       "wander"
     ],
-    "Data.Lens.Internal.Tagged": [],
+    "Data.Lens.Internal.Tagged": [
+      "Tagged"
+    ],
     "Data.Lens.Internal.Stall": [],
     "Data.Lens.Internal.Shop": [],
-    "Data.Lens.Internal.Re": [],
+    "Data.Lens.Internal.Re": [
+      "Re"
+    ],
     "Data.Lens.Internal.Market": [],
-    "Data.Lens.Internal.Indexed": [],
-    "Data.Lens.Internal.Grating": [],
-    "Data.Lens.Internal.Forget": [],
-    "Data.Lens.Internal.Focusing": [],
+    "Data.Lens.Internal.Indexed": [
+      "Indexed"
+    ],
+    "Data.Lens.Internal.Grating": [
+      "Grating"
+    ],
+    "Data.Lens.Internal.Forget": [
+      "Forget"
+    ],
+    "Data.Lens.Internal.Focusing": [
+      "Focusing"
+    ],
     "Data.Lens.Internal.Exchange": [],
     "Data.Lens.Internal.Bazaar": [
+      "Bazaar",
       "runBazaar"
     ],
     "Data.Lens.Indexed": [
@@ -20657,7 +20945,11 @@
     "Language.PS.SmartCST": [],
     "Language.PS.SmartCST.Types.SmartQualifiedNameConstructor": [],
     "Language.PS.SmartCST.Types.SmartQualifiedName": [],
-    "Language.PS.SmartCST.Types.Declaration": [],
+    "Language.PS.SmartCST.Types.Declaration": [
+      "DataHead",
+      "DataCtor",
+      "PSConstraint"
+    ],
     "Language.PS.SmartCST.Sugar.Declaration": [
       "typeRecord",
       "typeRow",
@@ -20781,14 +21073,30 @@
       "findOrNew"
     ],
     "Language.PS.SmartCST.ProcessModule": [
+      "Module",
       "moduleToCstModule",
       "printModule"
     ],
     "Language.PS.CST": [],
-    "Language.PS.CST.Types.QualifiedName": [],
-    "Language.PS.CST.Types.Module": [],
-    "Language.PS.CST.Types.Leafs": [],
-    "Language.PS.CST.Types.Declaration": [],
+    "Language.PS.CST.Types.QualifiedName": [
+      "QualifiedName"
+    ],
+    "Language.PS.CST.Types.Module": [
+      "Module",
+      "ImportDecl"
+    ],
+    "Language.PS.CST.Types.Leafs": [
+      "ModuleName",
+      "Ident",
+      "OpName",
+      "ProperName",
+      "Label"
+    ],
+    "Language.PS.CST.Types.Declaration": [
+      "DataHead",
+      "DataCtor",
+      "PSConstraint"
+    ],
     "Language.PS.CST.Sugar.QualifiedName": [
       "nonQualifiedName",
       "qualifiedName"
@@ -21046,10 +21354,22 @@
     "PscIde.Command": [
       "filterWrapper",
       "jsonSingletonObject'",
+      "CompletionOptions",
       "declarationTypeFromString",
       "declarationTypeToString",
       "commandWrapper",
       "encodeMaybeNull",
+      "TypePosition",
+      "TypeInfo",
+      "PursuitCompletion",
+      "ModuleList",
+      "Message",
+      "ImportList",
+      "Import",
+      "RebuildError",
+      "PscSuggestion",
+      "RebuildResult",
+      "PursIdeInfo",
       "unwrapResponse"
     ],
     "Node.Which": [
@@ -21427,8 +21747,11 @@
       "xor'",
       "implies",
       "not'",
+      "AtLeast",
       "getAtLeast",
+      "AtMost",
       "getAtMost",
+      "Between",
       "getBetween"
     ]
   },
@@ -21605,6 +21928,7 @@
       "graph"
     ],
     "RDF.Prefixes": [
+      "Prefix",
       "dc",
       "dcterms",
       "foaf",
@@ -21713,6 +22037,7 @@
       "createInstanceRef"
     ],
     "React.DOM": [
+      "IsDynamic",
       "mkDOM",
       "text",
       "int",
@@ -22540,6 +22865,7 @@
   "react-aria": {
     "React.Aria.Utils": [
       "useIdImpl",
+      "UseId",
       "useId",
       "mergePropsImpl",
       "mergeProps"
@@ -22561,14 +22887,19 @@
       "selectionFromSet"
     ],
     "React.Aria.Overlays": [
+      "UseModal",
       "useModalImpl",
       "useModal",
+      "UseOverlay",
       "useOverlayImpl",
       "useOverlay",
+      "UseOverlayPosition",
       "useOverlayPositionImpl",
       "usePosition",
+      "UseOverlayTrigger",
       "useOverlayTriggerImpl",
       "useOverlayTrigger",
+      "UsePreventScroll",
       "usePreventScrollImpl",
       "usePreventScroll",
       "overlayProvider",
@@ -22579,10 +22910,13 @@
     ],
     "React.Aria.Listbox": [
       "useListBoxImpl",
+      "UseListBox",
       "useListBox",
       "useOptionImpl",
+      "UseOption",
       "useOption",
-      "useListBoxSectionImpl"
+      "useListBoxSectionImpl",
+      "UseListBoxSection"
     ],
     "React.Aria.JSSet": [
       "toArray",
@@ -22592,8 +22926,10 @@
     ],
     "React.Aria.Interactions": [
       "useFocusWithinImpl",
+      "UseFocusWithin",
       "useFocusWithin",
       "useFocusImpl",
+      "UseFocus",
       "useFocus"
     ],
     "React.Aria.Focus": [
@@ -22603,6 +22939,7 @@
       "useFocusRing"
     ],
     "React.Aria.Combobox": [
+      "UseComboBox",
       "useComboBoxImpl",
       "useComboBox"
     ],
@@ -24165,8 +24502,12 @@
   },
   "react-halo": {
     "React.Halo": [],
-    "React.Halo.Internal.Types": [],
+    "React.Halo.Internal.Types": [
+      "SubscriptionId",
+      "ForkId"
+    ],
     "React.Halo.Internal.State": [
+      "HaloState",
       "createInitialState",
       "fresh"
     ],
@@ -24183,6 +24524,8 @@
       "runFinalize"
     ],
     "React.Halo.Internal.Control": [
+      "HaloM",
+      "HaloAp",
       "hoist",
       "hoistAp",
       "props",
@@ -24193,6 +24536,7 @@
       "kill"
     ],
     "React.Halo.Hook": [
+      "UseHalo",
       "useHalo"
     ],
     "React.Halo.Component": [
@@ -48396,6 +48740,7 @@
       "with"
     ],
     "Resource.Unsafe": [
+      "Resource",
       "new",
       "new'",
       "run",
@@ -48440,12 +48785,15 @@
       "supervise"
     ],
     "Control.Monad.Resource.Trans": [
+      "ResourceT",
       "mapResourceT",
       "runResourceT",
       "runResource",
       "joinResourceT"
     ],
     "Control.Monad.Resource.Internal.Registry": [
+      "Registry",
+      "ReleaseKey",
       "register",
       "release",
       "deregister",
@@ -48657,11 +49005,13 @@
     "Rito.Renderers.WebGL": [
       "defaultWebGLRenderer",
       "toInitializeWebGLRenderer",
+      "WebGLRenderer",
       "webGLRenderer"
     ],
     "Rito.Renderers.WebGL.UnrealBloomPass": [
       "defaultUnrealBloomPass",
       "toInitializeUnrealBloomPass",
+      "UnrealBloomPass",
       "unrealBloomPass"
     ],
     "Rito.Renderers.WebGL.RenderPass": [
@@ -48676,6 +49026,7 @@
       "effectComposerPass"
     ],
     "Rito.Renderers.WebGL.EffectComposer": [
+      "EffectComposer",
       "effectComposer"
     ],
     "Rito.Renderers.WebGL.BloomPass": [
@@ -48687,9 +49038,11 @@
       "raycaster"
     ],
     "Rito.Renderers.CSS3D": [
+      "CSS3DRenderer",
       "css3DRenderer"
     ],
     "Rito.Renderers.CSS2D": [
+      "CSS2DRenderer",
       "css2DRenderer"
     ],
     "Rito.Quaternion": [
@@ -48906,13 +49259,56 @@
       "toScene",
       "toGroup",
       "cameraToGroup",
+      "WebGLRenderer",
       "webGLRendererToRenderer",
+      "EffectComposer",
       "effectComposerToRenderer",
+      "Renderer",
+      "Pass",
+      "Light",
+      "CSS2DObject",
+      "CSS3DObject",
+      "Geometry",
+      "Material",
+      "Mesh",
+      "Instance",
+      "Points",
+      "Group",
+      "Scene",
+      "Sceneful",
+      "Groupful",
+      "Camera",
+      "InitializeEffectComposer",
+      "InitializeGlitchPass",
+      "InitializeEffectComposerPass",
+      "InitializeBloomPass",
+      "InitializeUnrealBloomPass",
+      "InitializeWebGLRenderer",
+      "InitializeScene",
+      "InitializeSphere",
+      "InitializeCSS2DObject",
+      "InitializeCSS3DObject",
+      "InitializePointLight",
+      "InitializeAmbientLight",
+      "InitializeDirectionalLight",
+      "InitializeRawShaderMaterial",
+      "InitializeShaderMaterial",
+      "InitializeMeshStandardMaterial",
+      "InitializeMeshLambertMaterial",
+      "InitializeMeshPhongMaterial",
       "defaultMaterials",
       "initializeDefaultMaterials",
+      "InitializeMeshBasicMaterial",
+      "InitializeBox",
+      "InitializeCapsule",
+      "InitializeCylinder",
+      "InitializePlane",
+      "InitializeBufferGeometry",
+      "InitializePerspectiveCamera",
       "bufferGeometry",
       "object3D",
-      "pureObject3D"
+      "pureObject3D",
+      "ThreeInterpret"
     ],
     "Rito.CombineOperation": [],
     "Rito.Color": [
@@ -48961,6 +49357,7 @@
       "parse"
     ],
     "Routing.Match": [
+      "Match",
       "root",
       "lit",
       "num",
@@ -49606,7 +50003,9 @@
       "matrix32",
       "matrix33"
     ],
-    "Data.Matrix.RegularMatrices": [],
+    "Data.Matrix.RegularMatrices": [
+      "RegularMatrix"
+    ],
     "Data.Matrix.Operations": [
       "consRowVec",
       "consColVec",
@@ -49713,7 +50112,8 @@
       "toMelody_"
     ],
     "Audio.SoundFont.Melody.Class": [
-      "toMelody"
+      "toMelody",
+      "MidiRecording"
     ],
     "Audio.SoundFont.Gleitz": [
       "gleitzUrl",
@@ -50040,6 +50440,7 @@
   "string-parsers": {
     "StringParser": [],
     "StringParser.Parser": [
+      "Parser",
       "unParser",
       "runParser",
       "printParserError",
@@ -50135,6 +50536,7 @@
       "unsafeRegex"
     ],
     "Data.String.Regex.Flags": [
+      "RegexFlags",
       "noFlags",
       "global",
       "ignoreCase",
@@ -50143,10 +50545,15 @@
       "unicode",
       "dotAll"
     ],
-    "Data.String.Pattern": [],
+    "Data.String.Pattern": [
+      "Pattern",
+      "Replacement"
+    ],
     "Data.String.NonEmpty": [],
     "Data.String.NonEmpty.Internal": [
+      "NonEmptyString",
       "nes",
+      "NonEmptyReplacement",
       "fromString",
       "unsafeFromString",
       "toString",
@@ -50215,7 +50622,9 @@
       "countPrefix",
       "splitAt"
     ],
-    "Data.String.NonEmpty.CaseInsensitive": [],
+    "Data.String.NonEmpty.CaseInsensitive": [
+      "CaseInsensitiveNonEmptyString"
+    ],
     "Data.String.Gen": [
       "genString",
       "genUnicodeString",
@@ -50281,7 +50690,9 @@
       "dropWhile",
       "splitAt"
     ],
-    "Data.String.CaseInsensitive": [],
+    "Data.String.CaseInsensitive": [
+      "CaseInsensitiveString"
+    ],
     "Data.Char": [
       "toCharCode",
       "fromCharCode"
@@ -51304,6 +51715,8 @@
   },
   "toppokki": {
     "Toppokki": [
+      "URL",
+      "Selector",
       "launch",
       "launchChromeAWS",
       "newPage",
@@ -51333,6 +51746,7 @@
       "runPromiseAffE2",
       "runPromiseAffE3",
       "runPromiseAffE4",
+      "KeyboardKey",
       "keyboardDown",
       "keyboardPress",
       "keyboardSendCharacter",
@@ -51483,6 +51897,7 @@
       "zipWith'"
     ],
     "Control.Monad.Identity.Trans": [
+      "IdentityT",
       "runIdentityT",
       "mapIdentityT"
     ],
@@ -51528,6 +51943,7 @@
       "traced"
     ],
     "Control.Comonad.Traced.Trans": [
+      "TracedT",
       "runTracedT"
     ],
     "Control.Comonad.Traced.Class": [
@@ -51542,6 +51958,7 @@
       "store"
     ],
     "Control.Comonad.Store.Trans": [
+      "StoreT",
       "runStoreT"
     ],
     "Control.Comonad.Store.Class": [
@@ -51559,6 +51976,7 @@
       "env"
     ],
     "Control.Comonad.Env.Trans": [
+      "EnvT",
       "runEnvT",
       "withEnvT",
       "mapEnvT"
@@ -51585,6 +52003,7 @@
       "appendChild"
     ],
     "Data.Tree.Zipper": [
+      "Loc",
       "next",
       "prev",
       "first",
@@ -52281,6 +52700,7 @@
   },
   "uncurried-transformers": {
     "Uncurried.WriterT": [
+      "WriterT",
       "writerT",
       "runWriterT",
       "evalWriterT",
@@ -52296,6 +52716,7 @@
       "mapWriter"
     ],
     "Uncurried.StateT": [
+      "StateT",
       "stateT",
       "runStateT",
       "evalStateT",
@@ -52330,6 +52751,7 @@
       "withRWSE"
     ],
     "Uncurried.ReaderT": [
+      "ReaderT",
       "readerT",
       "runReaderT",
       "hoistReaderT",
@@ -52350,6 +52772,7 @@
   },
   "undefined-is-not-a-problem": {
     "Data.Undefined.NoProblem": [
+      "Req",
       "undefined",
       "opt",
       "fromOpt",
@@ -52435,6 +52858,8 @@
       "generalCategory"
     ],
     "Data.CodePoint.Unicode.Internal": [
+      "ConversionRule",
+      "CharBlock",
       "gencatPF",
       "gencatSM",
       "gencatSO",
@@ -52713,6 +53138,7 @@
   "unlift": {
     "Effect.Unlift": [
       "withRunInEffect",
+      "UnliftEffect",
       "unliftEffect",
       "askUnliftEffect",
       "askRunInEffect",
@@ -52721,6 +53147,7 @@
     ],
     "Effect.Aff.Unlift": [
       "withRunInAff",
+      "UnliftAff",
       "unliftAff",
       "askUnliftAff",
       "askRunInAff",
@@ -52729,6 +53156,7 @@
     ],
     "Control.Monad.Unlift": [
       "withRunInBase",
+      "Unlift",
       "unlift",
       "askUnlift",
       "askRunInBase",
@@ -53004,6 +53432,7 @@
       "genPort"
     ],
     "URI.Path": [
+      "Path",
       "parser",
       "print"
     ],
@@ -53030,14 +53459,17 @@
       "segmentNCChar"
     ],
     "URI.Path.Rootless": [
+      "PathRootless",
       "parse",
       "print"
     ],
     "URI.Path.NoScheme": [
+      "PathNoScheme",
       "parse",
       "print"
     ],
     "URI.Path.Absolute": [
+      "PathAbsolute",
       "parse",
       "print"
     ],
@@ -53448,6 +53880,7 @@
     ],
     "VISX.Layout.Hierarchy": [
       "childrenProxy",
+      "Hierarchical",
       "mkNode",
       "mkLeaf",
       "hierarchy",
@@ -53547,6 +53980,7 @@
     "D3.TimeFormat": [
       "timeFormat",
       "timeFormatLocale",
+      "D3TimeFormatLocaleDefinition",
       "localeTimeFormat",
       "toD3Format"
     ],
@@ -53905,6 +54339,7 @@
       "defaultNSResolver"
     ],
     "Web.DOM.Document.XPath.ResultType": [
+      "ResultType",
       "any_type",
       "number_type",
       "string_type",
@@ -53929,6 +54364,7 @@
   },
   "web-encoding": {
     "Web.Encoding.UtfLabel": [
+      "UtfLabel",
       "utf8"
     ],
     "Web.Encoding.TextEncoder": [
@@ -54040,7 +54476,9 @@
       "toString",
       "fromString"
     ],
-    "Web.Fetch.Integrity": [],
+    "Web.Fetch.Integrity": [
+      "Integrity"
+    ],
     "Web.Fetch.Headers": [
       "fromFoldable",
       "fromRecord",
@@ -55920,6 +56358,9 @@
       "setText"
     ],
     "Web.HTML.History": [
+      "DocumentTitle",
+      "Delta",
+      "URL",
       "back",
       "forward",
       "go",
@@ -56044,7 +56485,11 @@
     "Web.HTML.Event.BeforeUnloadEvent.EventTypes": [
       "beforeunload"
     ],
-    "Web.HTML.Common": []
+    "Web.HTML.Common": [
+      "PropName",
+      "AttrName",
+      "ClassName"
+    ]
   },
   "web-pointerevents": {
     "Web.PointerEvent": [],
@@ -56110,6 +56555,7 @@
       "toError"
     ],
     "Web.Promise.Lazy": [
+      "LazyPromise",
       "new",
       "catch",
       "finally",
@@ -56154,6 +56600,7 @@
       "isResolved"
     ],
     "Web.Router.Internal.Control": [
+      "RouterM",
       "runRouter",
       "continue",
       "override",
@@ -56653,8 +57100,10 @@
       "writeVariantImpl"
     ],
     "Yoga.JSON.Variant": [
+      "TaggedVariant",
       "writeVariantImpl",
       "readVariantImpl",
+      "UntaggedVariant",
       "writeUntaggedVariantImpl",
       "readUntaggedVariantImpl"
     ],
@@ -56773,6 +57222,7 @@
       "appendChild"
     ],
     "Yoga.Tree.Zipper": [
+      "Loc",
       "next",
       "prev",
       "first",
