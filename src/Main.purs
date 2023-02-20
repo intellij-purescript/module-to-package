@@ -13,7 +13,7 @@ import Node.FS.Stats (Stats, isDirectory, isFile)
 import Node.Path (FilePath)
 import Node.Process (argv)
 import PureScript.CST (RecoveredParserResult(..), parseModule)
-import PureScript.CST.Types (DataMembers(..), Declaration(..), Export(..), Foreign(..), Ident(..), Labeled(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..), Proper(..))
+import PureScript.CST.Types (DataMembers(..), Declaration(..), Export(..), FixityOp(..), Foreign(..), Ident(..), Labeled(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..), Operator(..), Proper(..))
 import Data.Array (catMaybes, drop, fold, fromFoldable, intercalate) as Array
 import Node.Path (concat, extname) as Path
 import Data.Tuple (snd) as Tuple
@@ -47,7 +47,8 @@ extractExports m = case getExports m of
     # foldMapModule
         ( defaultMonoidalVisitor
             { onDecl = case _ of
-                (DeclNewtype _ _ (Name { name: (Proper name) }) _ ) -> [ name ]
+                (DeclNewtype _ _ (Name { name: (Proper name) }) _) -> [ {- is not imported as value -}]
+                (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) -> [ name ]
                 (DeclValue { name: (Name { name: (Ident name) }) }) -> [ name ]
                 (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
                   <#> unwrap
@@ -64,6 +65,7 @@ extractExports m = case getExports m of
   list -> list
     <#> case _ of
       ExportValue (Name { name: (Ident name) }) -> Just name
+      ExportOp (Name { name: (Operator name) }) -> Just name
       ExportType _ (Just (DataEnumerated names)) -> Nothing
       _ -> Nothing
     # Array.catMaybes
