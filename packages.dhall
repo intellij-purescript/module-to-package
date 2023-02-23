@@ -99,10 +99,11 @@ in  upstream
 -------------------------------
 -}
 let upstream =
-      https://github.com/purescript/package-sets/releases/download/psc-0.15.7-20230216/packages.dhall
-        sha256:8d4dc43ba920e029cfc39c122201ed821b37ad1c22bc115ab283bd9fab949eba
+      https://github.com/purescript/package-sets/releases/download/psc-0.15.7-20230222/packages.dhall
+        sha256:79789966818455024bafbfe1b0629aaae10c4017b3b9085931debd11d1905b16
 
 in  upstream
+  with yoga-json.version = "v5.1.0"
   with language-cst-parser =
     { version = "main"
     , repo = "https://github.com/natefaubion/purescript-language-cst-parser.git"

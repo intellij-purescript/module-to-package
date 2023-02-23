@@ -22,7 +22,7 @@ import PureScript.CST (RecoveredParserResult(..), parseModule)
 import PureScript.CST.Traversal (defaultMonoidalVisitor, foldMapModule)
 import PureScript.CST.Types (DataCtor(..), DataMembers(..), Declaration(..), Export(..), FixityOp(..), Foreign(..), Ident(..), Labeled(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..), Operator(..), Proper(..), Separated(..), Wrapped(..))
 import Data.Array (drop, fold, fromFoldable) as Array
-import Yoga.JSON (writeJSON) as JSON
+import Yoga.JSON (writePrettyJSON) as JSON
 import Foreign.Object (singleton) as Object
 import Node.Path (concat, extname) as Path
 import Data.Tuple (snd) as Tuple
@@ -40,7 +40,7 @@ main = do
         ParseSucceededWithErrors _ _ -> Nothing
         ParseFailed _ -> Nothing
     let package = Array.fold modules
-    log $ JSON.writeJSON package
+    log $ JSON.writePrettyJSON 2 package
 
 extractExports :: forall e. Module e -> Array (Object String)
 extractExports m = case getExports m of

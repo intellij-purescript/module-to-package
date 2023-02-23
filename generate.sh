@@ -9,8 +9,9 @@ function packages () {
   spago-packages | while read -r package version location url ; do
     if [ -d "packages/$package/src" ]; then
       echo "\"$package\": $(node index.mjs "packages/$package/src")"
+      echo -ne '\0'
     fi
-  done | paste -s -d, -
+  done | paste -z -s -d, -
 }
 
 spago bundle-app -p node -t index.mjs || exit $?
