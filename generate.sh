@@ -6,13 +6,14 @@ function spago-packages () {
 }
 
 function packages () {
-  spago bundle-app -p node -t index.mjs
   spago-packages | while read -r package version location url ; do
     if [ -d "packages/$package/src" ]; then
       echo "\"$package\": $(node index.mjs "packages/$package/src")"
     fi
   done | paste -s -d, -
 }
+
+spago bundle-app -p node -t index.mjs || exit $?
 
 mkdir -p "packages"
 spago-packages | while read package version location url ; do
