@@ -60,46 +60,31 @@ extractExports m = case getExports m of
                       <> Object.singleton "constructor" name
                   ]
                 (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) ->
-                  [ Object.singleton "name" name
-                      <> Object.singleton "import type" "operator"
-                  ]
+                  [ operatorImport name ]
                 (DeclValue { name: (Name { name: (Ident name) }) }) ->
-                  [ Object.singleton "name" name
-                      <> Object.singleton "import type" "value"
-                  ]
+                  [ valueImport name ]
                 (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
                   <#> unwrap
                   <#> _.label
                   <#> unwrap
                   <#> _.name
                   <#> unwrap
-                  <#> \name -> Object.singleton "name" name
-                    <> Object.singleton "import type" "value"
+                  <#> valueImport
                 (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
-                  [ Object.singleton "name" name
-                      <> Object.singleton "import type" "value"
-                  ]
+                  [ valueImport name ]
                 _ -> mempty
             }
         )
 
   list -> list
     <#> case _ of
-      ExportValue (Name { name: (Ident name) }) ->
-        [ Object.singleton "name" name
-            <> Object.singleton "import type" "value"
-        ]
-      ExportOp (Name { name: (Operator name) }) ->
-        [ Object.singleton "name" name
-            <> Object.singleton "import type" "operator"
-        ]
+      ExportValue (Name { name: (Ident name) }) -> [ valueImport name ]
+      ExportOp (Name { name: (Operator name) }) -> [ operatorImport name ]
       ExportType
-        (Name { name: Proper name })
-        (Just (DataEnumerated (Wrapped { value: (Just  (Separated { head, tail })) }))) ->
-        head : (tail <#> snd) <#> \(Name {name: Proper constructor}) ->
-          Object.singleton "type" name
-            <> Object.singleton "import type" "data member"
-            <> Object.singleton "constructor" constructor
+        (Name { name: Proper type' })
+        (Just (DataEnumerated (Wrapped { value: (Just (Separated { head, tail })) }))) ->
+        head : (tail <#> snd) <#> \(Name { name: Proper constructor }) ->
+          dataMemberImport constructor type'
 
       _ -> []
     # fold
@@ -131,3 +116,13 @@ allFiles (path :: FilePath) = do
     for paths allFiles <#> join
   else if isFile stats && Path.extname path == ".purs" then pure [ path ]
   else pure []
+
+valueImport name = Object.singleton "name" name
+  <> Object.singleton "import type" "value"
+
+operatorImport name = Object.singleton "name" name
+  <> Object.singleton "import type" "operator"
+
+dataMemberImport type' constructor = Object.singleton "type" type'
+  <> Object.singleton "import type" "data member"
+  <> Object.singleton "constructor" constructor

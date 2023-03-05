@@ -73093,9 +73093,9 @@
       "name": "eof"
     },
     {
-      "constructor": "LanguageDef",
+      "constructor": "GenLanguageDef",
       "import type": "data member",
-      "type": "GenLanguageDef"
+      "type": "LanguageDef"
     },
     {
       "import type": "value",
