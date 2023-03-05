@@ -8,10 +8,9 @@ function spago-packages () {
 function packages () {
   spago-packages | while read -r package version location url ; do
     if [ -d "packages/$package/src" ]; then
-      echo "\"$package\": $(node index.mjs "packages/$package/src")"
-      echo -ne '\0'
+      echo "$package"
     fi
-  done | paste -z -s -d, -
+  done | xargs node index.mjs 
 }
 
 spago bundle-app -p node -t index.mjs || exit $?
@@ -22,4 +21,4 @@ spago-packages | while read package version location url ; do
 done
 wait
 
-echo "{$(packages)}" > docs/latest.json
+packages > docs/latest.json

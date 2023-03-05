@@ -4,7 +4,6 @@ import Prelude
 
 import Control.Parallel (parTraverse)
 import Data.Array (fold, (:))
-import Data.Foldable (for_)
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Traversable (for)
@@ -30,17 +29,18 @@ import Data.Tuple (snd) as Tuple
 main :: Effect Unit
 main = do
   args <- argv
-  launchAff_ $ for_ (args # Array.drop 2) \filename -> do
-    warn $ "reading file: " <> filename
-    filenames <- allFiles filename
-    modules <- filenames # parTraverse \pursFilePath -> do
-      file <- readTextFile UTF8 pursFilePath
-      pure case parseModule file of
-        ParseSucceeded m -> Just $ toJson m
-        ParseSucceededWithErrors _ _ -> Nothing
-        ParseFailed _ -> Nothing
-    let package = Array.fold modules
-    log $ JSON.writePrettyJSON 2 package
+  launchAff_ do
+    packages <- for (args # Array.drop 2) \package_name -> do
+      warn $ "reading package: " <> package_name
+      filenames <- allFiles $ "packages/" <> package_name <> "/src"
+      modules <- filenames # parTraverse \file_path -> do
+        file <- readTextFile UTF8 file_path
+        pure case parseModule file of
+          ParseSucceeded m -> Just $ toJson m
+          ParseSucceededWithErrors _ _ -> Nothing
+          ParseFailed _ -> Nothing
+      pure $ Object.singleton package_name $ Array.fold modules
+    log $ JSON.writePrettyJSON 2 $ Array.fold packages
 
 extractExports :: forall e. Module e -> Array (Object String)
 extractExports m = case getExports m of
@@ -50,15 +50,9 @@ extractExports m = case getExports m of
             { onDecl = case _ of
                 (DeclData { name: Name { name: (Proper name) } } (Just (Tuple _ (Separated { head, tail })))) ->
                   head : (tail <#> snd) <#> \(DataCtor { name: Name { name: (Proper constructor) } }) ->
-                    Object.singleton "type" name
-                      <> Object.singleton "import type" "data member"
-                      <> Object.singleton "constructor" constructor
-
+                    dataMemberImport name constructor
                 (DeclNewtype _ _ (Name { name: (Proper name) }) _) ->
-                  [ Object.singleton "type" name
-                      <> Object.singleton "import type" "data member"
-                      <> Object.singleton "constructor" name
-                  ]
+                  [ dataMemberImport name name ]
                 (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) ->
                   [ operatorImport name ]
                 (DeclValue { name: (Name { name: (Ident name) }) }) ->
@@ -81,10 +75,10 @@ extractExports m = case getExports m of
       ExportValue (Name { name: (Ident name) }) -> [ valueImport name ]
       ExportOp (Name { name: (Operator name) }) -> [ operatorImport name ]
       ExportType
-        (Name { name: Proper type' })
+        (Name { name: Proper type_ })
         (Just (DataEnumerated (Wrapped { value: (Just (Separated { head, tail })) }))) ->
         head : (tail <#> snd) <#> \(Name { name: Proper constructor }) ->
-          dataMemberImport constructor type'
+          dataMemberImport constructor type_
 
       _ -> []
     # fold
@@ -123,6 +117,6 @@ valueImport name = Object.singleton "name" name
 operatorImport name = Object.singleton "name" name
   <> Object.singleton "import type" "operator"
 
-dataMemberImport type' constructor = Object.singleton "type" type'
+dataMemberImport type_ constructor = Object.singleton "type" type_
   <> Object.singleton "import type" "data member"
   <> Object.singleton "constructor" constructor
