@@ -74,8 +74,8 @@ extractExports m = case getExports m of
       _ -> []
     # fold
 
-toJson :: forall e. Module e -> Object (Array (Object String))
-toJson m = Object.singleton (getName m) (extractExports m)
+moduleToJson :: forall e. Module e -> Object (Array (Object String))
+moduleToJson m = Object.singleton (getName m) (extractExports m)
 
 getExports :: forall e. Module e -> Array (Export e)
 getExports (Module { header: ModuleHeader { exports } }) = case exports of
@@ -126,6 +126,6 @@ indexModule :: String -> Aff (Maybe (Object (Array (Object String))))
 indexModule file_path = do
   file <- readTextFile UTF8 file_path
   pure case parseModule file of
-    ParseSucceeded m -> Just $ toJson m
+    ParseSucceeded m -> Just $ moduleToJson m
     ParseSucceededWithErrors _ _ -> Nothing
     ParseFailed _ -> Nothing
