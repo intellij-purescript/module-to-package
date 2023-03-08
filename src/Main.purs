@@ -30,16 +30,7 @@ main :: Effect Unit
 main = do
   args <- argv
   launchAff_ do
-    packages <- for (args # Array.drop 2) \package_name -> do
-      warn $ "reading package: " <> package_name
-      filenames <- allFiles $ "packages/" <> package_name <> "/src"
-      modules <- filenames # parTraverse \file_path -> do
-        file <- readTextFile UTF8 file_path
-        pure case parseModule file of
-          ParseSucceeded m -> Just $ toJson m
-          ParseSucceededWithErrors _ _ -> Nothing
-          ParseFailed _ -> Nothing
-      pure $ Object.singleton package_name $ Array.fold modules
+    packages <- for (args # Array.drop 2) indexPackage
     log $ JSON.writePrettyJSON 2 $ Array.fold packages
 
 extractExports :: forall e. Module e -> Array (Object String)
@@ -123,3 +114,18 @@ dataMemberImport :: String -> String -> Object String
 dataMemberImport type_ constructor = Object.singleton "type" type_
   <> Object.singleton "import type" "data member"
   <> Object.singleton "constructor" constructor
+
+indexPackage :: String -> Aff (Object (Maybe (Object (Array (Object String)))))
+indexPackage package_name = do
+  warn $ "reading package: " <> package_name
+  filenames <- allFiles $ "packages/" <> package_name <> "/src"
+  modules <- filenames # parTraverse indexModule
+  pure $ Object.singleton package_name $ Array.fold modules
+
+indexModule :: String -> Aff (Maybe (Object (Array (Object String))))
+indexModule file_path = do
+  file <- readTextFile UTF8 file_path
+  pure case parseModule file of
+    ParseSucceeded m -> Just $ toJson m
+    ParseSucceededWithErrors _ _ -> Nothing
+    ParseFailed _ -> Nothing
