@@ -21,6 +21,7 @@ import PureScript.CST (RecoveredParserResult(..), parseModule)
 import PureScript.CST.Traversal (defaultMonoidalVisitor, foldMapModule)
 import PureScript.CST.Types (DataCtor(..), DataMembers(..), Declaration(..), Export(..), FixityOp(..), Foreign(..), Ident(..), Labeled(..), Module(..), ModuleHeader(..), ModuleName(..), Name(..), Operator(..), Proper(..), Separated(..), Wrapped(..))
 import Data.Array (drop, fold, fromFoldable) as Array
+import PureScript.CST.Types (Type) as CST
 import Yoga.JSON (writePrettyJSON) as JSON
 import Foreign.Object (singleton) as Object
 import Node.Path (concat, extname) as Path
@@ -110,14 +111,12 @@ indexDeclaration = case _ of
   (DeclData { name: Name { name: (Proper name) } } (Just (Tuple _ (Separated { head, tail })))) ->
     head : (tail <#> snd) <#> \(DataCtor { name: Name { name: (Proper constructor) } }) ->
       dataMemberImport name constructor
-  (DeclNewtype _ _ (Name { name: (Proper name) }) _) ->
-    [ dataMemberImport name name ]
-  (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) ->
-    [ operatorImport name ]
-  (DeclValue { name: (Name { name: (Ident name) }) }) ->
-    [ valueImport name ]
-  (DeclClass _ (Just (Tuple _ members))) -> Array.fromFoldable members
-    <#> unwrap >>> _.label >>> unwrap >>>_.name >>> unwrap >>> valueImport
-  (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
-    [ valueImport name ]
+  (DeclNewtype _ _ (Name { name: (Proper name) }) _) -> [ dataMemberImport name name ]
+  (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) -> [ operatorImport name ]
+  (DeclValue { name: (Name { name: (Ident name) }) }) -> [ valueImport name ]
+  (DeclClass _ (Just (Tuple _ members))) -> Array.fromFoldable members <#> indexClassMember
+  (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) -> [ valueImport name ]
   _ -> mempty
+
+indexClassMember :: forall e. Labeled (Name Ident) (CST.Type e) -> Object String
+indexClassMember = unwrap >>> _.label >>> unwrap >>> _.name >>> unwrap >>> valueImport
