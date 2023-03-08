@@ -89,8 +89,8 @@ getExports (Module { header: ModuleHeader { exports } }) = case exports of
 getName :: forall e7. Module e7 -> String
 getName (Module { header: (ModuleHeader { name: (Name { name: (ModuleName name) }) }) }) = name
 
-allFiles :: FilePath -> Aff (Array FilePath)
-allFiles (path :: FilePath) = do
+findAllModules :: FilePath -> Aff (Array FilePath)
+findAllModules (path :: FilePath) = do
   (stats :: Stats) <- stat (path :: FilePath)
   if stats # isDirectory then do
     files <- readdir path
@@ -98,7 +98,7 @@ allFiles (path :: FilePath) = do
       paths = do
         p <- files
         pure $ Path.concat [ path, p ]
-    for paths allFiles <#> join
+    for paths findAllModules <#> join
   else if isFile stats && Path.extname path == ".purs" then pure [ path ]
   else pure []
 
@@ -118,7 +118,7 @@ dataMemberImport type_ constructor = Object.singleton "type" type_
 indexPackage :: String -> Aff (Object (Maybe (Object (Array (Object String)))))
 indexPackage package_name = do
   warn $ "reading package: " <> package_name
-  filenames <- allFiles $ "packages/" <> package_name <> "/src"
+  filenames <- findAllModules $ "packages/" <> package_name <> "/src"
   modules <- filenames # parTraverse indexModule
   pure $ Object.singleton package_name $ Array.fold modules
 
