@@ -35,32 +35,7 @@ main = do
 
 extractExports :: forall e. Module e -> Array (Object String)
 extractExports m = case getExports m of
-  [] -> m
-    # foldMapModule
-        ( defaultMonoidalVisitor
-            { onDecl = case _ of
-                (DeclData { name: Name { name: (Proper name) } } (Just (Tuple _ (Separated { head, tail })))) ->
-                  head : (tail <#> snd) <#> \(DataCtor { name: Name { name: (Proper constructor) } }) ->
-                    dataMemberImport name constructor
-                (DeclNewtype _ _ (Name { name: (Proper name) }) _) ->
-                  [ dataMemberImport name name ]
-                (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) ->
-                  [ operatorImport name ]
-                (DeclValue { name: (Name { name: (Ident name) }) }) ->
-                  [ valueImport name ]
-                (DeclClass _ (Just (Tuple _ members))) -> Array.fromFoldable members
-                  <#> unwrap
-                  <#> _.label
-                  <#> unwrap
-                  <#> _.name
-                  <#> unwrap
-                  <#> valueImport
-                (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
-                  [ valueImport name ]
-                _ -> mempty
-            }
-        )
-
+  [] -> m # foldMapModule (defaultMonoidalVisitor { onDecl = indexDeclaration })
   list -> list
     <#> case _ of
       ExportValue (Name { name: (Ident name) }) -> [ valueImport name ]
@@ -129,3 +104,20 @@ indexModule file_path = do
     ParseSucceeded m -> Just $ moduleToJson m
     ParseSucceededWithErrors _ _ -> Nothing
     ParseFailed _ -> Nothing
+
+indexDeclaration :: forall e. Declaration e -> Array (Object String)
+indexDeclaration = case _ of
+  (DeclData { name: Name { name: (Proper name) } } (Just (Tuple _ (Separated { head, tail })))) ->
+    head : (tail <#> snd) <#> \(DataCtor { name: Name { name: (Proper constructor) } }) ->
+      dataMemberImport name constructor
+  (DeclNewtype _ _ (Name { name: (Proper name) }) _) ->
+    [ dataMemberImport name name ]
+  (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) ->
+    [ operatorImport name ]
+  (DeclValue { name: (Name { name: (Ident name) }) }) ->
+    [ valueImport name ]
+  (DeclClass _ (Just (Tuple _ members))) -> Array.fromFoldable members
+    <#> unwrap >>> _.label >>> unwrap >>>_.name >>> unwrap >>> valueImport
+  (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) ->
+    [ valueImport name ]
+  _ -> mempty
