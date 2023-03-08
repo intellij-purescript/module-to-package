@@ -57,7 +57,7 @@ extractExports m = case getExports m of
                   [ operatorImport name ]
                 (DeclValue { name: (Name { name: (Ident name) }) }) ->
                   [ valueImport name ]
-                (DeclClass _ (Just (Tuple _ members))) -> (Array.fromFoldable members)
+                (DeclClass _ (Just (Tuple _ members))) -> Array.fromFoldable members
                   <#> unwrap
                   <#> _.label
                   <#> unwrap
@@ -101,7 +101,7 @@ getName (Module { header: (ModuleHeader { name: (Name { name: (ModuleName name) 
 allFiles :: FilePath -> Aff (Array FilePath)
 allFiles (path :: FilePath) = do
   (stats :: Stats) <- stat (path :: FilePath)
-  if (stats # isDirectory) then do
+  if stats # isDirectory then do
     files <- readdir path
     let
       paths = do
@@ -111,12 +111,15 @@ allFiles (path :: FilePath) = do
   else if isFile stats && Path.extname path == ".purs" then pure [ path ]
   else pure []
 
+valueImport :: String -> Object String
 valueImport name = Object.singleton "name" name
   <> Object.singleton "import type" "value"
 
+operatorImport :: String -> Object String
 operatorImport name = Object.singleton "name" name
   <> Object.singleton "import type" "operator"
 
+dataMemberImport :: String -> String -> Object String
 dataMemberImport type_ constructor = Object.singleton "type" type_
   <> Object.singleton "import type" "data member"
   <> Object.singleton "constructor" constructor
