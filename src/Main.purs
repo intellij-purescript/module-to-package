@@ -39,11 +39,11 @@ extractExports m = case getExports m of
   [] -> m # foldMapModule (defaultMonoidalVisitor { onDecl = indexDeclaration })
   list -> list
     <#> case _ of
-      ExportValue (Name { name: (Ident name) }) -> [ valueImport name ]
-      ExportOp (Name { name: (Operator name) }) -> [ operatorImport name ]
+      ExportValue (Name { name: Ident name }) -> [ valueImport name ]
+      ExportOp (Name { name: Operator name }) -> [ operatorImport name ]
       ExportType
         (Name { name: Proper type_ })
-        (Just (DataEnumerated (Wrapped { value: (Just (Separated { head, tail })) }))) ->
+        (Just (DataEnumerated (Wrapped { value: Just (Separated { head, tail }) }))) ->
         head : (tail <#> snd) <#> \(Name { name: Proper constructor }) ->
           dataMemberImport constructor type_
 
@@ -63,7 +63,7 @@ getExports (Module { header: ModuleHeader { exports } }) = case exports of
     # \{ head, tail } -> head : (tail <#> Tuple.snd)
 
 getName :: forall e7. Module e7 -> String
-getName (Module { header: (ModuleHeader { name: (Name { name: (ModuleName name) }) }) }) = name
+getName (Module { header: ModuleHeader { name: Name { name: ModuleName name } } }) = name
 
 findAllModules :: FilePath -> Aff (Array FilePath)
 findAllModules (path :: FilePath) = do
@@ -108,14 +108,14 @@ indexModule file_path = do
 
 indexDeclaration :: forall e. Declaration e -> Array (Object String)
 indexDeclaration = case _ of
-  (DeclData { name: Name { name: (Proper name) } } (Just (Tuple _ (Separated { head, tail })))) ->
-    head : (tail <#> snd) <#> \(DataCtor { name: Name { name: (Proper constructor) } }) ->
+  DeclData { name: Name { name: Proper name } } (Just (Tuple _ (Separated { head, tail }))) ->
+    head : (tail <#> snd) <#> \(DataCtor { name: Name { name: Proper constructor } }) ->
       dataMemberImport name constructor
-  (DeclNewtype _ _ (Name { name: (Proper name) }) _) -> [ dataMemberImport name name ]
-  (DeclFixity { operator: (FixityValue _ _ (Name { name: Operator name })) }) -> [ operatorImport name ]
-  (DeclValue { name: (Name { name: (Ident name) }) }) -> [ valueImport name ]
-  (DeclClass _ (Just (Tuple _ members))) -> Array.fromFoldable members <#> indexClassMember
-  (DeclForeign _ _ (ForeignValue (Labeled { label: (Name { name: (Ident name) }) }))) -> [ valueImport name ]
+  DeclNewtype _ _ (Name { name: Proper name }) _ -> [ dataMemberImport name name ]
+  DeclFixity { operator: FixityValue _ _ (Name { name: Operator name }) } -> [ operatorImport name ]
+  DeclValue { name: Name { name: Ident name } } -> [ valueImport name ]
+  DeclClass _ (Just (Tuple _ members)) -> Array.fromFoldable members <#> indexClassMember
+  DeclForeign _ _ (ForeignValue (Labeled { label: Name { name: Ident name } })) -> [ valueImport name ]
   _ -> mempty
 
 indexClassMember :: forall e. Labeled (Name Ident) (CST.Type e) -> Object String
